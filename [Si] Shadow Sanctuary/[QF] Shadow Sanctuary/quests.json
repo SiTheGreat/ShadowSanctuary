@@ -1,0 +1,247 @@
+{
+	"Format": "1.0",
+
+	// Quests ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	"Quests": [
+
+	// Intro Quests ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+
+		// Flies quest
+		"Name": "262205002",
+		"Type": "Monster",
+		"Title": "Clear The Lair",
+		"Description": "Help Krobus by getting rid of the flies in the lair.",
+		"Objective": "Slay 100 flies.",
+		"Cancelable": false,
+		"Trigger": "Fly 100 Krobus",
+		"AddMailOnComplete": "262205003 noletter",
+		"ReactionText": "Thanks @! Meet me in the lair tomorrow.",
+
+		},
+
+		{
+
+		// Clay materials quest
+		"Name": "262205005",
+		"Type": "ItemDelivery",
+		"Title": "Clay for Krobus",
+		"Description": "Gather clay so Krobus can reinforce the mounds in the lair and turn them into houses.",
+		"Objective": "Deliver 300 clay to Krobus.",
+		"Cancelable": false,
+		"Trigger": "Krobus 330 300",
+		"AddMailOnComplete": "262205006 noletter",
+		"ReactionText": "This should work!",
+
+		},
+
+		{
+
+		// Bone materials quest
+		"Name": "262205007",
+		"Type": "ItemDelivery",
+		"Title": "Bone Fragments for Krobus",
+		"Description": "Gather bone fragments so Krobus can reinforce the mounds in the lair and turn them into houses.",
+		"Objective": "Deliver 300 bone fragments to Krobus.",
+		"Cancelable": false,
+		"Trigger": "Krobus 881 300",
+		"AddMailOnComplete": "262205008 noletter",
+		"ReactionText": "These will do nicely!",
+
+		},
+
+		{
+
+		// Bribe Marlon quest
+		"Name": "262205010",
+		"Type": "Location",
+		"Title": "Convince The Adventurer",
+		"Description": "Convince Marlon to let Krobus start a colony of shadow people under Pelican Town.",
+		"Objective": "Go to the Adventurer's Guild.",
+		"Cancelable": false,
+		"Trigger": "AdventureGuild",
+
+		},
+
+		{
+
+		// Bribe Rasmodius quest
+		"Name": "262205011",
+		"Type": "Location",
+		"Title": "Convince The Wizard",
+		"Description": "Convince Rasmodius to let Krobus start a colony of shadow people under Pelican Town.",
+		"Objective": "Go to the wizard's tower.",
+		"Cancelable": false,
+		"Trigger": "WizardHouse",
+
+		},
+
+		{
+
+		// Stone Golem quest
+		"Name": "262205013",
+		"Type": "Monster",
+		"Title": "Sticks And Stones",
+		"Description": "Help Marlon clear stone golems out of the mines.",
+		"Objective": "Slay 50 stone golems.",
+		"Cancelable": false,
+		"Trigger": "Stone_Golem 50",
+		"AddMailOnComplete": "262205014 noletter",
+
+		},
+
+
+		{
+
+		// Desert Totem quest
+		"Name": "262205017",
+		"Type": "ItemDelivery",
+		"Title": "Sunny With A Chance Of Magic",
+		"Description": "Rasmodius needs desert totems for a research trip.",
+		"Objective": "Deliver 20 desert totems to the wizard.",
+		"Cancelable": false,
+		"Trigger": "Wizard 261 20",
+		"AddMailOnComplete": "262205018 noletter",
+		"ReactionText": "Hm, these should suffice.#$b#Yes, fine, I won't stop you so long as they do not cause any disturbances to the town.#$b#Now leave me to my studies!",
+
+		},
+
+		{
+
+		// Mines Note quest
+		"Name": "262205020",
+		"Type": "Location",
+		"Title": "Reaching Out",
+		"Description": "Leave a note for the shadow people at the bottom of the mines.",
+		"Objective": "Go to the mines.",
+		"Cancelable": false,
+		"Trigger": "Mine",
+
+		},
+
+	// Char Intro Quests ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+		{
+
+		// Trio intro lunarite quest
+		"Name": "262205049",
+		"Type": "ItemDelivery",
+		"Title": "Lunarite",
+		"Description": "Krobus wants to experiment with lair materials.",
+		"Objective": "Deliver 5 lunarite to Krobus.",
+		"Cancelable": false,
+		"Trigger": "Krobus 551 5",
+		"AddMailOnComplete": "262205050 noletter",
+		"ReactionText": "I like the texture!#$b#I wonder how they'll turn out.#$b#Thanks!",
+
+		},
+
+		{
+
+		// Duffle intro supplies quest
+		"Name": "262205045",
+		"Type": "ItemDelivery",
+		"Title": "Running On Empty",
+		"Description": "Krobus is stocking up on emergency supplies for the lair.",
+		"Objective": "Deliver 50 field snacks to Krobus.",
+		"Cancelable": false,
+		"Trigger": "Krobus 403 50",
+		"AddMailOnComplete": "262205046 noletter",
+		"ReactionText": "Ugh, I really hope we don't have to resort to these.#$b#Thanks!",
+
+		},
+
+		{
+
+		// Tove intro iron quest
+		"Name": "262205057",
+		"Type": "ItemDelivery",
+		"Title": "Jailbirds",
+		"Description": "Krobus needs some iron to prepare for a new arrival.",
+		"Objective": "Deliver 50 iron bars to Krobus.",
+		"Cancelable": false,
+		"Trigger": "Krobus 335 50",
+		"AddMailOnComplete": "262205058 noletter",
+		"ReactionText": "Thanks!#$b#I hope they get here soon.",
+
+		},
+
+
+
+	// Char Gen Quests ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Sanctuary Quests ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	],
+
+	// Offers ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	"Offers": [
+
+	// Char Intro Offers ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+		{
+
+		// Trio intro quest letter
+		"QuestName": "262205049",
+		"OfferedBy": "Mail",
+		"OfferDetails": {
+				"Topic": "Lunarite For The Lair",
+				"Text": "Hi @,^^I'm experimenting with different materials to make the mounds in the lair more stable. Can you bring me some lunarite? Thanks!^^Krobus["
+				},
+		"When": {
+			"EventSeen": "262205035",
+			}
+
+		},
+
+		{
+
+		// Duffle intro quest letter
+		"QuestName": "262205045",
+		"OfferedBy": "Mail",
+		"OfferDetails": {
+				"Topic": "Supplies For The Lair",
+				"Text": "Hi @,^^I want to stock up on emergency supplies for the lair. Do you think you can help out? It doesn't have to be anything fancy. Thanks!^^Krobus["
+				},
+		"When": {
+			"EventSeen": "262205044",
+			}
+
+		},
+
+		{
+
+		// Tove intro quest letter
+		"QuestName": "262205057",
+		"OfferedBy": "Mail",
+		"OfferDetails": {
+				"Topic": "Iron For The Lair",
+				"Text": "Hi @,^^A new shadow person said they'll move in! It'll take them some time to get here, but they asked me to prepare a few things they'll need. Could you get me some iron please? Thanks!^^Krobus["
+				},
+		"When": {
+			"EventSeen": "262205056",
+			}
+
+		},
+
+	// Char Gen Offers ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Sanctuary Offers ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Board Offers ////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		// "Query: {{Random: {{Range: 1, 100}}}} <= 14": true // 14% chance
+
+
+	]
+
+
+
+}

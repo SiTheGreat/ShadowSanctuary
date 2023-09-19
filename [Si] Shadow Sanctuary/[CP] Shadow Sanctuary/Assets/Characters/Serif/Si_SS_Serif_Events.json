@@ -1,0 +1,46 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+
+	// Krobus monday quest to deliver lunarite; sewer hidden event, convo topic 1 week; Monday, intro event; have met Phana
+	// 2 events, 1 quest
+
+
+	{
+	// Event ID 262205035 Serif hidevent
+	"LogName": "Si SS IE HE 06",
+	"Action": "EditData",
+	"Target": "Data/Events/Town", // reqs
+	"Entries": {
+		"262205035/e 262205023/A SSAfterPhana/e 262205031/e 262205032/e 262205033/e 262205034/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	// lunarite quest 262205049 262205050
+
+	{
+	// Event ID 262205036 Serif hidevent
+	"LogName": "Si SS IE HE 06",
+	"Action": "EditData",
+	"Target": "Data/Events/BusStop", // reqs
+	"Entries": {
+		"262205036/n 262205050/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/addConversationTopic SSSerif1 7/end",
+		}
+	},
+
+	{
+	// Event ID 262205037 Trio intro
+	"LogName": "Si SS IE ME 07",
+	"Action": "EditData",
+	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
+	"Entries": {
+		"262205037/e 262205036/A SSSerif1/d Tue Wed Thu Fri Sat Sun/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+
+
+]
+}

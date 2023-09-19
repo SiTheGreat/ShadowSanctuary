@@ -1,0 +1,42 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Baby Void Chickens ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"MapTiles": [
+			{
+				"Position": { "X": 31, "Y": 8 },
+				"Layer": "Back",
+				"SetProperties": {
+					"CustomCompanions": "Spawn 3 SiTheGreat.CCShadowSanctuary.SSBabyVoidChickens"
+				}
+			}
+		]
+	},
+
+	// Void Chickens ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"MapTiles": [
+			{
+				"Position": { "X": 32, "Y": 8 },
+				"Layer": "Back",
+				"SetProperties": {
+					"CustomCompanions": "Spawn 5 SiTheGreat.CCShadowSanctuary.SSVoidChickens"
+				}
+			}
+		]
+	},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

@@ -1,0 +1,34 @@
+Intro conditions:
+-right after Duffle
+-have to find while holding snack
+-intro scene, farmer dialogue choice 'follow me quietly' vs 'get in my backpack' vs 'here, I'll carry you'
+-convotopic added by this scene and rmv'd by reunion scene, people asking'whatcha got there?'
+-NOT defined quest; just Duffle locdialogue 'have you found nib yet? they like tarts, maybe that will help you.' while pacing
+
+Sprites:
+
+Scheds:
+
+Loves: miners treat, strange bun, dolls/toys <snack>
+Likes: void mayo
+Neuts:
+Dislikes:
+Hates:
+
+Shop: none
+
+Gen quests:
+-asks for <snack>
+
+Sequence:
+-Intro event
+-friday temple, nib talks and duffle shushes them
+-while sick, cheer up quest by bringing <thing>
+
+Sanctuary events:
+-
+
+Char Notes:
+-will, can, and has tried to eat everything in the vicinity
+-talks on fridays
+-dolls

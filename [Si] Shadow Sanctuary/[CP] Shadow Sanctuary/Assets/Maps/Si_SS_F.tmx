@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="9" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="22" nextobjectid="1">
+ <properties>
+  <property name="AmbientLight" value="170 190 110"/>
+  <property name="Music" value="junimoKart_whaleMusic"/>
+  <property name="TreatAsOutdoors" value="f"/>
+ </properties>
+ <tileset firstgid="1" name="bugTiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
+  <image source="Tilesheets/bugLandTiles.png" width="128" height="224"/>
+  <tile id="4">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="4" duration="990"/>
+    <frame tileid="55" duration="990"/>
+   </animation>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="5" duration="1000"/>
+    <frame tileid="63" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="6" duration="995"/>
+    <frame tileid="71" duration="995"/>
+   </animation>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="113" name="Paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="Tilesheets/paths.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="145" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Tilesheets/townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2321" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="Tilesheets/furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="5297" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="Tilesheets/spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="7272" name="fall_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="Tilesheets/fall_outdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="1721">
+   <animation>
+    <frame tileid="1720" duration="990"/>
+    <frame tileid="1719" duration="990"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="9247" name="Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="Tilesheets/Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="9823" name="mine_lava" tilewidth="16" tileheight="16" tilecount="320" columns="16">
+  <image source="Tilesheets/mine_lava.png" width="256" height="320"/>
+ </tileset>
+ <tileset firstgid="10143" name="Cursors" tilewidth="16" tileheight="16" tilecount="6204" columns="44">
+  <image source="Tilesheets/Cursors.png" width="704" height="2256"/>
+ </tileset>
+ <tileset firstgid="16347" name="tools" tilewidth="16" tileheight="16" tilecount="504" columns="21">
+  <image source="Tilesheets/tools.png" width="336" height="384"/>
+ </tileset>
+ <layer id="1" name="Back" width="9" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+18,19,18,19,18,19,18,19,18,
+10,10,10,11,10,11,10,11,10,
+18,19,18,19,18,19,18,19,18,
+10,11,10,11,10,11,10,11,10,
+18,19,18,19,18,19,18,19,18,
+10,11,10,11,10,11,10,11,10,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Back1" width="9" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,10,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="16" name="Back2" width="9" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,9946,9947,9945,9944,0,9946,0,
+0,10,13519,0,0,0,7381,0,0,
+0,0,0,0,0,11950,0,0,0,
+0,0,0,13516,0,0,3947,3948,0,
+0,0,0,0,2684361942,13518,3979,3980,0,
+0,0,0,0,0,0,4011,4012,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="9" height="9">
+  <data encoding="csv">
+9908,9933,9908,9933,9908,9933,9890,9933,9908,
+0,9930,9931,9928,9929,0,9922,0,0,
+9939,9945,1631,2147485279,9625,9626,9938,1662,9948,
+9955,9805,0,0,0,0,0,0,10014,
+9987,1000,1001,1538,0,0,0,0,9998,
+10003,1032,1033,0,0,0,0,0,10014,
+10019,1035,1036,5414,0,0,0,0,10044,
+9902,1067,1068,0,0,0,0,0,9902,
+9902,9902,9902,9902,9902,9902,9902,9902,9902
+</data>
+ </layer>
+ <layer id="15" name="Buildings1" width="9" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="9" height="9">
+  <data encoding="csv">
+0,9936,0,0,9920,0,0,9936,0,
+0,0,0,0,0,0,121,0,0,
+0,0,0,0,0,0,0,0,0,
+0,121,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,121,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="9" height="9">
+  <data encoding="csv">
+0,0,1930,1931,0,0,0,0,0,
+9929,0,1962,1963,2684356492,9930,0,9928,9929,
+0,9798,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,10020,0,0,0,0,0,10043,0,
+9902,10036,10038,10038,10037,10038,10037,1610622772,9902,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="18" name="Front1" width="9" height="9">
+  <data encoding="csv">
+0,0,0,0,0,1138,1932,0,0,
+0,0,1568,1569,9617,9618,1964,1630,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,544,796,0,0,0,0,0,0,
+0,1003,1004,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="AlwaysFront" width="9" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="12" name="Back1"/>
+ <objectgroup id="17" name="Back2"/>
+ <objectgroup id="7" name="Buildings"/>
+ <objectgroup id="14" name="Buildings1"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="9" name="Front"/>
+ <objectgroup id="19" name="Front2"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

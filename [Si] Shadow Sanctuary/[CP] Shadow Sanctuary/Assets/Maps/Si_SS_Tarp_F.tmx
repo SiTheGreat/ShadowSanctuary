@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="left-down" width="5" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="1">
+ <tileset firstgid="1" name="bugTiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
+  <image source="Tilesheets/bugLandTiles.png" width="128" height="224"/>
+  <tile id="4">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="4" duration="990"/>
+    <frame tileid="55" duration="990"/>
+   </animation>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="5" duration="1000"/>
+    <frame tileid="63" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="6" duration="995"/>
+    <frame tileid="71" duration="995"/>
+   </animation>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="113" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="Tilesheets/furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="3089" name="Paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="Tilesheets/paths.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="3121" name="Greenhouse" tilewidth="16" tileheight="16" tilecount="300" columns="15">
+  <image source="Tilesheets/Greenhouse.png" width="240" height="320"/>
+ </tileset>
+ <tileset firstgid="3421" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Tilesheets/townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <layer id="1" name="Back" width="5" height="5">
+  <data encoding="csv">
+18,11,11,0,51,
+11,11,11,51,51,
+11,11,11,0,11,
+0,11,11,0,11,
+0,10,33,33,33
+</data>
+ </layer>
+ <layer id="11" name="Back1" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+17,0,0,0,0
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="13" name="Buildings" width="5" height="5">
+  <data encoding="csv">
+0,0,0,51,51,
+0,0,58,51,51,
+0,0,66,67,65,
+14,0,74,75,73,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="14" name="Buildings1" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Building" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Building"/>
+ <layer id="5" name="Paths" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,3097,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Front1" width="5" height="5">
+  <data encoding="csv">
+0,0,50,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="5" height="5">
+  <data encoding="csv">
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

@@ -1,0 +1,31 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+	// Has crafting recipe Monster Musk; Emily's house hidden event, convo topic 6 days; have met Phana
+	// 1 events
+
+	{
+	// Event ID 262205032 Glee musk hidevent
+	"LogName": "Si SS IE HE 08",
+	"Action": "EditData",
+	"Target": "Data/Events/BusStop", // reqs
+	"Entries": {
+		"262205032/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	{
+	// Event ID 262205034 Glee house hidevent
+	"LogName": "Si SS IE HE 08",
+	"Action": "EditData",
+	"Target": "Data/Events/EmilyHouse", // reqs
+	"Entries": {
+		"262205034/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+
+]
+}

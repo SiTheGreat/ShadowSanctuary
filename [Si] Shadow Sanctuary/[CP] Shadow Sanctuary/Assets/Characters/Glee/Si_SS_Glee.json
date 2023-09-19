@@ -1,0 +1,121 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Glee Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_SS_Glee",
+			"FromFile": "Assets/Characters/Glee/Si_SS_Glee_Sprite.png",
+		},
+
+		{
+			"LogName": "Si SS Glee Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_SS_Glee",
+			"FromFile": "Assets/Characters/Glee/Si_SS_Glee_Portrait.png",
+		},
+
+	// Disposition & Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Glee NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Glee": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_PartyRoom 6 4 0/Glee",
+			},
+		},
+
+		//{
+			//"LogName": "Si SS Glee Gift Tastes",
+			//"Action": "EditData",
+			//"Target": "Data/NPCGiftTastes",
+			//"Entries": {
+				//"Si_SS_Glee": "This is for me? Wonderful!/424/How generous of you./423/What am I supposed to do with this?/433/Get that thing away from me!/419/Thanks, I think./418/",
+			//},
+		//},
+
+	// NPC Exclusions & Anti-Social Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Glee Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_SS_Glee": true
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205040": false,
+			},
+		},
+
+		{
+			"LogName": "Glee Initial Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Glee": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205040": false,
+			},
+		},
+
+		{
+			"LogName": "Glee Gen Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Glee": "MovieInvite ShopDialog WinterStar ItemDelivery Socialize IslandVisit BeGreeted Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205040": true,
+			},
+		},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Glee Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_SS_Glee",
+			"FromFile": "Assets/Characters/Glee/Si_SS_Glee_Schedule.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205040": true,
+			},
+		},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Glee Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_SS_Glee",
+			"FromFile": "Assets/Characters/Glee/Si_SS_Glee_Dialogue.json",
+		},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Glee Events",
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Glee/Si_SS_Glee_Events.json",
+			"When": {
+				"HasCraftingRecipe |contains=Monster Musk": "true",
+			},
+    		},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		// Combo warp with Morprit and Barril
+		// See [CP] Shadow Sanctuary/Assets/Sanctuary/Si_SS_ComboWarps.json
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

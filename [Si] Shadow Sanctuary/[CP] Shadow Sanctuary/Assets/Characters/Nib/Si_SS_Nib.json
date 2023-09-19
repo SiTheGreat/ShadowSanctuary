@@ -1,0 +1,118 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Nib Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_SS_Nib",
+			"FromFile": "Assets/Characters/Nib/Si_SS_Nib_Sprite.png",
+		},
+
+		{
+			"LogName": "Si SS Nib Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_SS_Nib",
+			"FromFile": "Assets/Characters/Nib/Si_SS_Nib_Portrait.png",
+		},
+
+	// Disposition & Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Nib NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Nib": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_PartyRoom 5 7 2/Nib",
+			},
+		},
+
+		//{
+			//"LogName": "Si SS Nib Gift Tastes",
+			//"Action": "EditData",
+			//"Target": "Data/NPCGiftTastes",
+			//"Entries": {
+				//"Si_SS_Nib": "This is for me? Wonderful!/424/How generous of you./423/What am I supposed to do with this?/433/Get that thing away from me!/419/Thanks, I think./418/",
+			//},
+		//},
+
+	// NPC Exclusions & Anti-Social Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Nib Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_SS_Nib": true
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205051": false,
+			},
+		},
+
+		{
+			"LogName": "Nib Initial Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Nib": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205051": false,
+			},
+		},
+
+		{
+			"LogName": "Nib Gen Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Nib": "MovieInvite ShopDialog WinterStar ItemDelivery Socialize IslandVisit BeGreeted Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205051": true,
+			},
+		},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Nib Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_SS_Nib",
+			"FromFile": "Assets/Characters/Nib/Si_SS_Nib_Schedule.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205051": true,
+			},
+		},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Nib Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_SS_Nib",
+			"FromFile": "Assets/Characters/Nib/Si_SS_Nib_Dialogue.json",
+		},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Nib Events",
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Nib/Si_SS_Nib_Events.json",
+    		},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		// Combo warp with Rummel
+		// See [CP] Shadow Sanctuary/Assets/Sanctuary/Si_SS_ComboWarps.json
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

@@ -1,0 +1,205 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Tove Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_SS_Tove",
+			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Sprite.png",
+		},
+
+		{
+			"LogName": "Si SS Tove Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_SS_Tove",
+			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Portrait.png",
+		},
+
+	// Disposition & Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Tove NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Tove": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_PartyRoom 9 4 3/Tove",
+			},
+		},
+
+		//{
+			//"LogName": "Si SS Tove Gift Tastes",
+			//"Action": "EditData",
+			//"Target": "Data/NPCGiftTastes",
+			//"Entries": {
+				//"Si_SS_Tove": "This is for me? Wonderful!/424/How generous of you./423/What am I supposed to do with this?/433/Get that thing away from me!/419/Thanks, I think./418/",
+			//},
+		//},
+
+	// NPC Exclusions & Anti-Social Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Tove Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_SS_Tove": true
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205060": false,
+			},
+		},
+
+		{
+			"LogName": "Tove Initial Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Tove": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205060": false,
+			},
+		},
+
+		{
+			"LogName": "Tove Gen Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Tove": "MovieInvite ShopDialog WinterStar ItemDelivery Socialize IslandVisit BeGreeted Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205060": true,
+			},
+		},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Tove Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_SS_Tove",
+			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Schedule.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205060": true,
+			},
+		},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Tove Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_SS_Tove",
+			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Dialogue.json",
+		},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Tove Events",
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Events.json",
+    		},
+
+	// CC Chickens ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Chickens.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205060": true,
+			},
+		},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Tove Home
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_BugLand_Full",
+			"MapTiles": [
+				{
+					"Position": {"X": 26, "Y": 9 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 4 7 Custom_Si_SS_Z",
+					},
+				},
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205060": true,
+			},
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_Z",
+			"MapTiles": [
+				{
+					"Position": {"X": 4, "Y": 9 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 26 10 Custom_Si_SS_BugLand_Full",
+					},
+				},
+			],
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_Z",
+			"MapProperties": {
+				"NPCWarp": "4 8 Custom_Si_SS_BugLand_Full 26 11",
+			},
+		},
+
+	// Tove Yard REMOVED
+		//{
+			//"Action": "EditMap",
+			//"Target": "Maps/Custom_Si_SS_BugLand_Full",
+			//"MapTiles": [
+				//{
+					//"Position": {"X": 27, "Y": 8 },
+					//"Layer": "Buildings",
+					//"SetProperties": {
+						//"Action": "Warp 6 3 Custom_Si_SS_Z",
+					//},
+				//},
+			//],
+			//"When": {
+				//"HasSeenEvent:hostPlayer |contains=262205060": true,
+			//},
+		//},
+
+		//{
+			//"Action": "EditMap",
+			//"Target": "Maps/Custom_Si_SS_Z",
+			//"MapTiles": [
+				//{
+					//"Position": {"X": 7, "Y": 3 },
+					//"Layer": "Buildings",
+					//"SetProperties": {
+						//"Action": "Warp 28 8 Custom_Si_SS_BugLand_Full",
+					//},
+				//},
+			//],
+		//},
+
+		//{
+			//"Action": "EditMap",
+			//"Target": "Maps/Custom_Si_SS_Z",
+			//"MapProperties": {
+				//"NPCWarp": "6 3 Custom_Si_SS_BugLand_Full 29 8",
+			//},
+		//},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

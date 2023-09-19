@@ -1,0 +1,20 @@
+{
+
+	// Dialogue
+
+	"SSAfterPhana": "I appreciate how much work you and Krobus put into this place.",
+
+	"Mon": "I like this place better than the mines.#$b#Much more humid.",
+	"Tue": "I like plants, so don't be surprised if you find leaves everywhere.",
+	"Wed": "I wonder if others will come live here too.",
+	"Thu": "It's nice of you to help us, but I'm afraid I still don't quite trust you.",
+	"Fri": "...",
+	"Sat": "I enjoy making dishes, but it's hard to get certain ingredients down here.",
+	"Sun": "How did you and Krobus meet?",
+
+	//"Thu": "Don't mind the leaves, I've given up constantly brushing them off.",
+	// You're nicer than the other human I've met.
+	// I love gardening, it's dim down here but still humid enough for my plants.
+	// I like to cook, if you have any spare ingredients I'd appreciate them.
+
+}

@@ -1,0 +1,121 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Morprit Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_SS_Morprit",
+			"FromFile": "Assets/Characters/Morprit/Si_SS_Morprit_Sprite.png",
+		},
+
+		{
+			"LogName": "Si SS Morprit Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_SS_Morprit",
+			"FromFile": "Assets/Characters/Morprit/Si_SS_Morprit_Portrait.png",
+		},
+
+	// Disposition & Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Morprit NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Morprit": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_PartyRoom 4 4 3/Morprit",
+			},
+		},
+
+		//{
+			//"LogName": "Si SS Morprit Gift Tastes",
+			//"Action": "EditData",
+			//"Target": "Data/NPCGiftTastes",
+			//"Entries": {
+				//"Si_SS_Morprit": "This is for me? Wonderful!/424/How generous of you./423/What am I supposed to do with this?/433/Get that thing away from me!/419/Thanks, I think./418/",
+			//},
+		//},
+
+	// NPC Exclusions & Anti-Social Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Morprit Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_SS_Morprit": true
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205032": false,
+			},
+		},
+
+		{
+			"LogName": "Morprit Initial Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Morprit": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205032": false,
+			},
+		},
+
+		{
+			"LogName": "Morprit Gen Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Morprit": "MovieInvite ShopDialog WinterStar ItemDelivery Socialize IslandVisit BeGreeted Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205032": true,
+			},
+		},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Morprit Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_SS_Morprit",
+			"FromFile": "Assets/Characters/Morprit/Si_SS_Morprit_Schedule.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205032": true,
+			},
+		},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Morprit Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_SS_Morprit",
+			"FromFile": "Assets/Characters/Morprit/Si_SS_Morprit_Dialogue.json",
+		},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Morprit Events",
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Morprit/Si_SS_Morprit_Events.json",
+			"When": {
+				"HasCraftingRecipe |contains=Quality Bobber": "true",
+			},
+    		},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		// Combo warp with Barril and Glee
+		// See [CP] Shadow Sanctuary/Assets/Sanctuary/Si_SS_ComboWarps.json
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

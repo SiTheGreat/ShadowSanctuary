@@ -1,0 +1,18 @@
+{
+	"Name": "[Si] [CC] Shadow Sanctuary",
+	"Author": "SiTheGreat",
+	"Description": "Help Krobus create a safe haven for the Shadow People.",
+	"Version": "1.0.0",
+	"UniqueID": "SiTheGreat.CCShadowSanctuary",
+	"UpdateKeys": [ "" ],
+	"ContentPackFor": {
+		"UniqueID": "PeacefulEnd.CustomCompanions",
+		"MinimumVersion": "1.6.5"
+	},
+	"Dependencies": [
+		{
+        		"UniqueID": "SiTheGreat.CPShadowSanctuary",
+        		"IsRequired": true
+		},
+	]
+}

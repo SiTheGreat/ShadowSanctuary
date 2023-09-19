@@ -1,0 +1,122 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Ambu Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_SS_Ambu",
+			"FromFile": "Assets/Characters/Ambu/Si_SS_Ambu_Sprite.png",
+		},
+
+		{
+			"LogName": "Si SS Ambu Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_SS_Ambu",
+			"FromFile": "Assets/Characters/Ambu/Si_SS_Ambu_Portrait.png",
+		},
+
+	// Disposition & Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Ambu NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Ambu": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_PartyRoom 8 7 3/Ambu",
+			},
+		},
+
+		//{
+			//"LogName": "Si SS Ambu Gift Tastes",
+			//"Action": "EditData",
+			//"Target": "Data/NPCGiftTastes",
+			//"Entries": {
+				//"Si_SS_Ambu": "This is for me? Wonderful!/424/How generous of you./423/What am I supposed to do with this?/433/Get that thing away from me!/419/Thanks, I think./418/",
+			//},
+		//},
+
+	// NPC Exclusions & Anti-Social Flag
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Ambu Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_SS_Ambu": true
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205026": false,
+			},
+		},
+
+		{
+			"LogName": "Ambu Initial Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Ambu": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205026": false,
+			},
+		},
+
+		{
+			"LogName": "Ambu Gen Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Ambu": "MovieInvite ShopDialog WinterStar ItemDelivery Socialize IslandVisit BeGreeted Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205026": true,
+			},
+		},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Ambu Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_SS_Ambu",
+			"FromFile": "Assets/Characters/Ambu/Si_SS_Ambu_Schedule.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205026": true,
+			},
+		},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Ambu Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_SS_Ambu",
+			"FromFile": "Assets/Characters/Ambu/Si_SS_Ambu_Dialogue.json",
+		},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Ambu Events",
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Ambu/Si_SS_Ambu_Events.json",
+			"When": {
+				"HasFlag |contains=Island_UpgradeBridge": true,
+			},
+		},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		// Combo warp with Yubu
+		// See [CP] Shadow Sanctuary/Assets/Sanctuary/Si_SS_ComboWarps.json
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

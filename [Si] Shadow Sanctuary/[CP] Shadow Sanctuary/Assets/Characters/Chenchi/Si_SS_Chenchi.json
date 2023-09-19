@@ -1,0 +1,167 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Chenchi Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_SS_Chenchi",
+			"FromFile": "Assets/Characters/Chenchi/Si_SS_Chenchi_Sprite.png",
+		},
+
+		{
+			"LogName": "Si SS Chenchi Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_SS_Chenchi",
+			"FromFile": "Assets/Characters/Chenchi/Si_SS_Chenchi_Portrait.png",
+		},
+
+	// Disposition & Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Chenchi NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Chenchi": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_PartyRoom 4 7 0/???",
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205038": false,
+			},
+		},
+
+		{
+			"LogName": "Si SS Chenchi NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Chenchi": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_C 7 3 2/Chenchi",
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205038": true,
+			},
+		},
+
+		//{
+			//"LogName": "Si SS Chenchi Gift Tastes",
+			//"Action": "EditData",
+			//"Target": "Data/NPCGiftTastes",
+			//"Entries": {
+				//"Si_SS_Chenchi": "This is for me? Wonderful!/424/How generous of you./423/What am I supposed to do with this?/433/Get that thing away from me!/419/Thanks, I think./418/",
+			//},
+		//,
+
+	// NPC Exclusions & Anti-Social Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Chenchi Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_SS_Chenchi": true
+			},
+			//"When": {
+				//"HasSeenEvent:hostPlayer |contains=262205055": false,
+			//},
+		},
+
+		{
+			"LogName": "Chenchi Initial Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Chenchi": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205055": false,
+			},
+		},
+
+		{
+			"LogName": "Chenchi Gen Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Chenchi": "MovieInvite ShopDialog WinterStar ItemDelivery Socialize IslandVisit BeGreeted Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205055": true,
+			},
+		},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Chenchi Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_SS_Chenchi",
+			"FromFile": "Assets/Characters/Chenchi/Si_SS_Chenchi_Schedule.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205055": true,
+			},
+		},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Chenchi Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_SS_Chenchi",
+			"FromFile": "Assets/Characters/Chenchi/Si_SS_Chenchi_Dialogue.json",
+		},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Chenchi Events",
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Chenchi/Si_SS_Chenchi_Events.json",
+    		},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_BugLand_Full",
+			"MapTiles": [
+				{
+					"Position": {"X": 50, "Y": 20 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 11 5 Custom_Si_SS_C",
+					},
+				},
+			],
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_C",
+			"MapTiles": [
+				{
+					"Position": {"X": 12, "Y": 5 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 51 20 Custom_Si_SS_BugLand_Full",
+					},
+				},
+			],
+		},
+
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_C",
+			"MapProperties": {
+				"NPCWarp": "11 5 Custom_Si_SS_BugLand_Full 51 21",
+			},
+		},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

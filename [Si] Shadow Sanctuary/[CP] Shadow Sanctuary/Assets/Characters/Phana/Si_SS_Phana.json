@@ -1,0 +1,207 @@
+{
+
+	//"Format": "1.26.0",
+	"Changes": [
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Phana Sprite",
+			"Action": "Load",
+			"Target": "Characters/Si_SS_Phana",
+			"FromFile": "Assets/Characters/Phana/Si_SS_Phana_Sprite.png",
+		},
+
+		{
+			"LogName": "Si SS Phana Portrait",
+			"Action": "Load",
+			"Target": "Portraits/Si_SS_Phana",
+			"FromFile": "Assets/Characters/Phana/Si_SS_Phana_Portrait.png",
+		},
+
+	// Disposition & Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Phana NPC Manifestation Pre-Meeting",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Phana": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_PartyRoom 8 5 3/???",
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205023": false,
+			},
+		},
+
+		{
+			"LogName": "Si SS Phana NPC Manifestation Post-Meeting",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Si_SS_Phana": "adult/rude/neutral/positive/undefined/not-datable/null/Town/winter 7//Custom_Si_SS_F 6 7 3/Phana",
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205023": true,
+			},
+		},
+
+		//{
+			//"LogName": "Si SS Phana Gift Tastes",
+			//"Action": "EditData",
+			//"Target": "Data/NPCGiftTastes",
+			//"Entries": {
+				//"Si_SS_Phana": "This is for me? Wonderful!/424/How generous of you./423/What am I supposed to do with this?/433/Get that thing away from me!/419/Thanks, I think./418/",
+			//},
+		//},
+
+	// NPC Exclusions & Anti-Social Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Phana Anti-Social Flag",
+			"Action": "EditData",
+			"Target": "Data/AntiSocialNPCs",
+			"Entries": {
+				"Si_SS_Phana": "true",
+			},
+			//"When": {
+				//"HasSeenEvent:hostPlayer |contains=262205023": false,
+			//},
+		},
+
+		{
+			"LogName": "Phana Initial Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Phana": "All"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205023": false,
+			},
+		},
+
+		{
+			"LogName": "Phana Gen Exclusions",
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Entries": {
+				"Si_SS_Phana": "MovieInvite ShopDialog WinterStar ItemDelivery Socialize IslandVisit BeGreeted Greet"
+			},
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205023": true,
+			},
+		},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Phana Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Si_SS_Phana",
+			"FromFile": "Assets/Characters/Phana/Si_SS_Phana_Schedule.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205023": true,
+			},
+		},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Phana Dialogue",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Si_SS_Phana",
+			"FromFile": "Assets/Characters/Phana/Si_SS_Phana_Dialogue.json",
+		},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"LogName": "Si SS Phana Events",
+			"Action": "Include",
+			"FromFile": "Assets/Characters/Phana/Si_SS_Phana_Events.json",
+    		},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Phana Home
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_BugLand_Full",
+			"MapTiles": [
+				{
+					"Position": {"X": 29, "Y": 40 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 6 3 Custom_Si_SS_F",
+					},
+				},
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205023": true,
+			},
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_F",
+			"MapTiles": [
+				{
+					"Position": {"X": 6, "Y": 2 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 28 41 Custom_Si_SS_BugLand_Full",
+					},
+				},
+			],
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_F", // 29 41
+			"MapProperties": {
+				"NPCWarp": "5 3 Custom_Si_SS_BugLand_Full 28 44",
+			},
+		},
+
+	// Phana Greenhouse
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_BugLand_Full",
+			"MapTiles": [
+				{
+					"Position": {"X": 29, "Y": 37 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 11 7 Custom_Si_SS_FGH",
+					},
+				},
+			],
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_FGH",
+			"MapTiles": [
+				{
+					"Position": {"X": 12, "Y": 7 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 30 37 Custom_Si_SS_BugLand_Full",
+					},
+				},
+			],
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_FGH",
+			"MapProperties": {
+				"NPCWarp": "11 7 Custom_Si_SS_BugLand_Full 30 38",
+			},
+		},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}
