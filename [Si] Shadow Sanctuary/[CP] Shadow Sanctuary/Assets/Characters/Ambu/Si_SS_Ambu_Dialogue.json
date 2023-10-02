@@ -1,13 +1,46 @@
 {
 
-	// Dialogue
+	// Ambu Dialogue
 
-	"Mon": "What a fine Monday!",
-	"Tue": "What a fine Tuesday!",
-	"Wed": "What a fine Wednesday!",
-	"Thu": "What a fine Thursday!",
-	"Fri": "What a fine Friday!",
-	"Sat": "What a fine Saturday!",
-	"Sun": "What a fine Sunday!",
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue until going to the lair
+
+	{
+		"LogName": "SS Ambu Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Ambu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205026": false,
+		},
+		"Entries": {
+
+			"Mon": "What a fine Monday!",
+			"Tue": "What a fine Tuesday!",
+			"Wed": "What a fine Wednesday!",
+			"Thu": "What a fine Thursday!",
+			"Fri": "What a fine Friday!",
+			"Sat": "What a fine Saturday!",
+			"Sun": "What a fine Sunday!",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue after going to the lair
+	// Base dial; load this, editdata the rest
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Conversation topics
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
 
 }
