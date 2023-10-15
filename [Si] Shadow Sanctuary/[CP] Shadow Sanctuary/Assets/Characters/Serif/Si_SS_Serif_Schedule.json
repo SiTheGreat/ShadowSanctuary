@@ -1,7 +1,53 @@
 {
 
-	// Schedule
+	// All Serif schedules
 
-	"spring": "0 Custom_Si_SS_MBG 4 7 3/620 Custom_Si_SS_BugLand_Full 45 25 0/920 Custom_Si_SS_MBG 4 7 3",
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm
+
+	{
+		"LogName": "SS Serif Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Serif",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205037": false,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// After intro event
+
+	{
+		"LogName": "SS Serif Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Serif",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205037": true,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_MBG 4 7 3/620 Custom_Si_SS_BugLand_Full 45 25 0/920 Custom_Si_SS_MBG 4 7 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata schedule after other events
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
+
 
 }
