@@ -1,6 +1,6 @@
 {
 
-	// All Chenchi schedules
+	// All Glee schedules
 
 	"Changes": [
 
@@ -9,9 +9,9 @@
 	// Shadow Realm
 
 	{
-		"LogName": "SS Chenchi Schedule",
+		"LogName": "SS Glee Schedule",
 		"Action": "Load",
-		"Target": "Characters/schedules/Si_SS_Chenchi",
+		"Target": "Characters/schedules/Si_SS_Glee",
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205040": false,
 		},
@@ -27,9 +27,9 @@
 	// After intro event
 
 	{
-		"LogName": "SS Chenchi Schedule",
+		"LogName": "SS Glee Schedule",
 		"Action": "Load",
-		"Target": "Characters/schedules/Si_SS_Chenchi",
+		"Target": "Characters/schedules/Si_SS_Glee",
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205040": true,
 		},

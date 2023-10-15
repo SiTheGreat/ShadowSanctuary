@@ -1,13 +1,86 @@
 {
 
-	// Dialogue
+	// Morprit Dialogue
 
-	"Mon": "What a fine Monday!",
-	"Tue": "What a fine Tuesday!",
-	"Wed": "What a fine Wednesday!",
-	"Thu": "What a fine Thursday!",
-	"Fri": "What a fine Friday!",
-	"Sat": "What a fine Saturday!",
-	"Sun": "What a fine Sunday!",
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm Dialogue
+
+	{
+		"LogName": "SS Morprit Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Morprit",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205032": false,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "ADD WORDS HERE",
+			"Fri": "...",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue after going to the lair
+
+	{
+		"LogName": "SS Morprit Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Morprit",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205032": true,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "ADD WORDS HERE",
+			"Fri": "ADD WORDS HERE",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata to add more dial as other events occur
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Conversation topics
+
+	{
+		"LogName": "SS Morprit Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Morprit",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205032": true,
+		},
+		"Entries": {
+
+			"SSAfterPhana": "ADD WORDS HERE",
+			"SSAfterChenchi": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
 
 }
