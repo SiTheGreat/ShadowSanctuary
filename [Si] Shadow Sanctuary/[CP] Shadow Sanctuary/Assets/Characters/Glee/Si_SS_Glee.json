@@ -81,20 +81,15 @@
 
 		{
 			"LogName": "Si SS Glee Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Glee",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Glee/Si_SS_Glee_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205040": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Glee Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Glee",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Glee/Si_SS_Glee_Dialogue.json",
 		},
 		
