@@ -1,15 +1,85 @@
 {
 
-	// Dialogue
+	// Chenchi Dialogue
 
-	"SSAfterChenchi": "I hope my people are as kind to you as you have been to us.",
+	"Changes": [
 
-	"Mon": "I need to replenish my elixirs.",
-	"Tue": "There were many of us shamans once.#$e#Now we are few.$2",
-	"Wed": "You are very polite for a human.",
-	"Thu": "Krobus tells me you spend time exploring the mines.#$e#May Yoba ensure your safe passage.$1",
-	"Fri": "...",
-	"Sat": "The lair is nice and humid today.",
-	"Sun": "Are you a follower of Yoba?",
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm Dialogue
+
+	{
+		"LogName": "SS Chenchi Shadow Realm Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Chenchi",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": false,
+		},
+		"Entries": {
+
+			"Mon": "Oh, hello! I don't think we're meant to meet quite yet.",
+			"Tue": "Oh, hello! I don't think we're meant to meet quite yet.",
+			"Wed": "Oh, hello! I don't think we're meant to meet quite yet.",
+			"Thu": "Oh, hello! I don't think we're meant to meet quite yet.",
+			"Fri": "...!",
+			"Sat": "Oh, hello! I don't think we're meant to meet quite yet.",
+			"Sun": "Oh, hello! I don't think we're meant to meet quite yet.",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue after going to the lair
+
+	{
+		"LogName": "SS Chenchi Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Chenchi",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": true,
+		},
+		"Entries": {
+
+			"Mon": "I need to replenish my elixirs.",
+			"Tue": "There were many of us shamans once.#$e#Now we are few.$2",
+			"Wed": "You are very polite for a human.",
+			"Thu": "Krobus tells me you spend time exploring the mines.#$e#May Yoba ensure your safe passage.$1",
+			"Fri": "...",
+			"Sat": "The lair is nice and humid today.",
+			"Sun": "Are you a follower of Yoba?",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata to add more dial as other events occur
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Conversation topics
+
+	{
+		"LogName": "SS Chenchi Intro Dialogue",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Si_SS_Chenchi",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": true,
+		},
+		"Entries": {
+
+			"SSAfterChenchi": "I hope my people are as kind to you as you have been to us.",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
 
 }

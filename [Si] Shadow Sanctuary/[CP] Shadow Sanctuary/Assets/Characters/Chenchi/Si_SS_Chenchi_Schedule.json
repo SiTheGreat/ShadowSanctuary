@@ -1,8 +1,57 @@
 {
 
-	// Schedule
+	// All Chenchi schedules
 
-	"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm
+
+	{
+		"LogName": "SS Chenchi Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Chenchi",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": false,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// After intro event
+
+	{
+		"LogName": "SS Chenchi Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Chenchi",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": true,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Schedule after temple appears
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Schedule after Bellum appears
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
 
 
 }

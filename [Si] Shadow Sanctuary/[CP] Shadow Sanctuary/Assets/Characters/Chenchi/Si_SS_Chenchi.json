@@ -96,20 +96,15 @@
 
 		{
 			"LogName": "Si SS Chenchi Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Chenchi",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Chenchi/Si_SS_Chenchi_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205055": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Chenchi Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Chenchi",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Chenchi/Si_SS_Chenchi_Dialogue.json",
 		},
 		
