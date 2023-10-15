@@ -82,20 +82,15 @@
 
 		{
 			"LogName": "Si SS Duffle Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Duffle",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Duffle/Si_SS_Duffle_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205048": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Duffle Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Duffle",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Duffle/Si_SS_Duffle_Dialogue.json",
 		},
 		
