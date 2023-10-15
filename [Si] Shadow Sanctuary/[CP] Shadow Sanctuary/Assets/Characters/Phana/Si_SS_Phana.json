@@ -96,20 +96,15 @@
 
 		{
 			"LogName": "Si SS Phana Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Phana",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Phana/Si_SS_Phana_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205023": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Phana Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Phana",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Phana/Si_SS_Phana_Dialogue.json",
 		},
 		
