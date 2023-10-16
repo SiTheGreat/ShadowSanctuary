@@ -82,20 +82,15 @@
 
 		{
 			"LogName": "Si SS Yubu Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Yubu",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Yubu/Si_SS_Yubu_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205029": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Yubu Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Yubu",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Yubu/Si_SS_Yubu_Dialogue.json",
 		},
 		
