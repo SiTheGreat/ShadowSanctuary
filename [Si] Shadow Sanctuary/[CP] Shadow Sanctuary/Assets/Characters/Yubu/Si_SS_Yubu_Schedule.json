@@ -1,8 +1,54 @@
 {
 
-	// Schedule
+	// All Yubu schedules
 
-	"spring": "0 Custom_Si_SS_AY 6 4 1/610 Custom_Si_SS_BugLand_Full 18 47 0/840 Custom_Si_SS_AY 6 4 1",
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm
+
+	{
+		"LogName": "SS Yubu Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Yubu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205029": false,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// After intro event
+
+	{
+		"LogName": "SS Yubu Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Yubu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205029": true,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_AY 6 4 1/610 Custom_Si_SS_BugLand_Full 18 47 0/840 Custom_Si_SS_AY 6 4 1",
+
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata schedule after other events
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
 
 
 }

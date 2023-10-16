@@ -81,20 +81,15 @@
 
 		{
 			"LogName": "Si SS Serif Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Serif",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Serif/Si_SS_Serif_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205037": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Serif Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Serif",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Serif/Si_SS_Serif_Dialogue.json",
 		},
 		

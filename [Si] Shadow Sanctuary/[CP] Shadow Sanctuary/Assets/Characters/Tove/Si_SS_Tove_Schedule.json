@@ -1,8 +1,53 @@
 {
 
-	// Schedule
+	// All Tove schedules
 
-	"spring": "0 Custom_Si_SS_Z 5 3 3/610 Custom_Si_SS_BugLand_Full 26 11 2/620 Custom_Si_SS_BugLand_Full 49 24 0/920 Custom_Si_SS_Z 5 3 3",
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm
+
+	{
+		"LogName": "SS Tove Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Tove",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205060": false,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// After intro event
+
+	{
+		"LogName": "SS Tove Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Tove",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205060": true,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_Z 5 3 3/610 Custom_Si_SS_BugLand_Full 26 11 2/620 Custom_Si_SS_BugLand_Full 49 24 0/920 Custom_Si_SS_Z 5 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata schedule after other events
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
 
 
 }

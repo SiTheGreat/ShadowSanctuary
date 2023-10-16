@@ -81,20 +81,15 @@
 
 		{
 			"LogName": "Si SS Nib Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Nib",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Nib/Si_SS_Nib_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205051": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Nib Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Nib",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Nib/Si_SS_Nib_Dialogue.json",
 		},
 		

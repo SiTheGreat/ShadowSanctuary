@@ -81,20 +81,15 @@
 
 		{
 			"LogName": "Si SS Tove Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Tove",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205060": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Tove Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Tove",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Dialogue.json",
 		},
 		

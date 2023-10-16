@@ -39,8 +39,7 @@
 			//},
 		//},
 
-	// NPC Exclusions & Anti-Social Flag
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// NPC Exclusions & Anti-Social Flag ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Ambu Anti-Social Flag",
@@ -82,20 +81,15 @@
 
 		{
 			"LogName": "Si SS Ambu Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Ambu",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Ambu/Si_SS_Ambu_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205026": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Ambu Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Ambu",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Ambu/Si_SS_Ambu_Dialogue.json",
 		},
 		

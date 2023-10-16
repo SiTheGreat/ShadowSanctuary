@@ -81,20 +81,15 @@
 
 		{
 			"LogName": "Si SS Morprit Schedule",
-			"Action": "Load",
-			"Target": "Characters/schedules/Si_SS_Morprit",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Morprit/Si_SS_Morprit_Schedule.json",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205032": true,
-			},
 		},
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 		{
 			"LogName": "Si SS Morprit Dialogue",
-			"Action": "Load",
-			"Target": "Characters/Dialogue/Si_SS_Morprit",
+			"Action": "Include",
 			"FromFile": "Assets/Characters/Morprit/Si_SS_Morprit_Dialogue.json",
 		},
 		
