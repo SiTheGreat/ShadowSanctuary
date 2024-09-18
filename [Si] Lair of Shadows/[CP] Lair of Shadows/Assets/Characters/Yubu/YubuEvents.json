@@ -1,0 +1,45 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+
+	// Upgrade island resort; enter wizard tower hidden event; sunny day town, intro event p1; sunny day lair, intro event p2; have met Phana
+	// 3 events
+
+	{
+	// Event ID 262205027 Yubu hidevent
+	"LogName": "Si SS IE HE 03",
+	"Action": "EditData",
+	"Target": "Data/Events/WizardHouse", // reqs
+	"Entries": {
+		"262205027/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	{
+	// Event ID 262205028 Yubu intro p1
+	"LogName": "Si SS IE ME 04",
+	"Action": "EditData",
+	"Target": "Data/Events/Town", // reqs
+	"Entries": {
+		"262205028/e 262205027/w sunny/t 1000 1600/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	{
+	// Event ID 262205029 Yubu intro p2
+	"LogName": "Si SS IE ME 05",
+	"Action": "EditData",
+	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
+	"Entries": {
+		"262205029/e 262205028/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+// -Y: Y walks in, Y this looks swell! I think I'll like it here!, F and K walk in, P appears, P welcomes Y, K says hi too, Y responds eagerly 'you folks look like good neighbors!', sees F, runs in front of the others, 'don't worry I'll protext you! Put em up human! Let's go!', F ..., K explains, Y '...huh. interesting! A human ally against the threatening hordes that reside above our home! A great element to any good story!, F sweatdrop, P 'lively one aren't they'
+
+
+
+]
+}

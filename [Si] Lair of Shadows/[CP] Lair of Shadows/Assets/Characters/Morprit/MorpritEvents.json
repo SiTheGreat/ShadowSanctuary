@@ -1,0 +1,34 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+
+	// Enter lair carrying any fish, hidden event; has quality bobber recipe; have met Phana
+	// 1 event
+
+	{
+	// Event ID 262205031 Morprit quality bobber hidevent
+	"LogName": "Si SS IE HE 04",
+	"Action": "EditData",
+	"Target": "Data/Events/BusStop", // reqs
+	"Entries": {
+		"262205031/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	{
+	// Event ID 262205033 Morprit fish lair hidevent
+	"LogName": "Si SS IE HE 04",
+	"Action": "EditData",
+	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
+	"Entries": {
+		"262205033/e 262205023/A SSAfterPhana/i -4/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+
+
+
+]
+}

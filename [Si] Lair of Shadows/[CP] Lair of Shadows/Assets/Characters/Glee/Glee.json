@@ -1,0 +1,129 @@
+{
+
+	"Changes": [
+
+	// Dispo
+	// Gifts
+	// Images
+	// Intro conds
+	// Intro event
+	// Schedules x2
+	// Dialogue & CTs
+	// Events
+	// Quest
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Load",
+		"Target": "Characters/Glee",
+		"FromFile": "Assets/Characters/Glee/GleeSprite.png",
+	},
+
+	{
+		"Action": "Load",
+		"Target": "Portraits/Glee",
+		"FromFile": "Assets/Characters/Glee/GleePortrait.png",
+	},
+
+	// Disposition ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"Glee": {
+				// Char
+				"DisplayName": "Glee",
+				"Gender": "Undefined",
+				"Age": "Adult",
+				"BirthSeason": "Winter",
+				"BirthDay": 7,
+				// Attitude
+				"Manner": "Rude",
+				"SocialAnxiety": "Neutral",
+				"Optimism": "Positive",
+				"CanBeRomanced": false,
+				// Exclusions
+				"PerfectionScore": true,
+				"IntroductionsQuest": false,
+				"ItemDeliveryQuests": false,
+				"CanVisitIsland": false,
+				"WinterStarParticipant": false,
+				"CanCommentOnPurchasedShopItems": false,
+				"CanGreetNearbyCharacters": false,
+				"SocialTab": "HiddenUntilMet",
+				"Calendar": "HiddenUntilMet",
+				"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 262205040",
+				// Home
+				"HomeRegion": "Town",
+				"Home": [
+					{
+						"Id": "Default",
+						"Location": "Custom_Glee",
+						"Tile": { "X": 3, "Y": 5 },
+						"Direction": "Up"
+					}
+				]
+			}
+		}
+	},
+
+	// Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// loves: void mayo, berries, rainbow shells
+	// likes:
+	// dislikes:
+	// hates:
+	// neuts:
+
+	// Every day but Friday
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Glee": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": false
+		},
+	},
+
+	// Fridays
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Glee": "!/424/Glee smiles./423/Glee frowns./433/!/419/.../418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": true
+		},
+	},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Glee/GleeSchedule.json",
+	},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Glee/GleeDialogue.json",
+	},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Glee/GleeEvents.json",
+	},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

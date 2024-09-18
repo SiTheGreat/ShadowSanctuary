@@ -1,0 +1,33 @@
+Intro conditions:
+-see Harvey 8h event
+-quest: stock up on supplies for the sanctuary
+-HasCookingRecipe <blueberry tart>
+-summer
+-grants quest 'find nib' w phrase 'nib likes blueberry tart' (hascookingrecipe)
+-until find Nib, sched standing in one place w locdial 'how you found nib yet i'm so worried
+
+Sprites: base
+
+Scheds: init, chenchi
+
+Shop: none
+
+Gen quests:
+-potions
+-herbs, fiddlehead fern
+
+Sequence:
+-Intro event
+-return Nib
+-how met nib
+-sick nib; grateful for Nib getting better
+-asks for supplies quest
+--has decided to learn abt medicine from chenchi
+
+Sanctuary events:
+-asks twins to teach abt world. they have... very different styles (yubu grandiose adventure story, ambu factual)
+
+Char Notes:
+-prepper, but nothing can prepare you for a child
+-wandered the shadows for a long time, found nib, didn't want them to go through the same so went looking for somewhere better to raise them
+-try carrying snack, Nib loves those!

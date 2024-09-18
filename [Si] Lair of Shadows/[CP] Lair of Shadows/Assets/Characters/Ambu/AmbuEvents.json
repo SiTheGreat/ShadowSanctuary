@@ -1,0 +1,46 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+
+	// Build island bridge; enter museum hidden event; rainy night forest, intro event p1; rainy night lair, intro event p2; have met Phana
+	// 3 events
+
+	{
+	// Event ID 262205024 Ambu hidevent
+	"LogName": "Si SS IE HE 02",
+	"Action": "EditData",
+	"Target": "Data/Events/ArchaeologyHouse", // reqs
+	"Entries": {
+		"262205024/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	{
+	// Event ID 262205025 Ambu intro p1
+	"LogName": "Si SS IE ME 02",
+	"Action": "EditData",
+	"Target": "Data/Events/Forest", // reqs
+	"Entries": {
+		"262205025/e 262205024/t 2200 2600/w rainy/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	{
+	// Event ID 262205026 Ambu intro p2
+	"LogName": "Si SS IE ME 03",
+	"Action": "EditData",
+	"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+	"Entries": {
+		"262205026/e 262205025/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+// -A: A lost in the forest, F comes up behind, F '?', A jumps and scurries away, A afraid 'I'm not going to hurt anyone, I promise, please leave me alone!',
+// A 'escapes', you return w Krobus (and Phana?) to find them
+
+
+
+]
+}

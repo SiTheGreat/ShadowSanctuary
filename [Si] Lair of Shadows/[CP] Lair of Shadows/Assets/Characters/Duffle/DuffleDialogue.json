@@ -1,0 +1,86 @@
+{
+
+	// Duffle Dialogue
+
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm Dialogue
+
+	{
+		"LogName": "SS Duffle Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Duffle",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205048": false,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "ADD WORDS HERE",
+			"Fri": "...",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue after going to the lair
+
+	{
+		"LogName": "SS Duffle Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Duffle",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205048": true,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "I collect goods from Joja because they aren't missed. And they never expire!",
+			"Fri": "ADD WORDS HERE",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata to add more dial as other events occur
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Conversation topics
+
+	{
+		"LogName": "SS Duffle Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Duffle",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205048": true,
+		},
+		"Entries": {
+
+			"SSAfterPhana": "ADD WORDS HERE",
+			"SSAfterChenchi": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
+
+}

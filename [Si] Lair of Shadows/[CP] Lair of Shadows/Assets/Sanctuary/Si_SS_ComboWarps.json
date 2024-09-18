@@ -1,0 +1,60 @@
+{
+	// NPCWarps for the Bug Lair and Action Warps for multi-person houses
+	"Changes": [
+
+	// Ambu Yubu ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_BugLand_Full",
+			"MapTiles": [
+				{
+					"Position": {"X": 16, "Y": 24 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 4 3 Custom_Si_SS_AY",
+					},
+				},
+			],
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205030": true,
+			},
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_AY",
+			"MapTiles": [
+				{
+					"Position": {"X": 4, "Y": 2 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 17 24 Custom_Si_SS_BugLand_Full",
+					},
+				},
+			],
+		},
+
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_Si_SS_AY",
+			"MapProperties": {
+				"NPCWarp": "4 3 Custom_Si_SS_BugLand_Full 17 25",
+			},
+		},
+
+	// NPCWarps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		// add z zy
+		{
+			"Action": "EditMap", // 29 41 Custom_Si_SS_F 6 3 
+			"Target": "Maps/Custom_Si_SS_BugLand_Full",
+			"MapProperties": {
+				"NPCWarp": "28 40 Custom_Si_SS_F 7 3 30 37 Custom_Si_SS_FGH 10 7 49 46 Custom_Si_SS_B 3 6 17 24 Custom_Si_SS_AY 4 4 36 48 Custom_Si_SS_MBG 5 9 43 15 Custom_Si_SS_RN 5 8 51 20 Custom_Si_SS_C 10 5 26 10 Custom_Si_SS_Z 4 7 28 8 Custom_Si_SS_Z 5 3",
+			},
+		},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+
+	// Seen Duffle intro event; Duffle request to find Nib; enter backwoods with blueberry tart, intro event; have met Phana
+	// 1 event
+
+	// Nib quest 262205049 262205050
+	// SEE NOTES; UNUSED IDs
+
+	{
+	// Event ID 262205051 Nib intro
+	"LogName": "Si SS IE ME 10",
+	"Action": "EditData",
+	"Target": "Data/Events/Backwoods", // reqs
+	"Entries": {
+		"262205051/e 262205048/i 234/f Krobus 2000/e 262205999": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+
+
+
+]
+}

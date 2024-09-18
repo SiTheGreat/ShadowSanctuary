@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="13" height="11" tilewidth="16" tileheight="16" infinite="0" nextlayerid="20" nextobjectid="1">
+ <properties>
+  <property name="AmbientLight" value="170 190 110"/>
+  <property name="Music" value="junimoKart_whaleMusic"/>
+  <property name="TreatAsOutdoors" value="f"/>
+  <property name="Warp" value="15 55 Sewer 3 19 14 55 Sewer 3 19"/>
+ </properties>
+ <tileset firstgid="1" name="bugTiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
+  <image source="Tilesheets/bugLandTiles.png" width="128" height="224"/>
+  <tile id="4">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="4" duration="990"/>
+    <frame tileid="55" duration="990"/>
+   </animation>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="5" duration="1000"/>
+    <frame tileid="63" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+   <animation>
+    <frame tileid="6" duration="995"/>
+    <frame tileid="71" duration="995"/>
+   </animation>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="NoSpawn" value="All"/>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="39">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="Water" value="t"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="113" name="Paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="Tilesheets/paths.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="145" name="SewerTiles" tilewidth="16" tileheight="16" tilecount="88" columns="8">
+  <image source="Tilesheets/SewerTiles.png" width="128" height="176"/>
+ </tileset>
+ <tileset firstgid="233" name="night_market_tilesheet_objects" tilewidth="16" tileheight="16" tilecount="1368" columns="72">
+  <image source="Tilesheets/night_market_tilesheet_objects.png" width="1152" height="312"/>
+ </tileset>
+ <tileset firstgid="1601" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="Tilesheets/townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="3777" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="Tilesheets/furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="6753" name="mine_lava_dangerous" tilewidth="16" tileheight="16" tilecount="320" columns="16">
+  <image source="Tilesheets/mine_lava_dangerous.png" width="256" height="320"/>
+ </tileset>
+ <tileset firstgid="7073" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="Tilesheets/spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="9048" name="Fence3" tilewidth="16" tileheight="16" tilecount="66" columns="3">
+  <image source="Tilesheets/Fence3.png" width="48" height="352"/>
+ </tileset>
+ <tileset firstgid="9114" name="fall_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="Tilesheets/fall_outdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="1721">
+   <animation>
+    <frame tileid="1720" duration="990"/>
+    <frame tileid="1719" duration="990"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="11089" name="Greenhouse" tilewidth="16" tileheight="16" tilecount="300" columns="15">
+  <image source="Tilesheets/Greenhouse.png" width="240" height="320"/>
+ </tileset>
+ <tileset firstgid="11389" name="Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="Tilesheets/Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="11965" name="mine_lava" tilewidth="16" tileheight="16" tilecount="320" columns="16">
+  <image source="Tilesheets/mine_lava.png" width="256" height="320"/>
+ </tileset>
+ <layer id="1" name="Back" width="13" height="11">
+  <data encoding="csv">
+10,11,10,11,10,11,10,11,10,11,10,11,10,
+18,19,18,19,18,19,18,19,18,19,18,19,18,
+10,11,10,11,10,11,10,11,10,11,10,11,10,
+18,19,18,19,18,19,18,19,18,19,18,19,18,
+10,11,10,11,10,11,10,11,10,11,10,11,10,
+19,19,18,11,18,19,11,18,19,19,19,19,18,
+18,19,18,19,18,19,18,19,18,11,19,19,10,
+10,11,19,19,19,11,18,19,10,19,19,19,18,
+18,19,19,19,19,19,19,19,18,19,19,19,10,
+10,11,10,19,19,19,19,19,19,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Back1" width="13" height="11">
+  <data encoding="csv">
+0,0,0,0,0,12050,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,12087,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,6647,6648,6649,6650,6651,0,0,0,0,
+0,0,0,0,6679,6680,6681,6682,6683,0,0,0,0,
+0,0,0,0,6711,6712,6713,6714,6715,0,0,0,0,
+0,0,0,0,6743,6744,6745,6746,6747,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="16" name="Back2" width="13" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="13" height="11">
+  <data encoding="csv">
+12044,12044,12044,12044,12044,12044,12044,12044,12044,12044,12044,12044,12044,
+12044,12035,12038,12039,12039,12039,12038,12039,12040,12041,12058,12044,12044,
+12044,12081,12087,12087,12086,12088,12086,12087,12088,12089,12106,12044,12044,
+12044,12097,0,11674,0,0,0,0,0,3077,3078,12106,12044,
+12044,12129,0,0,0,0,0,0,0,0,0,2147495745,12044,
+12044,12129,0,0,0,0,0,0,0,0,0,2147495745,12044,
+12044,12145,0,0,0,0,0,0,0,0,0,2684366636,12044,
+12044,12161,0,0,0,0,0,0,0,12185,12044,12044,12044,
+12044,12044,0,0,0,0,0,0,0,2684366636,12044,12044,12044,
+12044,12044,12044,0,0,0,0,0,0,12044,12044,12044,12044,
+12044,12044,12044,12044,12044,12044,12044,12044,12044,12044,12044,12044,12044
+</data>
+ </layer>
+ <layer id="15" name="Buildings1" width="13" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,11832,0,2435,5489,5490,2416,11815,0,0,0,0,
+0,0,2092,0,0,2124,0,2124,0,0,0,0,0,
+0,0,0,2327,0,0,0,0,0,2147487877,2147487876,0,0,
+0,0,2795,2796,2797,2092,0,0,0,2147487909,2147487908,0,0,
+0,0,2327,2327,0,0,0,0,0,0,0,0,0,
+0,0,0,0,2092,0,0,0,2147487748,2147487747,0,0,0,
+0,0,0,0,0,4230,4231,4232,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Paths" width="13" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,121,0,121,0,121,0,121,0,121,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,121,0,121,0,121,0,121,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,121,0,121,0,121,0,121,121,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,121,0,121,0,121,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Front" width="13" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,5377,1844,1845,5589,5590,3013,3014,0,0,
+0,0,0,11666,5409,1876,1877,0,11807,3045,3046,0,0,
+0,0,0,0,0,0,0,0,0,0,783,0,0,
+0,0,2147484431,2295,0,0,0,0,0,2147487845,2147487844,0,0,
+0,0,2763,2764,2765,0,0,0,0,0,0,0,0,
+0,0,2295,2295,0,0,0,0,0,0,12170,0,0,
+0,0,12162,0,0,0,0,0,2147487716,2147487715,0,0,0,
+0,12044,12178,12181,0,0,0,0,12170,2684366636,0,0,0,
+0,0,0,12178,12179,12180,12179,12180,12171,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="18" name="Front1" width="13" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,11825,0,0,5457,5458,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,855,0,0,
+0,0,2147484503,0,0,0,0,0,0,0,927,0,0,
+0,0,2147484575,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,12170,0,0,0,
+0,0,0,0,0,4198,4199,4200,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="5" name="AlwaysFront" width="13" height="11">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,313,314,315,316,317,318,319,320,321,322,0,0,
+0,385,386,387,388,389,390,391,392,393,394,0,0,
+0,457,458,459,460,461,462,463,464,465,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,1968,2252,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,773,774,0,776,777,778,779,780,781,0,0,
+0,0,845,846,847,848,849,850,851,852,853,0,0,
+0,0,917,918,919,920,921,922,923,924,925,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="12" name="Back1"/>
+ <objectgroup id="17" name="Back2"/>
+ <objectgroup id="7" name="Buildings"/>
+ <objectgroup id="14" name="Buildings1"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="9" name="Front"/>
+ <objectgroup id="19" name="Front2"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

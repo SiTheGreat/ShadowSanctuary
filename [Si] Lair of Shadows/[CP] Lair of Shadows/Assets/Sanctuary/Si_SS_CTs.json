@@ -1,0 +1,30 @@
+{
+
+	// Conversation Topic Entries
+
+	"Changes": [
+
+
+
+	{
+		"LogName": "SS Krobus Conversation Topics",
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Krobus",
+		"Entries": {
+
+			"SSAfterFetta": "Someone came!$1#$b#I can't believe it!$1#$b#They chose a house and everything!$1",
+			"SSAfterChenchi": "Have you talked with Chenchi yet?#$b#They're a shaman.#$b#They hold ceremonies and make elixirs. Stuff like that.#$b#They're very important in shadow culture.#$b#Hopefully this means more of my people will show up!$1",
+
+		},
+	},
+
+	
+
+
+
+
+
+
+]
+
+}

@@ -1,0 +1,86 @@
+{
+
+	// Ambu Dialogue
+
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm Dialogue
+
+	{
+		"LogName": "SS Ambu Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Ambu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205026": false,
+		},
+		"Entries": {
+
+			"Mon": "H-hello, I don't think you're supposed to be here...",
+			"Tue": "H-hello, I don't think you're supposed to be here...",
+			"Wed": "H-hello, I don't think you're supposed to be here...",
+			"Thu": "H-hello, I don't think you're supposed to be here...",
+			"Fri": "...!",
+			"Sat": "H-hello, I don't think you're supposed to be here...",
+			"Sun": "H-hello, I don't think you're supposed to be here...",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue after going to the lair
+
+	{
+		"LogName": "SS Ambu Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Ambu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205026": true,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "ADD WORDS HERE",
+			"Fri": "ADD WORDS HERE",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata to add more dial as other events occur
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Conversation topics
+
+	{
+		"LogName": "SS Ambu Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Ambu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205026": true,
+		},
+		"Entries": {
+
+			"SSAfterPhana": "ADD WORDS HERE",
+			"SSAfterChenchi": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
+
+}

@@ -1,0 +1,53 @@
+{
+
+	// All Glee schedules
+
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm
+
+	{
+		"LogName": "SS Glee Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Glee",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205040": false,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// After intro event
+
+	{
+		"LogName": "SS Glee Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Glee",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205040": true,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_MBG 6 4 0/620 Custom_Si_SS_BugLand_Full 46 26 0/920 Custom_Si_SS_MBG 6 4 0",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata schedule after other events
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
+
+
+}

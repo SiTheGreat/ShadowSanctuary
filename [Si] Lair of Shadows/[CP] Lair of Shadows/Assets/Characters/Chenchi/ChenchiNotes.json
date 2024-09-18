@@ -1,0 +1,34 @@
+Intro conditions:
+-enter temple on sunday "none/-1000 -1000/farmer -100 -100 2/end"// thx lemur & nicole <3
+-enter lair carrying gem -2
+-enter lair on friday
+
+Sprites: base, masks
+
+Scheds: init (makes potions/remedies), temple
+
+
+Shop: none
+
+Gen quests:
+-gems for altar?
+
+Sequence:
+-Intro event (nods in greeting, doesn't speak, they and Krobus nod to each other, they walk off into the lair, farmer ?, krobus smile, text 'you have no idea what just happened, but they seem nice) (intro p2 on not-friday)
+-reflects on diffs between surface and shadow yoba
+-everything is yobas plan
+-missing other shamans, 'i have made my peace w your kind, must be strong for everyone now, we have all suffered'
+-quest need mats to make vigil mask
+-need mats for weekly temple mask to start that? 'i would like to start holding yoba sessions, i need these things'
+-one shadow person has lost someone and never got to mourn them (Rath?), so never got to mourn them > vigil mask for funeral
+-vanilla mask = war mask, worn when protecting farmer
+
+Sanctuary events:
+-help create vigil speech (choose one of three lines to be said during it)
+-yoba statue string: 'you try meditating at the altar. An odd feeling washes over you. It reminds you of <favorite thing>.'
+
+Char Notes:
+-Very passive; assumes everything is Yoba's plan, needs a push
+-'there were many of us shamans once; now we are few.
+-gathers mystical items like solar essence to make magic like staff
+-Chenchi's masks: purple = vigil/funerals, gold = weekly, pink = war, green = making potions, red = ?

@@ -1,0 +1,35 @@
+Intro conditions:
+-hasflag Island_UpgradeBridge
+-rainy
+
+Sprites: oldglasses, newglasses
+
+Scheds: init, chenchi
+
+Shop: none
+
+Gen quests:
+-get squid ink
+-cloth to wipe glasses
+
+Sequence:
+-Intro event; farmer in forest, hears noise near sewer entrance, shadow, farmer ?, enters lair, Ambu there (split in two, both rainy)
+-talk about reading
+-glasses break 'not again, it's hard to get stuff like these'
+-get new ones (would like straps), quest w Barril
+-talk abt Yubu
+-need to discourage kids from exploring the sewers/make them feel better about more noises down there (Ambu quickly hid nearby, have to help them get out of this one)
+
+Sanctuary events:
+-pet (later update: Onion)
+-rescue mission (save Yubu from surface; sneak to sewer, but crowd near it and near forest entrance; sneak around via beach? Distraction? Mines? 'Oh Yoba Yubu hasn't returned yet, please go find them!')
+-^Yubu missing; later they argue about it and farmer helps them understand each other
+
+Char Notes:
+-reads, esp near south sewer entrance late at night
+-Yubu and I both love learning about the world, just in different/our own ways
+-Yubu and I came from the same patch of shadows. I think that makes us like siblings/twins to you humans
+
+ A lost in the forest, F comes up behind, F '?', A jumps and scurries away, A afraid 'I'm not going to hurt anyone, I promise, please leave me alone!', f approaches, a backs away, f 'it's ok/i won't hurt you/I'm friends w a shadow person, can i take you to them', a shakes, a runs off, f sweatdrops; enter sewer, go to k, f !, k 'a shadow person in the woods?', f ..., k 'show me where; enter forest, both move around, bush shakes, f ?, f approaches, a appears, a leave me alone please!, k comes forward, k it's okay, you're not in danger, a y-you're like me, f heart, a look out there's a human behind you' k it's alright this is @ they're a friendly human, they won't hurt you, i promise, a ..., a no it's okay, I'm fine, really, don't worry about me, a scurries back into trees, k sweatdrop, k turns to f, k 'we can't make them do anything they don't want to do, i guess', k ...,  k could you walk through the forest and check in on them once in a while?, f :), k thank you
+-A stays in forest till 1 h, then scene to come join the sanctuary
+-A in secret woods instead?

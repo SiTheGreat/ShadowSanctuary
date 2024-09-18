@@ -1,0 +1,57 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+
+	// See Harvey 8h event; has cooking recipe Blueberry Tart; Krobus quest to stock up on sanc supplies field snacks; summer lair hidden event, convo topic 5 days; summer, intro event; have met Phana
+	// 2 events, 1 quest
+
+	{
+	// Event ID 262205044 Duffle pre-quest hidevent
+	"LogName": "Si SS IE HE 09",
+	"Action": "EditData",
+	"Target": "Data/Events/BusStop",
+	"Entries": {
+		"262205044/e 571102/e 262205023/A SSAfterPhana/f Krobus 2000/e 262205999": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	// supplies quest 262205045 262205046
+
+	{
+	// Event ID 262205047 Duffle hidevent
+	"LogName": "Si SS IE HE 09",
+	"Action": "EditData",
+	"Target": "Data/Events/Town", // reqs
+	"Entries": {
+		"262205047/n 262205046/e 262205999/z spring/z fall/z winter/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/addConversationTopic SSDuffle1 5/end",
+		}
+	},
+
+	{
+	// Event ID 262205048 Duffle intro
+	"LogName": "Si SS IE ME 09",
+	"Action": "EditData",
+	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs; A SSDuffle1, sewer
+	"Entries": {
+		"262205048/e 262205047/f Krobus 2000/e 262205999": "none/-1000 -1000/farmer -100 -100 2/end",
+
+		}
+	},
+
+
+// D and K talking, D lots of jumping !'ing, F walks in '?', K !, D turns, D ! Eek a human! Things keep getting worse!, K it's okay D, this is my friend @, @ this is D, they were coming here with someone named N but they got separated, could you go look for them please?, f music note, D oh thank you so much, N is always getting into trouble so I'm veey worried, they like tart, maybe if you get some it will help you find them
+
+
+
+
+
+
+
+	// Go find Nib (not a defined quest)
+
+
+
+]
+}

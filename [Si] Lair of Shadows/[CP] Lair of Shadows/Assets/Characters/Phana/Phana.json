@@ -1,0 +1,264 @@
+{
+	"Changes": [
+
+	// Dispo
+	// Gifts
+	// Images
+	// Intro conds
+	// Intro event
+	// Schedules x2
+	// Dialogue & CTs
+	// Events
+	// GH quest Flora and Phana
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Load",
+		"Target": "Characters/Phana",
+		"FromFile": "Assets/Characters/Phana/PhanaSprite.png",
+	},
+
+	{
+		"Action": "Load",
+		"Target": "Portraits/Phana",
+		"FromFile": "Assets/Characters/Phana/PhanaPortrait.png",
+	},
+
+	// Disposition ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"Phana": {
+				// Char
+				"DisplayName": "Phana",
+				"Gender": "Undefined",
+				"Age": "Adult",
+				"BirthSeason": "Winter",
+				"BirthDay": 7,
+				// Attitude
+				"Manner": "Rude",
+				"SocialAnxiety": "Neutral",
+				"Optimism": "Positive",
+				"CanBeRomanced": false,
+				// Exclusions
+				"PerfectionScore": true,
+				"IntroductionsQuest": false,
+				"ItemDeliveryQuests": false,
+				"CanVisitIsland": false,
+				"WinterStarParticipant": false,
+				"CanCommentOnPurchasedShopItems": false,
+				"CanGreetNearbyCharacters": false,
+				"SocialTab": "HiddenUntilMet",
+				"Calendar": "HiddenUntilMet",
+				"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 262205023",
+				// Home
+				"HomeRegion": "Town",
+				"Home": [
+					{
+						"Id": "Default",
+						"Location": "Custom_Phana",
+						"Tile": { "X": 4, "Y": 6 },
+						"Direction": "Up"
+					}
+				]
+			}
+		}
+	},
+
+	// Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// loves: seeds, ingredients, kale
+	// likes: void mayo
+	// dislikes:
+	// hates: wine
+	// neuts:
+
+	// Every day but Friday
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Phana": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": false
+		},
+	},
+
+	// Fridays
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Phana": "!/424/Phana smiles./423/Phana frowns./433/!/419/.../418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": true
+		},
+	},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Phana/PhanaSchedule.json",
+	},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Phana/PhanaDialogue.json",
+	},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Phana/PhanaEvents.json",
+	},
+
+	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Add home map
+	{
+		"Action": "Load",
+		"Target": "Maps/Custom_Phana",
+		"FromFile": "Assets/Characters/Phana/Phana.tmx",
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+			"Custom_Phana": {
+				"DisplayName": "Phana's House",
+				"CreateOnLoad": {
+					"MapPath": "Maps/Custom_Phana"
+				},
+				"DefaultArrivalTile": {
+					"X": 5,
+					"Y": 2
+				}
+			}
+		}
+	},
+
+	// Add home warps (do I need NPCWarp? Get from old version of SS if so)
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"AddWarps": [
+			"29 40 Custom_Phana 6 3"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": true,
+		},
+	},
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Phana",
+		"AddWarps": [
+			"6 2 Custom_Si_SS_BugLand_Full 28 41"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": true,
+		},
+	},
+
+	// Add home events file
+	{
+		"Action": "Load",
+		"Target": "Data/Events/Phana",
+		"FromFile": "Assets/Characters/Phana/PhanaBlank.json",
+	},
+
+	// Add home tarp
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"PatchMode": "Replace",
+		"FromFile": "Assets/Phana/PhanaTarp.tmx",
+		"ToArea": { "X": 25, "Y": 40, "Width": 5, "Height": 5 },
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": false,
+		},
+	},
+
+	// Greenhouse ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Add greenhouse map
+	{
+		"Action": "Load",
+		"Target": "Maps/Custom_PhanaGH",
+		"FromFile": "Assets/Characters/Phana/PhanaGH.tmx",
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+			"Custom_Phana": {
+				"DisplayName": "Phana's Greenhouse",
+				"CreateOnLoad": {
+					"MapPath": "Maps/Custom_PhanaGH"
+				},
+				"DefaultArrivalTile": {
+					"X": 5,
+					"Y": 2
+				}
+			}
+		}
+	},
+
+	// Add greenhouse warps
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"AddWarps": [
+			"29 37 Custom_PhanaGH 11 7"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": true,
+		},
+	},
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_PhanaGH",
+		"AddWarps": [
+			"12 7 Custom_Si_SS_BugLand_Full 30 37"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": true,
+		},
+	},
+
+	// Add greenhouse events file
+	{
+		"Action": "Load",
+		"Target": "Data/Events/Phana",
+		"FromFile": "Assets/Characters/Phana/PhanaGHBlank.json",
+	},
+
+	// Add greenhouse tarp
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"PatchMode": "Replace",
+		"FromFile": "Assets/Phana/PhanaGHTarp.tmx",
+		"ToArea": { "X": 26, "Y": 33, "Width": 5, "Height": 7 },
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=262205999": false, // UPDATE EVENT
+			},
+	},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

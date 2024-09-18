@@ -1,0 +1,197 @@
+{
+
+	"Changes": [
+
+	// Dispo
+	// Gifts
+	// Images
+	// Intro conds
+	// Intro event
+	// Schedules x2
+	// Dialogue & CTs
+	// Events
+	// Quest
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Load",
+		"Target": "Characters/Morprit",
+		"FromFile": "Assets/Characters/Morprit/MorpritSprite.png",
+	},
+
+	{
+		"Action": "Load",
+		"Target": "Portraits/Morprit",
+		"FromFile": "Assets/Characters/Morprit/MorpritPortrait.png",
+	},
+
+	// Disposition ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"Morprit": {
+				// Char
+				"DisplayName": "Morprit",
+				"Gender": "Undefined",
+				"Age": "Adult",
+				"BirthSeason": "Winter",
+				"BirthDay": 7,
+				// Attitude
+				"Manner": "Rude",
+				"SocialAnxiety": "Neutral",
+				"Optimism": "Positive",
+				"CanBeRomanced": false,
+				// Exclusions
+				"PerfectionScore": true,
+				"IntroductionsQuest": false,
+				"ItemDeliveryQuests": false,
+				"CanVisitIsland": false,
+				"WinterStarParticipant": false,
+				"CanCommentOnPurchasedShopItems": false,
+				"CanGreetNearbyCharacters": false,
+				"SocialTab": "HiddenUntilMet",
+				"Calendar": "HiddenUntilMet",
+				"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 262205032",
+				// Home
+				"HomeRegion": "Town",
+				"Home": [
+					{
+						"Id": "Default",
+						"Location": "Custom_Morprit",
+						"Tile": { "X": 3, "Y": 5 },
+						"Direction": "Up"
+					}
+				]
+			}
+		}
+	},
+
+	// Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// Loves: lures, rare fish, maic bait, regular bait, drum and flute blocks
+	// Likes: void mayo, less rare fish
+	// Neuts: carp
+	// Dislikes:
+	// Hates:
+
+	// Every day but Friday
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Morprit": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": false
+		},
+	},
+
+	// Fridays
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Morprit": "!/424/Morprit smiles./423/Morprit frowns./433/!/419/.../418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": true
+		},
+	},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Morprit/MorpritSchedule.json",
+	},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Morprit/MorpritDialogue.json",
+	},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Morprit/MorpritEvents.json",
+	},
+
+	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Add home map
+	{
+		"Action": "Load",
+		"Target": "Maps/Custom_Morprit",
+		"FromFile": "Assets/Characters/Morprit/Morprit.tmx",
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+			"Custom_Morprit": {
+				"DisplayName": "Morprit's House",
+				"CreateOnLoad": {
+					"MapPath": "Maps/Custom_Morprit"
+				},
+				"DefaultArrivalTile": {
+					"X": 3,
+					"Y": 5
+				}
+			}
+		}
+	},
+
+	// Add home warps
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"AddWarps": [
+			"36 47 Custom_Morprit 5 9"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205032": true,
+		},
+	},
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Morprit",
+		"AddWarps": [
+			"5 11 Custom_Si_SS_BugLand_Full 36 48"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205032": true,
+		},
+	},
+
+	// Add home events file
+	{
+		"Action": "Load",
+		"Target": "Data/Events/Morprit",
+		"FromFile": "Assets/Characters/Morprit/MorpritBlank.json",
+	},
+
+	// Add home tarp
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"PatchMode": "Replace",
+		"FromFile": "Assets/Characters/Morprit/MorpritTarp.tmx",
+		"ToArea": { "X": 34, "Y": 42, "Width": 6, "Height": 7 },
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205037": false,
+		},
+	},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

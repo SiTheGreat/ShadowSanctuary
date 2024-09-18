@@ -1,0 +1,32 @@
+Intro conditions:
+-sunny
+-hasflag Island_Resort
+
+Sprites: base
+
+Scheds: init
+
+Shop:
+
+Gen quests:
+-artifacts 'i heard about x, can you get me one?'
+
+Sequence:
+-Intro event
+-yoba events
+-name means follower of yoba, but is least religious of all; aother event w chenchi, explains what yoba means
+-drag on adventure
+-mail 'look what i found! come on, let's go on an adventure
+
+Sanctuary events:
+-missing (Ambu)
+
+Char Notes:
+-talks on Fridays
+-sneaks up to the surface a lot
+-I don't really follow Yoba, the only person I've ever been able to rely on is Single 4
+-Vigil: ‘I don’t follow Yoba, but I do care for my people and hope they find their way.’
+-If marry Yubu, Chenci agrees to try doing a human marriage ceremony
+
+
+enter town/beach, notice commotion, townie comes up 'kids saw a monster, I'm sure they're jist jumping at shadows but can you help us look around please?', f :), f checks some bushes, other  townies speech bubbles 'nothing here! 'Not herr either! 'I found a squirrel, does that count?', some bushes near f shake, f ?, f goes over, f !, Y appears, Y back human! I'm warning you!', f shh!/hang on, I don't want to fight you/oh you wanna go? Lets go', townie 'f did you find something?', y !, y behind bush again, f turn around, f 'nope, nothing here/just a rabbit/the kids probably imagined it', t 'you're probably right', kids 'but we did! It was dark and scary and wearing a pirate hat!', t 'I'm sure there's nothing to be afraid of, if there is then I'm sure f will protect us', f :), t 'come on now, it's time to go. Thank you so much for your help f', kids 'thanks f!', f heart, fade out, warp townie and kids away, fade in, f turns around, y reappears, y 'that was an interesting response, who are you human?', f a simple farmer/an understanding adventurer/a friend to the shadow people, y 'oh i highly doubt that/a fellow seeker of thrills!/really? Do you know any around here?, f :), take to sanctuary

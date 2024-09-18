@@ -1,0 +1,25 @@
+{
+	"Name": "[Si] [CP] Lair of Shadows",
+	"Author": "SiTheGreat",
+	"Description": "Help Krobus create a safe haven for the Shadow People.",
+	"Version": "1.0.0",
+	"UniqueID": "Si.LoS",
+	"UpdateKeys": [ "" ],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher",
+	},
+	// "Dependencies": [
+
+	// 	{
+    //     		"UniqueID": "aedenthorn.ExtraMapLayers",
+    //     		"IsRequired": true
+	// 	},
+
+	// 	{
+    //     		"UniqueID": "SuperAardvark.AntiSocial",
+    //     		"IsRequired": true
+	// 	},
+
+	// ]
+
+}

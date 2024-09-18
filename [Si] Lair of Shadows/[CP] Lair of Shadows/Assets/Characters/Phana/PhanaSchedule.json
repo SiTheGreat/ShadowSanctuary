@@ -1,0 +1,59 @@
+{
+
+	// All Phana schedules
+
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm
+
+	{
+		"LogName": "SS Phana Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Phana",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": false,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_C 7 3 3/650 Custom_Si_SS_BugLand_Full 47 19 2/950 Custom_Si_SS_BugLand_C 7 3 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// After intro event
+
+	{
+		"LogName": "SS Phana Schedule",
+		"Action": "Load",
+		"Target": "Characters/schedules/Si_SS_Phana",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": true,
+		},
+		"Entries": {
+
+			"spring": "0 Custom_Si_SS_MBG 6 4 0/620 Custom_Si_SS_BugLand_Full 46 26 0/920 Custom_Si_SS_MBG 6 4 0",
+
+		//"spring": "650 Custom_Si_SS_F 2 3 3/810 Custom_Si_SS_F 3 5 3/900 Custom_Si_SS_F 3 3 0/930 Custom_Si_SS_Bugland_Full 28 45 3/940 Custom_Si_SS_Bugland_Full 28 45 3/950 Custom_Si_SS_Bugland_Full 44 49 1/1040 Custom_Si_SS_Bugland_Full 44 49 1/1250 Custom_Si_SS_Bugland_Full 36 31 1/1510 Custom_Si_SS_Bugland_Full 48 10 0/1650 Custom_Si_SS_Bugland_Full 24 14 3/1740 Custom_Si_SS_Bugland_Full 19 31 2/1850 Custom_Si_SS_Bugland_Full 28 45 0/1930 Custom_Si_SS_F 3 3 0/1940 Custom_Si_SS_F 3 3 0/2020 Custom_Si_SS_F 2 3 3/2040 Custom_Si_SS_F 3 7 3/2120 Custom_Si_SS_F 2 3 3/2150 Custom_Si_SS_F 3 5 3/2240 Custom_Si_SS_F 3 3 0/2310 Custom_Si_SS_F 6 7 3",
+
+		//"spring": "0 Custom_Si_SS_Bugland_Full 27 48 3/640 Custom_Si_SS_Bugland_Full 44 49 1/1250 Custom_Si_SS_Bugland_Full 36 31 1/1510 Custom_Si_SS_Bugland_Full 48 10 0/1650 Custom_Si_SS_Bugland_Full 24 14 3/1820 Custom_Si_SS_Bugland_Full 19 31 2/1940 Custom_Si_SS_F 3 3 0/2020 Custom_Si_SS_F 2 3 3/2040 Custom_Si_SS_F 3 7 3/2120 Custom_Si_SS_F 2 3 3/2150 Custom_Si_SS_F 3 5 3/2240 Custom_Si_SS_F 3 3 0/2310 Custom_Si_SS_F 6 7 3",
+
+		//"spring": "650 Custom_Si_SS_F 2 3 3/810 Custom_Si_SS_F 3 5 3/900 Custom_Si_SS_F 3 3 0/1930 Custom_Si_SS_F 3 3 0/1940 Custom_Si_SS_F 3 3 0/2020 Custom_Si_SS_F 2 3 3/2040 Custom_Si_SS_F 3 7 3/2120 Custom_Si_SS_F 2 3 3/2150 Custom_Si_SS_F 3 5 3/2240 Custom_Si_SS_F 3 3 0/2310 Custom_Si_SS_F 6 7 3",
+
+		},
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata schedule after other events
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
+
+
+}

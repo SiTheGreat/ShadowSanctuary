@@ -1,0 +1,86 @@
+{
+
+	// Nib Dialogue
+
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm Dialogue
+
+	{
+		"LogName": "SS Nib Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Nib",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205051": false,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "ADD WORDS HERE",
+			"Fri": "...",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue after going to the lair
+
+	{
+		"LogName": "SS Nib Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Nib",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205051": true,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "Blueberries are in season now right? Can you bring me some?",
+			"Fri": "ADD WORDS HERE",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata to add more dial as other events occur
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Conversation topics
+
+	{
+		"LogName": "SS Nib Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Nib",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205051": true,
+		},
+		"Entries": {
+
+			"SSAfterPhana": "ADD WORDS HERE",
+			"SSAfterChenchi": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
+
+}

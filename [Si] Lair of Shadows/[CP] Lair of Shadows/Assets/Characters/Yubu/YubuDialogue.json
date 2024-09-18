@@ -1,0 +1,86 @@
+{
+
+	// Yubu Dialogue
+
+	"Changes": [
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Shadow Realm Dialogue
+
+	{
+		"LogName": "SS Yubu Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Yubu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205029": false,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "ADD WORDS HERE",
+			"Fri": "...",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Dialogue after going to the lair
+
+	{
+		"LogName": "SS Yubu Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Yubu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205029": true,
+		},
+		"Entries": {
+
+			"Mon": "ADD WORDS HERE",
+			"Tue": "ADD WORDS HERE",
+			"Wed": "ADD WORDS HERE",
+			"Thu": "ADD WORDS HERE",
+			"Fri": "ADD WORDS HERE",
+			"Sat": "ADD WORDS HERE",
+			"Sun": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Editdata to add more dial as other events occur
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Conversation topics
+
+	{
+		"LogName": "SS Yubu Intro Dialogue",
+		"Action": "Load",
+		"Target": "Characters/Dialogue/Si_SS_Yubu",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205029": true,
+		},
+		"Entries": {
+
+			"SSAfterPhana": "ADD WORDS HERE",
+			"SSAfterChenchi": "ADD WORDS HERE",
+
+		}
+
+	},
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
+
+
+}

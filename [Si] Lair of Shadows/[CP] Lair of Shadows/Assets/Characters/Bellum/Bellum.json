@@ -1,0 +1,197 @@
+{
+
+	"Changes": [
+		
+	// Dispo
+	// Gifts
+	// Images
+	// Intro conds
+	// Intro event
+	// Schedules x2
+	// Dialogue & CTs
+	// Events
+	// Quest All's Fair
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Load",
+		"Target": "Characters/Bellum",
+		"FromFile": "Assets/Characters/Bellum/BellumSprite.png",
+	},
+
+	{
+		"Action": "Load",
+		"Target": "Portraits/Bellum",
+		"FromFile": "Assets/Characters/Bellum/BellumPortrait.png",
+	},
+
+	// Disposition ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"Bellum": {
+				// Char
+				"DisplayName": "Bellum",
+				"Gender": "Undefined",
+				"Age": "Adult",
+				"BirthSeason": "Winter",
+				"BirthDay": 7,
+				// Attitude
+				"Manner": "Rude",
+				"SocialAnxiety": "Neutral",
+				"Optimism": "Positive",
+				"CanBeRomanced": false,
+				// Exclusions
+				"PerfectionScore": true,
+				"IntroductionsQuest": false,
+				"ItemDeliveryQuests": false,
+				"CanVisitIsland": false,
+				"WinterStarParticipant": false,
+				"CanCommentOnPurchasedShopItems": false,
+				"CanGreetNearbyCharacters": false,
+				"SocialTab": "HiddenUntilMet",
+				"Calendar": "HiddenUntilMet",
+				"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 262205XXX", // UPDATE EVENT
+				// Home
+				"HomeRegion": "Town",
+				"Home": [
+					{
+						"Id": "Default",
+						"Location": "Custom_Bellum",
+						"Tile": { "X": 3, "Y": 5 },
+						"Direction": "Up"
+					}
+				]
+			}
+		}
+	},
+
+	// Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// Loves: tea, tea leaves, potions
+	// Likes: void mayo, void essence
+	// Neuts:
+	// Dislikes:
+	// Hates: pickled tea leaves, pris shard (did you steal this from my people in the mines), rabbits foot (what is that supposed to be)
+
+	// Every day but Friday
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Bellum": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": false
+		},
+	},
+
+	// Fridays
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Bellum": "!/424/Bellum smiles./423/Bellum frowns./433/!/419/.../418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": true
+		},
+	},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Bellum/BellumSchedule.json",
+	},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Bellum/BellumDialogue.json",
+	},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Bellum/BellumEvents.json",
+	},
+
+	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Add home map
+	{
+		"Action": "Load",
+		"Target": "Maps/Custom_Bellum",
+		"FromFile": "Assets/Characters/Bellum/Bellum.tmx",
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+			"Custom_Bellum": {
+				"DisplayName": "Bellum's House",
+				"CreateOnLoad": {
+					"MapPath": "Maps/Custom_Bellum"
+				},
+				"DefaultArrivalTile": {
+					"X": 3,
+					"Y": 5
+				}
+			}
+		}
+	},
+
+	// Add home warps
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"AddWarps": [
+			"49 45 Custom_Bellum 3 6"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205XXX": true, // UPDATE EVENT
+		},
+	},
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Bellum",
+		"AddWarps": [
+			"3 8 Custom_Si_SS_BugLand_Full 49 46"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205XXX": true, // UPDATE EVENT
+		},
+	},
+
+	// Add home events file
+	{
+		"Action": "Load",
+		"Target": "Data/Events/Bellum",
+		"FromFile": "Assets/Characters/Bellum/BellumBlank.json",
+	},
+
+	// Add home tarp
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"PatchMode": "Replace",
+		"FromFile": "Assets/Characters/Bellum/BellumTarp.tmx",
+		"ToArea": { "X": 47, "Y": 44, "Width": 5, "Height": 3 },
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205XXX": false, // UPDATE EVENT
+		},
+	},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}

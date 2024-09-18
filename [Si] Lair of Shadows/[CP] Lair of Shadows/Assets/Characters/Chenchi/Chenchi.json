@@ -1,0 +1,197 @@
+{
+
+	"Changes": [
+
+	// Dispo
+	// Gifts
+	// Images
+	// Intro conds
+	// Intro event
+	// Schedules x2
+	// Dialogue & CTs
+	// Events
+	// Quest
+
+	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Load",
+		"Target": "Characters/Chenchi",
+		"FromFile": "Assets/Characters/Chenchi/ChenchiSprite.png",
+	},
+
+	{
+		"Action": "Load",
+		"Target": "Portraits/Chenchi",
+		"FromFile": "Assets/Characters/Chenchi/ChenchiPortrait.png",
+	},
+
+	// Disposition ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Characters",
+		"Entries": {
+			"Chenchi": {
+				// Char
+				"DisplayName": "Chenchi",
+				"Gender": "Undefined",
+				"Age": "Adult",
+				"BirthSeason": "Winter",
+				"BirthDay": 7,
+				// Attitude
+				"Manner": "Rude",
+				"SocialAnxiety": "Neutral",
+				"Optimism": "Positive",
+				"CanBeRomanced": false,
+				// Exclusions
+				"PerfectionScore": true,
+				"IntroductionsQuest": false,
+				"ItemDeliveryQuests": false,
+				"CanVisitIsland": false,
+				"WinterStarParticipant": false,
+				"CanCommentOnPurchasedShopItems": false,
+				"CanGreetNearbyCharacters": false,
+				"SocialTab": "HiddenUntilMet",
+				"Calendar": "HiddenUntilMet",
+				"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 262205055", // UPDATE EVENT
+				// Home
+				"HomeRegion": "Town",
+				"Home": [
+					{
+						"Id": "Default",
+						"Location": "Custom_Chenchi",
+						"Tile": { "X": 3, "Y": 5 },
+						"Direction": "Up"
+					}
+				]
+			}
+		}
+	},
+
+	// Gifts ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// loves: void mayo
+	// likes:
+	// dislikes:
+	// hates:
+	// neuts:
+
+	// Every day but Friday
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Chenchi": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": false
+		},
+	},
+
+	// Fridays
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"Entries": {
+			"Chenchi": "!/424/Chenchi smiles./423/Chenchi frowns./433/!/419/.../418/",
+		},
+		"When": {
+			"DayOfWeek |contains=Friday": true
+		},
+	},
+
+	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Chenchi/ChenchiSchedule.json",
+	},
+
+	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Chenchi/ChenchiDialogue.json",
+	},
+		
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Chenchi/ChenchiEvents.json",
+	},
+
+	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Add home map
+	{
+		"Action": "Load",
+		"Target": "Maps/Custom_Chenchi",
+		"FromFile": "Assets/Characters/Chenchi/Chenchi.tmx",
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+			"Custom_Chenchi": {
+				"DisplayName": "Chenchi's House",
+				"CreateOnLoad": {
+					"MapPath": "Maps/Custom_Chenchi"
+				},
+				"DefaultArrivalTile": {
+					"X": 3,
+					"Y": 5
+				}
+			}
+		}
+	},
+
+	// Add home warps
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"AddWarps": [
+			"49 45 Custom_Chenchi 3 6"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": true, // UPDATE EVENT
+		},
+	},
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Chenchi",
+		"AddWarps": [
+			"3 8 Custom_Si_SS_BugLand_Full 49 46"
+		],
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": true, // UPDATE EVENT
+		},
+	},
+
+	// Add home events file
+	{
+		"Action": "Load",
+		"Target": "Data/Events/Chenchi",
+		"FromFile": "Assets/Characters/Chenchi/ChenchiBlank.json",
+	},
+
+	// Add home tarp
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"PatchMode": "Replace",
+		"FromFile": "Assets/Characters/Chenchi/ChenchiTarp.tmx",
+		"ToArea": { "X": 45, "Y": 16, "Width": 8, "Height": 11 },
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205055": false,
+		},
+	},
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
+
+}
