@@ -32,6 +32,7 @@ Char Notes:
 -farmer gets advice from a fellow farmer
 -void goose eggs that don't work like regular eggs
 -flat arc char where they don't grow much, but help the player understand the experiences of the other shadow people and why they have difficulty trusting others by taming a void goose
+-add an action trigger mail event thingy to the string when petting each chicken, and an event that happens once each chicken has been petted once lol (maybe that triggers the chickeb quest? Or the goose)
 
 
 Chicken Quest
@@ -41,5 +42,8 @@ Lots so it's an extended quest
 Added if other mods installed (ES: hanging out with Emperor, found by Lexi; RSV: with ninjas, Jeric; Caverns: found by the dwarves, who have never seen a chicken before; zuzu city; ghost town; friendly witch hanging out with ghost/slippy: amelia's plane cockpit; pet shelter; hanging out with Apples
 -chickenquest: PFM recycle chickens into eggs and vice versa
 -rare spawn trash items, monster loot
+-chicken quest - the collectible void chickens become a rare animal goods drop by other chickens lol
+-possibly put one quest chicken in a specific place in the lair right after quest starts (or on the farm? Or maybe an event where farmer walking sees one, it jumps clucks and scurries away) so player knows what to look for
+-Tove gives a book they're writing on void chickens (either 'caring for void chickens' or 'benefits of void mayo') which increases void egg and mayo value 'this one is signed, of course!'
 
 Make Mimsy events/stuff separte so easier to make individual later

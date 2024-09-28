@@ -1,7 +1,7 @@
 Intro conditions:
--hidevent BeachNightMarket
+-
 
-Sprites: default poncho (argyle pattern), vase form (curr Diagol)
+Sprites:
 
 Scheds: init, chenchi?; winter only
 
@@ -14,7 +14,7 @@ Hates:
 Shop:
 
 Gen quests:
--
+-tech quest
 
 Sequence:
 -
@@ -23,4 +23,4 @@ Sanctuary events:
 -
 
 Char Notes:
--
+-1.6 data/incomingphonecalls -> Roa calls after getting a phone lol, then tries to get other shadows to do it too only they're not familiar with phones lol
