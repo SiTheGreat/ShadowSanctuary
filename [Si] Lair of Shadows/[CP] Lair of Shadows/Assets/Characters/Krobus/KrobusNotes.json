@@ -1,0 +1,38 @@
+Intro conditions:
+-10h w Caroline
+-monster hunter shadow people goal HasFlag: Gil_Savage Ring
+-x hearts w fetta, chenchi
+
+Sprites: base, sword, bow
+
+Scheds: init, post-trust
+
+Shop: none
+
+Gen quests:
+-potions
+-bombs 'need to replenish my stockpile'
+
+Sequence:
+-Intro event
+-tries to attack farmer, defended by others
+-demands to know why f comes so much, doesn't trust f
+-Quest drags you into some conspiracy hunts; 'checking for dwarves' 'investigating mysterious sounds/things = animals/pets'
+-Quest: Make Defenses 'The Best Offense'
+-Quest: Make Weapons 'The Best Defense'
+-later event between Marlon and the colony/Bellum
+
+Sanctuary events:
+-morprit 'you make really god weapons!' bellum 'uh thanks' morprit 'you should hang out with barril, they like crafting stuff'
+
+Char Notes:
+-sends bombs in the mail (initially no text, with trust 'keep you on your toes')
+-Doesn't trust colony at first, needs to be convinced; learns to put their energy to helping colony w food etc
+-aggressive, has to learn not to be. Picks up fishing from Morprit
+-patrols lair, sharpens weapons, gets food from Fenna; later helps around colony
+-loooong quests to trust
+-'you're an honorary shadow person, obviously'
+-later: npc adventures mine companion
+-loves tea; will gife a tea machine/ornamental tea set/kettle eventually = tea every day ('the kettle has a timer') they crafted
+-void tea (sol tea? you can experiment. hated)
+-meditates at yoba altar on fridays, frustrated look if you try to talk to them there

@@ -1,0 +1,14 @@
+{
+	"Changes": [
+
+	{
+		// Quest ID Si_SF_Q1
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"Si_SF_Q1": "ItemDelivery/Frog Eggs/Sebastian is looking for rare Gourmand Frog eggs./Deliver a Frog Egg to Sebastian/Sebastian FrogEgg 1/-1/0/-1/false/Hmm, let's see...#$b#Looks like this is also a Gourmand Frog egg!$1#$b#Nice work @!$7#$b#I'm going to put it in the quick tank I set up for the other one to make sure they stay safe while I look into a few things.#$action AddMail Current Si_SF_M2",
+		},
+	},
+
+	]
+}

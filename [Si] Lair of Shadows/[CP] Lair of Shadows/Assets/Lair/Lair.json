@@ -1,0 +1,95 @@
+{
+
+	"Format": "2.0.0",
+	"Changes": [
+	
+	// Quests ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		// OR quests can go into char files beside events (so can mail tbh, and there won't be much of that...)
+		"Action": "Include",
+		"FromFile": "Assets/Lair/Quests.json",
+	},
+
+	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Items ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// Music ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		// Lair background music // Move to lair file
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"MapProperties": {
+			"Music": "junimoKart_whaleMusic",
+		},
+		"Update": "OnLocationChange",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205023": true,
+		},
+	},
+
+	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"Action": "EditMap", // Move to lair file
+		"Target": "Maps/Sewer",
+		"AddWarps": [
+			"3 18 Custom_Si_SS_BugLand_Full 15 53"
+		],
+		"When": {
+			"HasFlag:hostPlayer |contains=262205003": true,
+		},
+	},
+
+	{
+		"Action": "EditMap", // Move to lair file
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"AddWarps": [
+			"14 54 Sewer 3 19",
+			"15 54 Sewer 3 19"
+		],
+	},
+
+	{
+		"Action": "Include", // Move to lair file
+		"FromFile": "Assets/Sanctuary/Si_SS_ComboWarps.json",
+	},
+
+	// Locations ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		// Map: Full BugLand; move to lair file
+		"Name": "Custom_Si_SS_BugLand_Full",
+		"FromMapFile": "Assets/Maps/Si_SS_02BugLand_Full.tmx",
+	},
+
+	{
+		// Map: Party Room; move to lair file; switch to shadow realm
+		"Name": "Custom_Si_SS_PartyRoom",
+		"FromMapFile": "Assets/Maps/Si_SS_PartyRoom.tmx",
+	},
+
+	{
+		// Tarps to hide house maps till character reveals // Move to char files except board > lair file
+		"Action": "Include",
+		"FromFile": "Assets/Sanctuary/Si_SS_Tarps.json",
+		//"When": { // all houses activated
+			//"HasSeenEvent:hostPlayer |contains=262205029": true,
+		//},
+	},
+
+	{
+		// Locations file for custom locations // Move to lair file/char folders
+		"LogName": "Si SS Custom Location Events",
+		"Action": "Load",
+		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+		"FromFile": "Assets/Sanctuary/Si_SS_LairEvents.json",
+	},
+
+	],
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+}

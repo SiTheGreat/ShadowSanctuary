@@ -1,0 +1,31 @@
+{
+	"Changes": [
+
+	// Dialogue
+
+
+	// Have X hearts with Chenchi; finish shadow people monster hunter goal; 10h w Caroline; adventurer's guild hidden event; quest (define); enter lair, intro event; have met Phana
+	// 2 events (rework)
+
+	// IDS CHANGED SEE MASTER LIST
+	// hidevent Guild 262205061
+	// undef quest 262205062 262205063
+	// intro event 1&2 262205064 262205065
+	// reserved 262205066 262205067 262205068 262205069 262205070
+
+
+	{
+	// Event ID 2622050XX Hidevent
+	"LogName": "Si SS ",
+	"Action": "EditData",
+	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
+	"Entries": {
+		"2622050XX/e 262205999/d Fri": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+
+
+
+]
+}

@@ -5,214 +5,110 @@
 
 	// Characters ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Phana/Phana.json",
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Phana/Phana.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Bellum/Bellum.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Ambu/Ambu.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Yubu/Yubu.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Morprit/Morprit.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Serif/Serif.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Glee/Glee.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Duffle/Duffle.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Nib/Nib.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Chenchi/Chenchi.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Tove/Tove.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Argil/Argil.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Rath/Rath.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Pax/Pax.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Roa/Roa.json",
+	},
+
+	{
+		"Action": "Include",
+		"FromFile": "Assets/Characters/Krobus/Krobus.json",
+	},
+
+	// Lair ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		// Lair-wide content
+		"Action": "Include",
+		"FromFile": "Assets/Lair/Lair.json",
+		"When": {
+			"HasWalletItem |contains=MagicInk": true,
+			"HasWalletItem |contains=DwarvishTranslationGuide": true
 		},
+	},
 
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Bellum/Bellum.json",
-		},
+	// Guild ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Ambu/Ambu.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Yubu/Yubu.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Morprit/Morprit.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Serif/Serif.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Glee/Glee.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Duffle/Duffle.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Nib/Nib.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Chenchi/Chenchi.json",
-		},
-
-		{
-			"Action": "Include",
-			"FromFile": "Assets/Characters/Tove/Tove.json",
-		},
-
-	// General ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-		{
-			// General sanctuary events
-			"Action": "Include",
-			"FromFile": "Assets/Lair/Lair.json",
-			"When": {
-				//"HasWalletItem": "MagicInk",
-				//"HasWalletItem": "DwarvishTranslationGuide",
-				"HasWalletItem |contains=MagicInk": true,
-				"HasWalletItem |contains=DwarvishTranslationGuide": true
-			},
-		},
-
-
-		{
-			// Lair background music // Move to lair file
-			"Action": "EditMap",
-			"Target": "Maps/Custom_Si_SS_BugLand_Full",
-			"MapProperties": {
-				"Music": "junimoKart_whaleMusic",
-			},
-			"Update": "OnLocationChange",
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205023": true,
-			},
-		},
-
-		{
-			// Tarps to hide house maps till character reveals // Move to lair file
-			"Action": "Include",
-			"FromFile": "Assets/Sanctuary/Si_SS_Tarps.json",
-			//"When": { // all houses activated
-				//"HasSeenEvent:hostPlayer |contains=262205029": true,
-			//},
-		},
-
-		{
-			// Locations file for custom locations // Move to lair file/char folders
-			"LogName": "Si SS Custom Location Events",
-			"Action": "Load",
-			"Target": "Data/Events/Custom_Si_SS_BugLand_Full, Custom_Si_SS_F, Custom_Si_SS_B, Custom_Si_SS_AY, Custom_Si_SS_MBG, Custom_Si_SS_RN, Custom_Si_SS_C, Custom_Si_SS_Z, Custom_Si_SS_FGH",
-				// Add other rooms here too
-			"FromFile": "Assets/Sanctuary/Si_SS_LairEvents.json",
-		},
-
-
-		{
-			// Locations file for custom locations
-			"LogName": "Si SS Custom Location Events",
-			"Action": "Load",
-			"Target": "Data/Events/AdventureGuild",
-			"FromFile": "Assets/Sanctuary/Si_SS_LairEvents.json",
-			// When conds here
-		},
-
-
-	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-		{
-			"Action": "EditMap", // Move to lair file
-			"Target": "Maps/Sewer",
-			"AddWarps": [
-				"3 18 Custom_Si_SS_BugLand_Full 15 53"
-			],
-			"When": {
-				"HasFlag:hostPlayer |contains=262205003": true,
-			},
-		},
-
-		{
-			"Action": "EditMap", // Move to lair file
-			"Target": "Maps/Custom_Si_SS_BugLand_Full",
-			"AddWarps": [
-				"14 54 Sewer 3 19",
-				"15 54 Sewer 3 19"
-			],
-		},
-
-		{
-			"Action": "Include", // Move to lair file
-			"FromFile": "Assets/Sanctuary/Si_SS_ComboWarps.json",
-		},
-
-	// Locations ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	],
-
-	"CustomLocations": [
-
-		{
-			// Map: Full BugLand; move to lair file
-			"Name": "Custom_Si_SS_BugLand_Full",
-			"FromMapFile": "Assets/Maps/Si_SS_02BugLand_Full.tmx",
-		},
-
-		{
-			// Map: Party Room; move to lair file
-			"Name": "Custom_Si_SS_PartyRoom",
-			"FromMapFile": "Assets/Maps/Si_SS_PartyRoom.tmx",
-		},
-
-
-		{
-			// Map: Phana; move to char folder
-			"Name": "Custom_Si_SS_F",
-			"FromMapFile": "Assets/Maps/Si_SS_F.tmx",
-		},
-
-		{
-			// Map: Bellum; move to char folder
-			"Name": "Custom_Si_SS_B",
-			"FromMapFile": "Assets/Maps/Si_SS_b.tmx",
-		},
-
-		{
-			// Map: Ambu Yubu; move to char folder
-			"Name": "Custom_Si_SS_AY",
-			"FromMapFile": "Assets/Maps/Si_SS_AY.tmx",
-		},
-
-		{
-			// Map: Morprit Serif Glee; move to char folder
-			"Name": "Custom_Si_SS_MBG",
-			"FromMapFile": "Assets/Maps/Si_SS_MBG.tmx",
-		},
-
-		{
-			// Map: Duffle Nib; move to char folder
-			"Name": "Custom_Si_SS_RN",
-			"FromMapFile": "Assets/Maps/Si_SS_RN.tmx",
-		},
-
-		{
-			// Map: Chenchi; move to char folder
-			"Name": "Custom_Si_SS_C",
-			"FromMapFile": "Assets/Maps/Si_SS_C.tmx",
-		},
-
-		{
-			// Map: Tove; move to char folder
-			"Name": "Custom_Si_SS_Z",
-			"FromMapFile": "Assets/Maps/Si_SS_Z.tmx",
-		},
-
-		{
-			// Map: Phana Greenhouse; move to char folder
-			"Name": "Custom_Si_SS_FGH",
-			"FromMapFile": "Assets/Maps/Si_SS_FGH.tmx",
-		},
-
-	],
+	{
+		// Load events file for the Adventurer's Guild when no other mod does
+		"Action": "Load",
+		"Target": "Data/Events/AdventureGuild",
+		"FromFile": "Assets/Lair/GuildEvents.json",
+		"Priority": "Low"
+	},
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	],
 
 }
