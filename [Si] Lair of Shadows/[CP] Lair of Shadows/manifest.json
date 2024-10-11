@@ -8,18 +8,11 @@
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher",
 	},
-	// "Dependencies": [
-
-	// 	{
-    //     		"UniqueID": "aedenthorn.ExtraMapLayers",
-    //     		"IsRequired": true
-	// 	},
-
-	// 	{
-    //     		"UniqueID": "SuperAardvark.AntiSocial",
-    //     		"IsRequired": true
-	// 	},
-
-	// ]
+	"Dependencies": [
+		{
+        		"UniqueID": "DLX.Bundles",
+        		"IsRequired": true
+		},
+	]
 
 }

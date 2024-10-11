@@ -92,7 +92,7 @@
 		"Action": "Include",
 		"FromFile": "Assets/Lair/Lair.json",
 		"When": {
-			"HasWalletItem |contains=MagicInk": true,
+			"HasWalletItem |contains=MagicInk": true, // event is precond in intro quest; might not need this anymore
 			"HasWalletItem |contains=DwarvishTranslationGuide": true
 		},
 	},

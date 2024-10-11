@@ -1,31 +1,197 @@
 {
 	"Changes": [
 
-	// Dialogue
-
-
-	// Have X hearts with Chenchi; finish shadow people monster hunter goal; 10h w Caroline; adventurer's guild hidden event; quest (define); enter lair, intro event; have met Phana
-	// 2 events (rework)
-
-	// IDS CHANGED SEE MASTER LIST
-	// hidevent Guild 262205061
-	// undef quest 262205062 262205063
-	// intro event 1&2 262205064 262205065
-	// reserved 262205066 262205067 262205068 262205069 262205070
-
+	// Intro Quest ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
-	// Event ID 2622050XX Hidevent
-	"LogName": "Si SS ",
-	"Action": "EditData",
-	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
-	"Entries": {
-		"2622050XX/e 262205999/d Fri": "none/-1000 -1000/farmer -100 -100 2/end",
+		// 418172 is the 'end of magic ink quest' event at wiz house; also see if can do n HasDwarvishTranslationGuide or n canUnderstandDwarves
+		"Action": "EditData",
+		"Target": "Data/Events/Sewer",
+		"Entries": {
+			"{{ModId}}_Intro1/e 418172/w rainy/d Fri/f Krobus 2000": "continue/15 20/farmer 6 21 3 Krobus 4 21 0/fade/pause 400/emote farmer 8/pause 200/emote Krobus 16/pause 200/faceDirection Krobus 1/speak Krobus \"@! It's good to see you.#$b#Were you able to finish your quest?\"/pause 200/emote farmer 32/pause 200/speak Krobus \"That's good.\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/pause 200/speak Krobus \"You know, now that you've gone down there, I feel better about leaving the entrance open.#$b#I was actually thinking...#$b#Well, it might be stupid.$2\"/pause 200/emote farmer 8/pause 200/speak Krobus \"It's just that, I'm safe and warm here in the sewers, but my people are out there, scattered and hunted.#$b#And there's lots of space in there...#$b#No one's using it, right?#$b#So what if I turned it into a safe place for them?#$b#Like a sanctuary?$3\"/pause 200/emote farmer 40/pause 200/emote farmer 32/pause 200/faceDirection Krobus 1/speak Krobus \"Really? You think it's a good idea?\"/pause 200/emote farmer 20/pause 200/speak Krobus \"Then I'm going to try to do it!$1\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/speak Krobus \"It's going to be really difficult though...\"/pause 200/faceDirection Krobus 1/pause 100/speak Krobus \"Will you help me?\"/pause 100/quickQuestion Will you help Krobus?#I'd love to help you!#I'll think about it.(break)speak Krobus \"Great! Bring me a strange bun when you're ready to get started.$1\"(break)speak Krobus \"I understand.#$b#I'm going to start getting stuff together. Feel free to pitch in anytime!$1#$b#Bring me a strange bun if you decide to help.\"/addQuest {{ModId}}_Intro2/pause 200/emote farmer 32/pause 300/end/fade",
 		}
 	},
 
+	{
+		// Strange bun quest to kickstart this mod's events
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro2": "ItemDelivery/A Sanctuary of Shadows/Krobus wants to turn the lair into a safe haven for the Shadow People. When you're ready to help him, bring him a strange bun./Give Krobus a strange bun./Krobus 203 1/-1/0/-1/false/Great, you brought it!$1#$b#I started clearing out the lair, but I ran into a problem.#$b#There are too many bugs in there!#$b#Can you get rid of them for me?#$action AddQuest {{ModId}}_Intro3",
+		},
+	},
 
+	{
+		// Fly quest
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro3": "Monster/Clear the Lair/Help Krobus by getting rid of the flies in the lair./Slay 100 flies./Fly 100 Krobus/-1/0/-1/false/Thanks @! Meet me in the lair tomorrow.#$action AddMail {{ModId}}_Intro4 received",
+		},
+	},
 
+	{
+		// Unlocks bundle for clay and bone fragments
+		"Action": "EditData",
+		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+		"Entries": {
+			"{{ModId}}_Intro5/n {{ModId}}_Intro4/d Fri": "continue/34 39/farmer 33 39 1 Krobus 35 39 3/fade/pause 300/speak Krobus \"Here's what I've got so far.\"/speak Krobus \"I've cleaned the place up a bit.#$b#I think these mounds would make good houses.#$b#Some of them need to be reinforced though.#$b#Can you get some clay for me?#$b#And some bone fragments too. I think they're the reason the soil in here has held up so well.\"/pause 200/emote farmer 32/pause 200/emote Krobus 20/pause 200/speak Krobus \"I'll put out a basket for you to drop them off in.#$b#I'll keep cleaning the lair in the mean time.\"/action UB_PlaceBundle {{ModId}}_Intro6/pause 200/end/fade",
+		}
+	},
 
-]
+	// {
+	// 	// Load Bundle Icon for Unlockable Bundle Intro6 // Still need to make this
+	// 	"Action": "Load",
+	// 	"Target": "{{ModId}}/BundleUI",
+	// 	"FromFile": "Assets/Other/BundleUI.png",
+	// },
+
+	{
+		// Bundle for clay and bone fragments
+		"Action": "EditData",
+		"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+			"{{ModId}}_Intro6": {
+				"Location": "Custom_Si_SS_BugLand_Full",
+				"BundleName": "Bundle One",
+				// "BundleIconAsset": "",
+				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
+				"ShopPosition": "18, 46",
+				"ShopType": "CCBundle",
+				"ShopTexture":"Mods/{{ModId}}/Basket",
+				"DrawQuestionMark": true,
+				"QuestionMarkOffset": "32, 32",
+				"BundleSlots": 2,
+				"Price": {
+						"(O)330": 300,
+						"(O)881": 300,
+					},
+					"BundleReward": {
+						"(O)771": 200,
+					},
+				"SpecialPlacementRequirements": [
+					{
+						"Type": "TriggerAction"
+					}
+				],
+				"BundleCompletedActions": [
+					"AddMail {{ModId}}_Intro7 received",
+				]
+			}
+		}
+	},
+
+	{
+		// Unlocks bribery quests
+		"Action": "EditData",
+		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+		"Entries": {
+			"{{ModId}}_Intro8/n {{ModId}}_Intro7/d Fri": "continue/38 17/farmer 43 17 3 Krobus 41 17 1/fade/pause 300/speak Krobus \"Those materials really helped!\"/pause 200/speak Krobus \"The mounds will make great houses.\"/pause 200/emote farmer 20/speak Krobus \"Things are moving along pretty well.#$b#I'm worried that the wizard won't be happy though.#$b#Could you go check if it'll be okay?\"/addQuest {{ModId}}_Intro9/pause 200/emote farmer 32/pause 200/speak Krobus \"Maybe take a super cucumber, I know the wizard likes those.#$b#...#$b#Can you also make sure the guild won't attack any of my people down here?\"/addQuest {{ModId}}_Intro10/pause 200/emote farmer 8/pause 200/speak Krobus \"I know they can be a little trigger-happy, but this is supposed to be a safe and peaceful place.#$b#I don't mean any disrespect!$3\"/pause 300/emote farmer 40/pause 200/emote farmer 32/pause 300/end/fade",
+		}
+	},
+
+	{
+		// Bribe Ras quest
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro9": "Location/Convince The Wizard/Convince Rasmodius to let Krobus start a colony of Shadow People under Pelican Town./Go to the Wizard's Tower./WizardHouse/-1/0/-1/false",
+		},
+	},
+
+	{
+		// Bribe Marlon quest
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro10": "Location/Convince The Adventurer/Convince Marlon to let Krobus start a colony of Shadow People under Pelican Town./Go to the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
+		},
+	},
+
+	{
+		// Go see Ras
+		"Action": "EditData",
+		"Target": "Data/Events/WizardHouse",
+		"Entries": {
+			"{{ModId}}_Intro11/n {{ModId}}_Intro8": "continue/7 15/farmer 6 16 3 Wizard 4 16 1/fade/pause 300/speak Wizard \"You two want to start a village of Shadow People under the town?!#$b#Are you crazy?\"/pause 200/emote farmer 16/pause 200/emote Wizard 12/pause 200/speak Wizard \"Hmph.#$b#I don't think it's a good idea.#$b#Not a good idea at all!\"/pause 200/emote Wizard 40/pause 200/speak Wizard \"But I suppose there's no stopping you is there...\"/pause 300/emote farmer 8/pause 200/speak Wizard \"Alright then, let's see how serious you are about this.\"/pause 200/speak Wizard \"I need to make a number of research trips to the desert, but my research equipment is not allowed on the bus.#$b#Bring me a batch of warp totems, and I shall consider your inane request.\"/addQuest {{ModId}}_Intro12/pause 200/emote farmer 32/pause 200/emote Wizard 12/pause 300/end/fade",
+		}
+	},
+
+	{
+		// Desert totems quest
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro12": "ItemDelivery/Sunny With A Chance Of Magic/Rasmodius needs desert totems for a research trip./Deliver 20 desert totems to the wizard./Wizard 261 20/-1/0/-1/false/Hm, these should suffice.#$b#Yes, fine, I won't stop you so long as they do not cause any disturbances to the town.#$b#Now leave me to my studies!#$action AddMail {{ModId}}_Intro13 received",
+		},
+	},
+
+	{
+		// Go see Marlon
+		"Action": "EditData",
+		"Target": "Data/Events/AdventureGuild",
+		"Entries": {
+			"{{ModId}}_Intro14/n {{ModId}}_Intro8": "continue/7 13/farmer 5 16 0 Marlon 5 13 2/fade/pause 300/speak Marlon \"You want to start a village of Shadow People under the town?\"/pause 200/speak Marlon \"Seriously?\"/pause 200/emote farmer 40/pause 200/speak Marlon \"Hmm...\"/pause 200/speak Marlon \"Well your intentions are noble, I'll give you that.\"/pause 200/speak Marlon \"If it's a peaceful endeavor...\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"Tell you what, I'll think about it.#$b#But first, I need your help with something.#$b#Stone golems have been appearing in greater numbers in the mines. They're difficult to see and have even caused a few cave-ins.#$b#Reduce their numbers as much as you can.\"/addQuest {{ModId}}_Intro15/pause 200/speak Marlon \"Return here when you're done.\"/pause 300/end/fade",
+		}
+	},
+
+	{
+		// Stone golems quest
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro15": "Monster/Sticks And Stones/Help Marlon clear stone golems out of the mines./Slay 50 stone golems./Stone_Golem 50/-1/0/-1/false/Thanks @! Meet me in the lair tomorrow.#$action AddQuest {{ModId}}_Intro16",
+		},
+	},
+
+	{
+		// Return to Marlon quest
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro16": "Location/Sticks And Stones/Help Marlon clear stone golems out of the mines./Return to the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
+		},
+	},
+
+	{
+		// Talk to Marlon again
+		"Action": "EditData",
+		"Target": "Data/Events/AdventureGuild",
+		"Entries": {
+			"{{ModId}}_Intro17/n {{ModId}}_Intro15": "continue/7 13/farmer 5 16 0 Marlon 5 13 2/skippable/fade/pause 300/speak Marlon \"Well done @, the mines are much safer now.\"/pause 200/speak Marlon \"I've thought about your proposal, and I've come to a decision.\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"I'll allow it.\"/pause 200/emote farmer 20/pause 200/speak Marlon \"However!#$b#You must understand this:#$b#You will be responsible for them.#$b#You are representing the surface world in this endeavor.#$b#From what you've told me, you are also sponsoring the effort.#$b#That means, should any issues arise, either from their side or ours...#$b#It is your duty to resolve the situation and restore peace.#$b#Once they start moving in, there will be no going back.\"/pause 500/speak Marlon \"Do you accept this responsibility?\"/pause 300/emote farmer 40/pause 300/quickQuestion Are you sure about this?#Yes.#I need to think about it.(break)speak Marlon \"You have grown a great deal since you first came to the valley @.#$b#I'm sure you can handle anything you set your mind to.#$b#But please, come by any time if you need advice.#$b#Take care @.\"(break)speak Marlon \"Of course!#$b#You must be absolutely certain before committing to this path.#$b#Stop by any time if you need advice.#$b#Take care @.\"/pause 200/emote farmer 32/pause 300/end/fade",	
+		}
+	},
+
+	{
+		// Unlock final intro quest
+		"Action": "EditData",
+		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+		"Entries": {
+			"{{ModId}}_Intro18/e {{ModId}}_Intro17/n {{ModId}}_Intro13/d Fri": "continue/24 24/farmer 23 24 1 Krobus 25 24 3/fade/pause 300/emote Krobus 20/pause 200/speak Krobus \"Thanks so much for convincing them!$1#$b#The lair is pretty much done, so I guess we're ready.\"/pause 200/emote farmer 32/pause 200/speak Krobus \"I'll start spreading the word.#$b#Many of my people will be hesitant, but I hope some will still choose to live here.#$b#I heard there are some of my people in the mines nearby.#$b#Could you leave this note at the bottom of them for me?\"/addQuest {{ModId}}_Intro19/speak Krobus \"It's an invitation.#$b#I wrote it in my language so they know it was sent by one of us.\"/pause 200/emote farmer 32/pause 200/speak Krobus \"Thank you so much for all your help @.#$b#I really, truly, appreciate it.#$b#Even if no one shows up...$2#$b#I will never forget this.$1\"/pause 300/emote farmer 20/pause 300/end/fade",
+		}
+	},
+
+	{
+		// Go to the mines
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro19": "Location/Reaching Out/Leave a note for the Shadow People at the bottom of the mines./Go to the mines./Mine/-1/0/-1/false",
+		},
+	},
+
+	{
+		// Final intro quest event
+		"Action": "EditData",
+		"Target": "Data/Events/Mine",
+		"Entries": {
+			"{{ModId}}_Intro20/e {{ModId}}_Intro18": "continue/18 8/farmer 18 11 0 Dwarf 23 8 2/addConversationTopic SSDelay1 9/skippable/fade/pause 300/move farmer 0 -3 1/faceDirection Dwarf 3/speak Dwarf \"Going on a mine run?\"/pause 300/emote farmer 40/pause 200/speak Dwarf \"You should take more equipment.#$b#The Shadow People have been out in full force lately.#$b#And the mines are dark.#$b#They might get the jump on you.#$b#Wouldn't want my best customer to get hurt.\"/pause 200/emote farmer 8/pause 200/speak Dwarf \"That one in the sewers may be smart enough not to attack you, but many of them aren't.#$b#It's nothing to do with whether you think they're nice or not.#$b#They're too suspicious for it to be worth it.#$b#Violence is all they've ever known.\"/pause 200/emote farmer 40/pause 200/faceDirection Dwarf 1/pause 200/speak Dwarf \"Be careful @.\"/pause 200/move Dwarf 10 0 1 true/emote farmer 40/globalFade/viewport -1000 -1000/pause 500/playSound stairsdown/pause 300/message \"You make your way down into the mines, and leave the note at the bottom.\"/pause 400/playSound crystal/pause 300/message \"Now you can only wait.\"/pause 300/end/fade",
+		}
+	},
+
+	// Char Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	]
 }
