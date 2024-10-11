@@ -8,42 +8,81 @@
 	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
-	// Event ID 262205053 Chenchi hidevent 1
-	"LogName": "Si SS IE HE 10",
+	// Chenchi intro hidevent 1
 	"Action": "EditData",
 	"Target": "Data/Events/SeedShop", // reqs
 	"Entries": {
-		"262205053/d Mon Tue Wed Thu Fri Sat/e 262205023/A SSAfterPhana/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		"{{ModId}}_Chenchi1/d Mon Tue Wed Thu Fri Sat/e {{ModId}}_Phana1/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
 		}
 	},
 
 	{
-	// Event ID 262205054 Chenchi hidevent 2
-	"LogName": "Si SS IE HE 11",
+	// Chenchi intro hidevent 2
 	"Action": "EditData",
 	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
 	"Entries": {
-		"262205054/i -2/e 262205023/A SSAfterPhana/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		"{{ModId}}_Chenchi2/i -2/e {{ModId}}_Phana1/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
+		}
+	},
+
+	// {
+	// 	// Load Bundle Icon for Unlockable Bundle Intro6 // Still need to make this
+	//	// Probably make bundles look vaguely like the shadow people they're connected to
+	// 	"Action": "Load",
+	// 	"Target": "{{ModId}}/BundleUI",
+	// 	"FromFile": "Assets/Other/BundleUI.png",
+	// },
+
+	{
+		// Chenchi intro bundle
+		"Action": "EditData",
+		"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+			"{{ModId}}_Chenchi3": { // update
+				"Location": "Custom_Si_SS_BugLand_Full",
+				"BundleName": "Bundle One", // update
+				// "BundleIconAsset": "", // update
+				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
+				"ShopPosition": "18, 46", // update
+				"ShopType": "CCBundle",
+				"ShopTexture":"Mods/{{ModId}}/Basket",
+				"DrawQuestionMark": true,
+				"QuestionMarkOffset": "32, 32",
+				"BundleSlots": 2,
+				"Price": { // update
+						"(O)330": 300,
+						"(O)881": 300,
+					}, // update
+					"BundleReward": {
+						"(O)771": 200,
+					},
+				"SpecialPlacementRequirements": [
+					{
+						"Type": "TriggerAction"
+					}
+				],
+				"BundleCompletedActions": [
+					"AddMail {{ModId}}_Chenchi4 received", // update
+				]
+			}
 		}
 	},
 
 	{
-	// Event ID 262205055 Chenchi intro p1
-	"LogName": "Si SS IE ME 11",
+	// Chenchi intro 1
 	"Action": "EditData",
 	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
 	"Entries": {
-		"262205055/e 262205053/e 262205054/d Mon Tue Wed Thu Sat Sun/f Krobus 2000": "continue/27 50/farmer 22 51 1 Krobus 30 51 0 Si_SS_Chenchi 17 48 1/skippable/fade/move farmer 5 0 1 true/pause 200/faceDirection Krobus 1/pause 100/emote Krobus 40/move Si_SS_Chenchi 5 0 2 true/pause 100/faceDirection Krobus 0/pause 200/faceDirection Krobus 3/pause 100/emote Krobus 16/move Si_SS_Chenchi 0 2 1 true/pause 300/emote farmer 32/pause 200/speak Krobus \"...$1\"/move Si_SS_Chenchi 3 0 1 true/pause 200/emote farmer 40/jump Krobus/pause 100/emote Krobus 16/pause 200/emote farmer 8/pause 100/faceDirection farmer 3/pause 100/jump farmer/emote farmer 16/move Krobus 0 -1 3/pause 300/faceDirection farmer 0/speak Si_SS_Chenchi \"...\"/pause 200/speak Krobus \"...$3\"/pause 300/emote Si_SS_Chenchi 40/pause 300/emote Krobus 40/pause 300/speak Si_SS_Chenchi \"*Nods.*$1\"/pause 300/speak Krobus \"*Nods.*$1\"/pause 200/move Si_SS_Chenchi 7 0 0 true/move Krobus 0 1 3 true/pause 100/faceDirection Krobus 0/pause 200/faceDirection Krobus 1/faceDirection farmer 1/move Si_SS_Chenchi 0 -10 0 true/pause 200/faceDirection Krobus 0/pause 300/faceDirection Krobus 3/pause 200/emote farmer 8/pause 200/emote Krobus 32/pause 100/emote farmer 40/pause 200/message \"You have no idea what just happened, but they seem nice.\"/pause 300/end/fade",
+		"{{ModId}}_Chenchi5/e {{ModId}}_Chenchi1/e {{ModId}}_Chenchi2/n {{ModId}}_Chenchi4/d Mon Tue Wed Thu Sat Sun/A SSAfterPhana/f Krobus 2000": "continue/27 50/farmer 22 51 1 Krobus 30 51 0 Chenchi 17 48 1/skippable/fade/move farmer 5 0 1 true/pause 200/faceDirection Krobus 1/pause 100/emote Krobus 40/move Chenchi 5 0 2 true/pause 100/faceDirection Krobus 0/pause 200/faceDirection Krobus 3/pause 100/emote Krobus 16/move Chenchi 0 2 1 true/pause 300/emote farmer 32/pause 200/speak Krobus \"...$1\"/move Chenchi 3 0 1 true/pause 200/emote farmer 40/jump Krobus/pause 100/emote Krobus 16/pause 200/emote farmer 8/pause 100/faceDirection farmer 3/pause 100/jump farmer/emote farmer 16/move Krobus 0 -1 3/pause 300/faceDirection farmer 0/speak Chenchi \"...\"/pause 200/speak Krobus \"...$3\"/pause 300/emote Chenchi 40/pause 300/emote Krobus 40/pause 300/speak Chenchi \"*Nods.*$1\"/pause 300/speak Krobus \"*Nods.*$1\"/pause 200/move Chenchi 7 0 0 true/move Krobus 0 1 3 true/pause 100/faceDirection Krobus 0/pause 200/faceDirection Krobus 1/faceDirection farmer 1/move Chenchi 0 -10 0 true/pause 200/faceDirection Krobus 0/pause 300/faceDirection Krobus 3/pause 200/emote farmer 8/pause 200/emote Krobus 32/pause 100/emote farmer 40/pause 200/message \"You have no idea what just happened, but they seem nice.\"/pause 300/end/fade",
 		}
 	},
 
 	{
-	// Event ID 262205038 Chenchi intro p2
-	"LogName": "Si SS IE ME 11",
+	// Chenchi intro 2
 	"Action": "EditData",
 	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
 	"Entries": {
-		"262205038/e 262205055/d Fri/f Krobus 2000": "continue/47 19/farmer 47 19 1 Si_SS_Chenchi 48 19 3/addConversationTopic SSAfterChenchi 10/skippable/fade/pause 300/speak Si_SS_Chenchi \"You must be @ the Human.$1\"/pause 200/emote farmer 8/pause 200/speak Si_SS_Chenchi \"Krobus has spoken with me about you.#$b#They said you are very kind, and have helped create this sanctuary.#$b#Thank you for this.\"/pause 200/emote farmer 60/pause 200/speak Si_SS_Chenchi \"I am Chenchi.#$b#I am a shaman of Yoba.#$b#As a sign of my devotion, I do not speak on Fridays.#$b#I hope this did not offend you on our first meeting.$2\"/pause 200/emote farmer 32/pause 200/speak Si_SS_Chenchi \"A quiet one yourself, aren't you?$1\"/pause 400/speak Si_SS_Chenchi \"I have chosen this mound as my abode.#$b#I intend to make it a temple to Yoba.#$b#You are welcome to meditate here, if such is your calling.\"/pause 200/emote farmer 20/pause 200/emote Si_SS_Chenchi 32/pause 300/end/fade",
+		"{{ModId}}_Chenchi6/e {{ModId}}_Chenchi5/d Fri/f Krobus 2000": "continue/47 19/farmer 47 19 1 Chenchi 48 19 3/addConversationTopic SSAfterChenchi 10/skippable/fade/pause 300/speak Chenchi \"You must be @ the Human.$1\"/pause 200/emote farmer 8/pause 200/speak Chenchi \"Krobus has spoken with me about you.#$b#They said you are very kind, and have helped create this sanctuary.#$b#Thank you for this.\"/pause 200/emote farmer 60/pause 200/speak Chenchi \"I am Chenchi.#$b#I am a shaman of Yoba.#$b#As a sign of my devotion, I do not speak on Fridays.#$b#I hope this did not offend you on our first meeting.$2\"/pause 200/emote farmer 32/pause 200/speak Chenchi \"A quiet one yourself, aren't you?$1\"/pause 400/speak Chenchi \"I have chosen this mound as my abode.#$b#I intend to make it a temple to Yoba.#$b#You are welcome to meditate here, if such is your calling.\"/pause 200/emote farmer 20/pause 200/emote Chenchi 32/pause 300/end/fade",
 		}
 	},
 

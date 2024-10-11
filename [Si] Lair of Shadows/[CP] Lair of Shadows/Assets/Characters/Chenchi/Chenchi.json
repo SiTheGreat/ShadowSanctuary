@@ -2,7 +2,7 @@
 
 	"Changes": [
 
-	// Dispo
+	// Dispo; set to ??? before intro 2 event
 	// Gifts
 	// Images
 	// Intro conds
@@ -11,6 +11,7 @@
 	// Dialogue & CTs
 	// Events
 	// Quest (mask quest, also shrine quest to make temple atop house - maybe all in one quest?)
+	// Map string for meditating at Yoba shrine
 
 	// Images ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
