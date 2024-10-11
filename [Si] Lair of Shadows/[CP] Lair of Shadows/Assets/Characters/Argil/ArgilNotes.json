@@ -1,6 +1,8 @@
 Intro conditions:
 -hidevent BeachNightMarket
 
+Bundle: cloth, clay
+
 Sprites: default poncho (argyle pattern), vase form (curr Diagol)
 
 Scheds: init, chenchi?; winter only

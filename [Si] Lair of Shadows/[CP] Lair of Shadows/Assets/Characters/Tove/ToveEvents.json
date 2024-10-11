@@ -1,11 +1,11 @@
 {
 	"Changes": [
 
-	// Dialogue
-
-
 	// Enter bus stop with egg, hidden event; event Krobus mail quest for iron; bus stop spring hidden event, convo topic 13 days; intro event appear after egg fest
+	// Bundle: iron bars, hay, void mayo/eggs, parsnips
 	// 4 events, 1 mail, 1 quest
+
+	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 	// Event ID 262205056 Tove hidevent 1
@@ -40,12 +40,12 @@
 		}
 	},
 
-// -T: find them in forest at night, T marches up followed by a line/gaggle of chickens, T 'hello you seem friendly, would you happen to know of any people like me in the area', F ..., F ?, T 'why yes, I am looking for Krobus!', F music note, F empty speech bubble, walk and talk, T 'I see, so you are @! K told me that you prepared the iron I needed in our letters.', F :), F ?, T I am a void chicken farmer, void egg products are very nutritious for shadows so i do quite well, but it will be nice to have a stable home for them rather than having to herd them around constantly, F <3, F ?, T 'I've had bad experiences with humans, but I've had good experiences too. K told me to look for a fellow farmer who doesn't talk much and has your features, so I decided to take a chance. If I was wrong, my chickens can be very protective!, reach lair, T 'dim and humid, this will do wonderfully. Thank you @, please come visit any time. I'll rustle up some void may for you if you have the taste for it!
+	// -T: find them in forest at night, T marches up followed by a line/gaggle of chickens, T 'hello you seem friendly, would you happen to know of any people like me in the area', F ..., F ?, T 'why yes, I am looking for Krobus!', F music note, F empty speech bubble, walk and talk, T 'I see, so you are @! K told me that you prepared the iron I needed in our letters.', F :), F ?, T I am a void chicken farmer, void egg products are very nutritious for shadows so i do quite well, but it will be nice to have a stable home for them rather than having to herd them around constantly, F <3, F ?, T 'I've had bad experiences with humans, but I've had good experiences too. K told me to look for a fellow farmer who doesn't talk much and has your features, so I decided to take a chance. If I was wrong, my chickens can be very protective!, reach lair, T 'dim and humid, this will do wonderfully. Thank you @, please come visit any time. I'll rustle up some void may for you if you have the taste for it!
 
+	// Heart Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	// EVENTS; Meeting; lost chickens; found chickens. Mimsy as sep events... (but intro event here?)
 
 
 ]
 }
-
-// EVENTS; Meeting; lost chickens; found chickens. Mimsy as sep events... (but intro event here?)

@@ -1,11 +1,11 @@
 {
 	"Changes": [
 
-	// Dialogue
-
-
 	// Enter lair carrying any fish, hidden event; has quality bobber recipe; have met Phana
+	// Bundle: bobber, crab pot, carving knife weapon or leah's whittler weapon, lunarite, rainbow shell, monster musk
 	// 1 event
+
+	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 	// Event ID 262205031 Morprit quality bobber hidevent
@@ -27,7 +27,7 @@
 		}
 	},
 
-
+	// Heart Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ]

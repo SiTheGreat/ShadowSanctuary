@@ -1,10 +1,11 @@
 {
 	"Changes": [
 
-	// Dialogue
-
 	// Has crafting recipe Monster Musk; Emily's house hidden event, convo topic 6 days; have met Phana
+	// Bundle: 
 	// 1 events
+
+	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 	// Event ID 262205032 Glee musk hidevent
@@ -25,6 +26,8 @@
 		"262205034/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
 		}
 	},
+
+	// Heart Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ]

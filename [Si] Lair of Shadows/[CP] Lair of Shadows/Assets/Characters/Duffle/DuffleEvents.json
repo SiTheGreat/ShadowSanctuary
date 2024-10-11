@@ -1,11 +1,11 @@
 {
 	"Changes": [
 
-	// Dialogue
-
-
 	// See Harvey 8h event; has cooking recipe Blueberry Tart; Krobus quest to stock up on sanc supplies field snacks; summer lair hidden event, convo topic 5 days; summer, intro event; have met Phana
+	// Bundle: field snacks, tent, cooking fire, life elixir
 	// 2 events, 1 quest
+
+	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 	// Event ID 262205044 Duffle pre-quest hidevent
@@ -40,16 +40,12 @@
 		}
 	},
 
-
-// D and K talking, D lots of jumping !'ing, F walks in '?', K !, D turns, D ! Eek a human! Things keep getting worse!, K it's okay D, this is my friend @, @ this is D, they were coming here with someone named N but they got separated, could you go look for them please?, f music note, D oh thank you so much, N is always getting into trouble so I'm veey worried, they like tart, maybe if you get some it will help you find them
-
-
-
-
-
-
+	// D and K talking, D lots of jumping !'ing, F walks in '?', K !, D turns, D ! Eek a human! Things keep getting worse!, K it's okay D, this is my friend @, @ this is D, they were coming here with someone named N but they got separated, could you go look for them please?, f music note, D oh thank you so much, N is always getting into trouble so I'm veey worried, they like tart, maybe if you get some it will help you find them
 
 	// Go find Nib (not a defined quest)
+	
+
+	// Heart Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 

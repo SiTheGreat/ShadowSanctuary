@@ -1,10 +1,8 @@
 {
 	"Changes": [
 
-	// Dialogue
-
-
 	// Have X hearts with Chenchi; finish shadow people monster hunter goal; 10h w Caroline; adventurer's guild hidden event; quest (define); enter lair, intro event; have met Phana
+	// Bundle: quiver trinket, shadow dagger weapon, tea leaves, bombs
 	// 2 events (rework)
 
 	// IDS CHANGED SEE MASTER LIST
@@ -13,6 +11,7 @@
 	// intro event 1&2 262205064 262205065
 	// reserved 262205066 262205067 262205068 262205069 262205070
 
+	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 	// Event ID 2622050XX Hidevent
@@ -24,7 +23,7 @@
 		}
 	},
 
-
+	// Heart Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ]

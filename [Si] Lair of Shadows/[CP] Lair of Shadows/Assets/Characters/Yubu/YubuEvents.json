@@ -1,11 +1,11 @@
 {
 	"Changes": [
 
-	// Dialogue
-
-
 	// Upgrade island resort; enter wizard tower hidden event; sunny day town, intro event p1; sunny day lair, intro event p2; have met Phana
+	// Bundle: anchor, cinder shards, maybe island fossil
 	// 3 events
+
+	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 	// Event ID 262205027 Yubu hidevent
@@ -38,6 +38,8 @@
 	},
 
 // -Y: Y walks in, Y this looks swell! I think I'll like it here!, F and K walk in, P appears, P welcomes Y, K says hi too, Y responds eagerly 'you folks look like good neighbors!', sees F, runs in front of the others, 'don't worry I'll protext you! Put em up human! Let's go!', F ..., K explains, Y '...huh. interesting! A human ally against the threatening hordes that reside above our home! A great element to any good story!, F sweatdrop, P 'lively one aren't they'
+
+// Heart Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 

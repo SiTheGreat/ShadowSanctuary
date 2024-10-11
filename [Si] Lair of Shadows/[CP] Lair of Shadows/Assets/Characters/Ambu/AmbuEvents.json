@@ -1,11 +1,11 @@
 {
 	"Changes": [
 
-	// Dialogue
-
-
 	// Build island bridge; enter museum hidden event; rainy night forest, intro event p1; rainy night lair, intro event p2; have met Phana
+	// Bundle: ginger, a book, maybe island fossil
 	// 3 events
+
+	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 	// Event ID 262205024 Ambu hidevent
@@ -39,6 +39,8 @@
 
 // -A: A lost in the forest, F comes up behind, F '?', A jumps and scurries away, A afraid 'I'm not going to hurt anyone, I promise, please leave me alone!',
 // A 'escapes', you return w Krobus (and Phana?) to find them
+
+// Heart Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
