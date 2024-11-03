@@ -1,7 +1,7 @@
 Intro conditions:
 -
 
-Bundle: coconuts
+Bundle: coconuts, mushrooms
 
 Sprites:
 
@@ -22,7 +22,7 @@ Sequence:
 -
 
 Sanctuary events:
--
+-Asks Phana to grow mushrooms for them
 
 Char Notes:
 -
