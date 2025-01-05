@@ -174,7 +174,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Phana",
-		"FromFile": "Assets/Characters/Phana/PhanaBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// Add home tarp
@@ -242,7 +242,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Phana",
-		"FromFile": "Assets/Characters/Phana/PhanaGHBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// Add greenhouse tarp

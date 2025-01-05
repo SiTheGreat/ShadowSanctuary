@@ -86,7 +86,7 @@
 		"Action": "Include",
 		"FromFile": "Assets/Sanctuary/Si_SS_Tarps.json",
 		//"When": { // all houses activated
-			//"HasSeenEvent:hostPlayer |contains=262205029": true,
+			//"HasSeenEvent:hostPlayer |contains=262205029": false,
 		//},
 	},
 
@@ -95,7 +95,7 @@
 		"LogName": "Si SS Custom Location Events",
 		"Action": "Load",
 		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
-		"FromFile": "Assets/Sanctuary/Si_SS_LairEvents.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	],

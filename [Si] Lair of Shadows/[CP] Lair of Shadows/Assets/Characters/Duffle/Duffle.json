@@ -175,7 +175,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Duffle",
-		"FromFile": "Assets/Characters/Duffle/DuffleBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// Add home tarp

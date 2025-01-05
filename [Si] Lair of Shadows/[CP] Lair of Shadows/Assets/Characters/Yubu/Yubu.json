@@ -160,7 +160,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Yubu",
-		"FromFile": "Assets/Characters/Yubu/YubuBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

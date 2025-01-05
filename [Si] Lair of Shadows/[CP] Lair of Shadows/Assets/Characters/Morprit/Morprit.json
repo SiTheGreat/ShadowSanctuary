@@ -175,7 +175,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Morprit",
-		"FromFile": "Assets/Characters/Morprit/MorpritBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// Add home tarp

@@ -176,7 +176,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Chenchi",
-		"FromFile": "Assets/Characters/Chenchi/ChenchiBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// Add home tarp

@@ -175,7 +175,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Rath",
-		"FromFile": "Assets/Characters/Rath/RathBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

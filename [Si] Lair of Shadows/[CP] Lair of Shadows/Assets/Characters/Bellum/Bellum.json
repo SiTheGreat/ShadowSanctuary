@@ -175,7 +175,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Bellum",
-		"FromFile": "Assets/Characters/Bellum/BellumBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// Add home tarp

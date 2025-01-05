@@ -175,7 +175,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Ambu",
-		"FromFile": "Assets/Characters/Ambu/AmbuBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

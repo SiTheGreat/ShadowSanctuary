@@ -185,7 +185,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Tove",
-		"FromFile": "Assets/Characters/Tove/ToveBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// Add home tarp

@@ -175,7 +175,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Pax",
-		"FromFile": "Assets/Characters/Pax/PaxBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

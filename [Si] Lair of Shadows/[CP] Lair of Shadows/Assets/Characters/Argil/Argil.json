@@ -175,7 +175,7 @@
 	{
 		"Action": "Load",
 		"Target": "Data/Events/Argil",
-		"FromFile": "Assets/Characters/Argil/ArgilBlank.json",
+		"FromFile": "Assets/Other/blank.json",
 	},
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

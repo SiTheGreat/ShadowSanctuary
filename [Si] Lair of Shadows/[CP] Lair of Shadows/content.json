@@ -103,7 +103,7 @@
 		// Load events file for the Adventurer's Guild when no other mod does
 		"Action": "Load",
 		"Target": "Data/Events/AdventureGuild",
-		"FromFile": "Assets/Lair/GuildEvents.json",
+		"FromFile": "Assets/Other/blank.json",
 		"Priority": "Low"
 	},
 
