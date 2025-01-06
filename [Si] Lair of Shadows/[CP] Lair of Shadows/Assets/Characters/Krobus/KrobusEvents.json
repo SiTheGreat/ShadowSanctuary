@@ -39,12 +39,12 @@
 		}
 	},
 
-	// {
-	// 	// Load Bundle Icon for Unlockable Bundle Intro6 // Still need to make this
-	// 	"Action": "Load",
-	// 	"Target": "{{ModId}}/BundleUI",
-	// 	"FromFile": "Assets/Other/BundleUI.png",
-	// },
+	{
+		// Load Bundle Icon for Unlockable Bundle Intro6
+		"Action": "Load",
+		"Target": "{{ModId}}/BundleIcon1",
+		"FromFile": "Assets/Other/BundleIcon1.png",
+	},
 
 	{
 		// Bundle for clay and bone fragments
@@ -52,15 +52,15 @@
 		"Target": "UnlockableBundles/Bundles",
 		"Entries": {
 			"{{ModId}}_Intro6": {
-				"Location": "Custom_Si_SS_BugLand_Full",
+				"Location": "Custom_Si_SS_BugLand_Full", // or BugLand ?
 				"BundleName": "Bundle One",
-				// "BundleIconAsset": "",
+				"BundleIconAsset": "{{ModId}}/BundleIcon",
 				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
 				"ShopPosition": "18, 46",
 				"ShopType": "CCBundle",
 				"ShopTexture":"Mods/{{ModId}}/Basket",
 				"DrawQuestionMark": true,
-				"QuestionMarkOffset": "32, 32",
+				"QuestionMarkOffset": "32, 48",
 				"BundleSlots": 2,
 				"Price": {
 						"(O)330": 300,

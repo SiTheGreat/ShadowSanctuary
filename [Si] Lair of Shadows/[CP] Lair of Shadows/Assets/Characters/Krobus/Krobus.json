@@ -11,7 +11,7 @@
 		"Action": "EditData",
 		"Target": "Data/NPCGiftTastes",
 		"Entries": {
-			"Krobus": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/",
+			"Krobus": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/", // update to append instead
 		},
 		"When": {
 			"DayOfWeek |contains=Friday": false
@@ -23,7 +23,7 @@
 		"Action": "EditData",
 		"Target": "Data/NPCGiftTastes",
 		"Entries": {
-			"Krobus": "!/424/Krobus smiles./423/Krobus frowns./433/!/419/.../418/",
+			"Krobus": "!/424/Krobus smiles./423/Krobus frowns./433/!/419/.../418/", // update to append instead
 		},
 		"When": {
 			"DayOfWeek |contains=Friday": true
