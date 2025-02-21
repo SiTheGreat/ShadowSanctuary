@@ -5,10 +5,11 @@
 
 	{
 		// 418172 is the 'end of magic ink quest' event at wiz house; also see if can do n HasDwarvishTranslationGuide or n canUnderstandDwarves
+		// Should I make the strange bun quest a bundle instead?
 		"Action": "EditData",
 		"Target": "Data/Events/Sewer",
 		"Entries": {
-			"{{ModId}}_Intro1/e 418172/w rainy/d Fri/f Krobus 2000": "continue/15 20/farmer 6 21 3 Krobus 4 21 0/fade/pause 400/emote farmer 8/pause 200/emote Krobus 16/pause 200/faceDirection Krobus 1/speak Krobus \"@! It's good to see you.#$b#Were you able to finish your quest?\"/pause 200/emote farmer 32/pause 200/speak Krobus \"That's good.\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/pause 200/speak Krobus \"You know, now that you've gone down there, I feel better about leaving the entrance open.#$b#I was actually thinking...#$b#Well, it might be stupid.$2\"/pause 200/emote farmer 8/pause 200/speak Krobus \"It's just that, I'm safe and warm here in the sewers, but my people are out there, scattered and hunted.#$b#And there's lots of space in there...#$b#No one's using it, right?#$b#So what if I turned it into a safe place for them?#$b#Like a sanctuary?$3\"/pause 200/emote farmer 40/pause 200/emote farmer 32/pause 200/faceDirection Krobus 1/speak Krobus \"Really? You think it's a good idea?\"/pause 200/emote farmer 20/pause 200/speak Krobus \"Then I'm going to try to do it!$1\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/speak Krobus \"It's going to be really difficult though...\"/pause 200/faceDirection Krobus 1/pause 100/speak Krobus \"Will you help me?\"/pause 100/quickQuestion Will you help Krobus?#I'd love to help you!#I'll think about it.(break)speak Krobus \"Great! Bring me a strange bun when you're ready to get started.$1\"(break)speak Krobus \"I understand.#$b#I'm going to start getting stuff together. Feel free to pitch in anytime!$1#$b#Bring me a strange bun if you decide to help.\"/addQuest {{ModId}}_Intro2/pause 200/emote farmer 32/pause 300/end/fade",
+			"{{ModId}}_Intro1/e 418172/w rainy/d Fri/f Krobus 2000": "continue/15 20/farmer 6 21 3 Krobus 4 21 0/fade/pause 400/emote farmer 8/pause 200/emote Krobus 16/pause 200/faceDirection Krobus 1/speak Krobus \"@! It's good to see you.#$b#Were you able to finish your quest?\"/pause 200/emote farmer 32/pause 200/speak Krobus \"That's good.\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/pause 200/speak Krobus \"You know, now that you've gone down there, I feel better about leaving the entrance open.#$b#I was actually thinking...#$b#Well, it might be stupid.$2\"/pause 200/emote farmer 8/pause 200/speak Krobus \"It's just that, I'm safe and warm here in the sewers, but my people are out there, scattered and hunted.#$b#And there's lots of space in there...#$b#No one's using it, right?#$b#So what if I turned it into a safe place for them?#$b#Like a sanctuary?$3\"/pause 200/emote farmer 40/pause 200/emote farmer 32/pause 200/faceDirection Krobus 1/speak Krobus \"Really? You think it's a good idea?\"/pause 200/emote farmer 20/pause 200/speak Krobus \"Then I'm going to try to do it!$1\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/speak Krobus \"It's going to be really difficult though...\"/pause 200/faceDirection Krobus 1/pause 100/speak Krobus \"Will you help me?\"/pause 100/quickQuestion Will you help Krobus?#I'd love to help you!#I'll think about it.(break)speak Krobus \"Great! Bring me a strange bun when you're ready to get started.$1\"(break)speak Krobus \"I understand.#$b#I'm going to start working on it. Feel free to pitch in anytime!$1#$b#Bring me a strange bun if you decide to help.\"/addQuest {{ModId}}_Intro2/pause 200/emote farmer 32/pause 300/end/fade",
 		}
 	},
 
@@ -42,8 +43,8 @@
 	{
 		// Load Bundle Icon for Unlockable Bundle Intro6
 		"Action": "Load",
-		"Target": "{{ModId}}/BundleIcon1",
-		"FromFile": "Assets/Other/BundleIcon1.png",
+		"Target": "{{ModId}}/BundleIcon_Intro6",
+		"FromFile": "Assets/Other/BundleIcon_Intro6.png",
 	},
 
 	{
@@ -54,7 +55,7 @@
 			"{{ModId}}_Intro6": {
 				"Location": "Custom_Si_SS_BugLand_Full", // or BugLand ?
 				"BundleName": "Bundle One",
-				"BundleIconAsset": "{{ModId}}/BundleIcon",
+				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6",
 				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
 				"ShopPosition": "18, 46",
 				"ShopType": "CCBundle",
@@ -86,7 +87,7 @@
 		"Action": "EditData",
 		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
 		"Entries": {
-			"{{ModId}}_Intro8/n {{ModId}}_Intro7/d Fri": "continue/38 17/farmer 43 17 3 Krobus 41 17 1/fade/pause 300/speak Krobus \"Those materials really helped!\"/pause 200/speak Krobus \"The mounds will make great houses.\"/pause 200/emote farmer 20/speak Krobus \"Things are moving along pretty well.#$b#I'm worried that the wizard won't be happy though.#$b#Could you go check if it'll be okay?\"/addQuest {{ModId}}_Intro9/pause 200/emote farmer 32/pause 200/speak Krobus \"Maybe take a super cucumber, I know the wizard likes those.#$b#...#$b#Can you also make sure the guild won't attack any of my people down here?\"/addQuest {{ModId}}_Intro10/pause 200/emote farmer 8/pause 200/speak Krobus \"I know they can be a little trigger-happy, but this is supposed to be a safe and peaceful place.#$b#I don't mean any disrespect!$3\"/pause 300/emote farmer 40/pause 200/emote farmer 32/pause 300/end/fade",
+			"{{ModId}}_Intro8/n {{ModId}}_Intro7/d Fri": "continue/38 17/farmer 43 17 3 Krobus 41 17 1/fade/pause 300/speak Krobus \"Those materials really helped!\"/pause 200/speak Krobus \"The mounds will make great houses.\"/pause 200/emote farmer 20/speak Krobus \"Things are moving along pretty well.#$b#I'm worried that the wizard won't be happy though.#$b#Could you go check if it'll be okay?\"/addQuest {{ModId}}_Intro9/pause 200/emote farmer 32/pause 200/speak Krobus \"Maybe take a super cucumber, I know the wizard likes those.#$b#...#$b#Can you also make sure the guild won't attack any of my people down here?\"/addQuest {{ModId}}_Intro10/pause 200/emote farmer 8/pause 200/speak Krobus \"I know they can be pretty cautious, but this is supposed to be a safe and peaceful place.#$b#I don't mean any disrespect!$3\"/pause 300/emote farmer 40/pause 200/emote farmer 32/pause 300/end/fade",
 		}
 	},
 
@@ -122,7 +123,7 @@
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModId}}_Intro12": "ItemDelivery/Sunny With A Chance Of Magic/Rasmodius needs desert totems for a research trip./Deliver 20 desert totems to the wizard./Wizard 261 20/-1/0/-1/false/Hm, these should suffice.#$b#Yes, fine, I won't stop you so long as they do not cause any disturbances to the town.#$b#Now leave me to my studies!#$action AddMail {{ModId}}_Intro13 received",
+			"{{ModId}}_Intro12": "ItemDelivery/Sunny With A Chance Of Magic/Rasmodius needs desert totems for some research trips./Deliver 20 desert totems to the wizard./Wizard 261 20/-1/0/-1/false/Hm, these should suffice.#$b#Yes, fine, I won't stop you so long as they do not cause any disturbances to the town.#$b#Now leave me to my studies!#$action AddMail {{ModId}}_Intro13 received",
 		},
 	},
 
@@ -136,29 +137,29 @@
 	},
 
 	{
-		// Stone golems quest
+		// Stone golems quest // need to verify the quest completion action works properly
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModId}}_Intro15": "Monster/Sticks And Stones/Help Marlon clear stone golems out of the mines./Slay 50 stone golems./Stone_Golem 50/-1/0/-1/false/Thanks @! Meet me in the lair tomorrow.#$action AddQuest {{ModId}}_Intro16",
+			"{{ModId}}_Intro15": "Monster/Sticks And Stones/Help Marlon clear stone golems out of the mines, and then return to the guild./Slay 50 stone golems./Stone_Golem 50/-1/0/-1/false/#$action AddMail {{ModId}}_Intro16 received",
 		},
 	},
 
-	{
-		// Return to Marlon quest
-		"Action": "EditData",
-		"Target": "Data/Quests",
-		"Entries": {
-			"{{ModId}}_Intro16": "Location/Sticks And Stones/Help Marlon clear stone golems out of the mines./Return to the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
-		},
-	},
+	// {
+	// 	// Return to Marlon quest
+	// 	"Action": "EditData",
+	// 	"Target": "Data/Quests",
+	// 	"Entries": {
+	// 		"{{ModId}}_Intro16": "Location/Sticks And Stones/Help Marlon clear stone golems out of the mines./Return to the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
+	// 	},
+	// },
 
 	{
 		// Talk to Marlon again
 		"Action": "EditData",
 		"Target": "Data/Events/AdventureGuild",
 		"Entries": {
-			"{{ModId}}_Intro17/n {{ModId}}_Intro15": "continue/7 13/farmer 5 16 0 Marlon 5 13 2/skippable/fade/pause 300/speak Marlon \"Well done @, the mines are much safer now.\"/pause 200/speak Marlon \"I've thought about your proposal, and I've come to a decision.\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"I'll allow it.\"/pause 200/emote farmer 20/pause 200/speak Marlon \"However!#$b#You must understand this:#$b#You will be responsible for them.#$b#You are representing the surface world in this endeavor.#$b#From what you've told me, you are also sponsoring the effort.#$b#That means, should any issues arise, either from their side or ours...#$b#It is your duty to resolve the situation and restore peace.#$b#Once they start moving in, there will be no going back.\"/pause 500/speak Marlon \"Do you accept this responsibility?\"/pause 300/emote farmer 40/pause 300/quickQuestion Are you sure about this?#Yes.#I need to think about it.(break)speak Marlon \"You have grown a great deal since you first came to the valley @.#$b#I'm sure you can handle anything you set your mind to.#$b#But please, come by any time if you need advice.#$b#Take care @.\"(break)speak Marlon \"Of course!#$b#You must be absolutely certain before committing to this path.#$b#Stop by any time if you need advice.#$b#Take care @.\"/pause 200/emote farmer 32/pause 300/end/fade",	
+			"{{ModId}}_Intro17/n {{ModId}}_Intro16": "continue/7 13/farmer 5 16 0 Marlon 5 13 2/skippable/fade/pause 300/speak Marlon \"Well done @, the mines are much safer now.\"/pause 200/speak Marlon \"I've thought about your proposal, and I've come to a decision.\"/pause 200/emote Marlon 40/pause 200/speak Marlon \"I'll allow it.\"/pause 200/emote farmer 20/pause 200/speak Marlon \"However!#$b#You must understand this:#$b#You will be responsible for them.#$b#You are representing the surface world in this endeavor.#$b#From what you've told me, you are also sponsoring the effort.#$b#That means, should any issues arise, either from their side or ours...#$b#It is your duty to resolve the situation and restore peace.#$b#Once they start moving in, there will be no going back.\"/pause 500/speak Marlon \"Do you accept this responsibility?\"/pause 300/emote farmer 40/pause 300/quickQuestion Are you sure about this?#Yes.#I need to think about it.(break)speak Marlon \"You have grown a great deal since you first came to the valley @.#$b#I'm sure you can handle anything you set your mind to.#$b#But please, come by any time if you need advice.#$b#Take care @.\"(break)speak Marlon \"Of course!#$b#You must be absolutely certain before committing to this path.#$b#Stop by any time if you need advice.#$b#Take care @.\"/pause 200/emote farmer 32/pause 300/end/fade",	
 		}
 	},
 
