@@ -11,7 +11,7 @@
 	// Event ID 262205027 Yubu hidevent
 	"LogName": "Si SS IE HE 03",
 	"Action": "EditData",
-	"Target": "Data/Events/WizardHouse", // reqs
+	"Target": "Data/Events/WizardHouse", // reqs, change to pirate cove?
 	"Entries": {
 		"262205027/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
 		}

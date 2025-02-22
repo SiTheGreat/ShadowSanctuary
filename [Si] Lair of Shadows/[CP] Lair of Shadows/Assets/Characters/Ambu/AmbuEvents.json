@@ -11,7 +11,7 @@
 	// Event ID 262205024 Ambu hidevent
 	"LogName": "Si SS IE HE 02",
 	"Action": "EditData",
-	"Target": "Data/Events/ArchaeologyHouse", // reqs
+	"Target": "Data/Events/ArchaeologyHouse", // reqs, or field office? Maybe event where snail remarks on reading 'my that's a hefty book you've got there... do you like reading?'
 	"Entries": {
 		"262205024/e 262205023/A SSAfterPhana/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
 		}

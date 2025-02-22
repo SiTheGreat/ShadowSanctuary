@@ -3,8 +3,9 @@ Intro conditions:
 -quest: stock up on supplies for the sanctuary
 -HasCookingRecipe <blueberry tart>
 -summer
--grants quest 'find nib' w phrase 'nib likes blueberry tart' (hascookingrecipe)
+-grants quest 'find nib' w phrase 'nib likes blueberry tart' (hascookingrecipe) (nib loves pastries and blueberries) (something warm with blueberries in it will draw nib right out)
 -until find Nib, sched standing in one place w locdial 'how you found nib yet i'm so worried
+-bundle is 100 salmonberries and 100 blackberries
 
 Sprites: base
 

@@ -7,6 +7,50 @@
 
 	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	// {
+	// 	// Load Bundle Icon for this Bundle // Still need to make this
+	//	// Probably make bundles look vaguely like the shadow people they're connected to
+	// Action": "Load",
+	// "Target": "{{ModId}}/BundleIcon_Intro6",
+	// "FromFile": "Assets/Other/BundleIcon_Intro6.png",
+	// },
+
+	{
+		// Morprit intro bundle
+		"Action": "EditData",
+		"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+			"{{ModId}}_Morprit1": {
+				"Location": "Custom_Si_SS_BugLand_Full",
+				// "BundleName": "Bundle One", // update
+				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6", // update icon
+				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
+				"ShopPosition": "36, 48",
+				"ShopType": "CCBundle",
+				"ShopTexture":"Mods/{{ModId}}/Basket",
+				"DrawQuestionMark": true,
+				"QuestionMarkOffset": "32, 48",
+				"BundleSlots": 3,
+				"Price": {
+						"(O)877": 1, // quality bobber
+						"(O)551": 10, // lunarite
+						"(O)879": 1, // monster musk
+					},
+					"BundleReward": {
+						"(O)856": 3, // curiousity lure
+					},
+				"SpecialPlacementRequirements": [
+					{
+						"Type": "TriggerAction"
+					}
+				],
+				"BundleCompletedActions": [
+					"AddMail {{ModId}}_Morprit2 received",
+				]
+			}
+		}
+	},
+
 	{
 	// Event ID 262205031 Morprit quality bobber hidevent
 	"LogName": "Si SS IE HE 04",

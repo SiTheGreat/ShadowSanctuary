@@ -26,11 +26,11 @@
 	},
 
 	// {
-	// 	// Load Bundle Icon for Unlockable Bundle Intro6 // Still need to make this
+	// 	// Load Bundle Icon for this Bundle // Still need to make this
 	//	// Probably make bundles look vaguely like the shadow people they're connected to
-	// 	"Action": "Load",
-	// 	"Target": "{{ModId}}/BundleUI",
-	// 	"FromFile": "Assets/Other/BundleUI.png",
+	// Action": "Load",
+	// "Target": "{{ModId}}/BundleIcon_Intro6",
+	// "FromFile": "Assets/Other/BundleIcon_Intro6.png",
 	// },
 
 	{
@@ -40,21 +40,22 @@
 		"Entries": {
 			"{{ModId}}_Chenchi3": { // update
 				"Location": "Custom_Si_SS_BugLand_Full",
-				"BundleName": "Bundle One", // update
-				// "BundleIconAsset": "", // update
+				// "BundleName": "Bundle One", // update
+				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6", // update icon
 				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
-				"ShopPosition": "18, 46", // update
+				"ShopPosition": "51, 20",
 				"ShopType": "CCBundle",
 				"ShopTexture":"Mods/{{ModId}}/Basket",
 				"DrawQuestionMark": true,
-				"QuestionMarkOffset": "32, 32",
-				"BundleSlots": 2,
+				"QuestionMarkOffset": "32, 48",
+				"BundleSlots": 3,
 				"Price": { // update
-						"(O)330": 300,
-						"(O)881": 300,
+						"(O)768": 100, // solar essence
+						"(O)124": 1, // golden mask
+						"(O)769": 100, // void essence
 					}, // update
 					"BundleReward": {
-						"(O)771": 200,
+						"(O)559": 3, // pyrite
 					},
 				"SpecialPlacementRequirements": [
 					{

@@ -5,11 +5,12 @@
 
 	{
 		// 418172 is the 'end of magic ink quest' event at wiz house; also see if can do n HasDwarvishTranslationGuide or n canUnderstandDwarves
+		// 3131209 is the event at the end of the juicy bugs wanted quest
 		// Should I make the strange bun quest a bundle instead?
 		"Action": "EditData",
 		"Target": "Data/Events/Sewer",
 		"Entries": {
-			"{{ModId}}_Intro1/e 418172/w rainy/d Fri/f Krobus 2000": "continue/15 20/farmer 6 21 3 Krobus 4 21 0/fade/pause 400/emote farmer 8/pause 200/emote Krobus 16/pause 200/faceDirection Krobus 1/speak Krobus \"@! It's good to see you.#$b#Were you able to finish your quest?\"/pause 200/emote farmer 32/pause 200/speak Krobus \"That's good.\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/pause 200/speak Krobus \"You know, now that you've gone down there, I feel better about leaving the entrance open.#$b#I was actually thinking...#$b#Well, it might be stupid.$2\"/pause 200/emote farmer 8/pause 200/speak Krobus \"It's just that, I'm safe and warm here in the sewers, but my people are out there, scattered and hunted.#$b#And there's lots of space in there...#$b#No one's using it, right?#$b#So what if I turned it into a safe place for them?#$b#Like a sanctuary?$3\"/pause 200/emote farmer 40/pause 200/emote farmer 32/pause 200/faceDirection Krobus 1/speak Krobus \"Really? You think it's a good idea?\"/pause 200/emote farmer 20/pause 200/speak Krobus \"Then I'm going to try to do it!$1\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/speak Krobus \"It's going to be really difficult though...\"/pause 200/faceDirection Krobus 1/pause 100/speak Krobus \"Will you help me?\"/pause 100/quickQuestion Will you help Krobus?#I'd love to help you!#I'll think about it.(break)speak Krobus \"Great! Bring me a strange bun when you're ready to get started.$1\"(break)speak Krobus \"I understand.#$b#I'm going to start working on it. Feel free to pitch in anytime!$1#$b#Bring me a strange bun if you decide to help.\"/addQuest {{ModId}}_Intro2/pause 200/emote farmer 32/pause 300/end/fade",
+			"{{ModId}}_Intro1/e 418172/e 3131209/w rainy/d Fri/f Krobus 2000": "continue/15 20/farmer 6 21 3 Krobus 4 21 0/fade/pause 400/emote farmer 8/pause 200/emote Krobus 16/pause 200/faceDirection Krobus 1/speak Krobus \"@! It's good to see you.#$b#Were you able to finish your quest?\"/pause 200/emote farmer 32/pause 200/speak Krobus \"That's good.\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/pause 200/speak Krobus \"You know, now that you've gone down there, I feel better about leaving the entrance open.#$b#I was actually thinking...#$b#Well, it might be stupid.$2\"/pause 200/emote farmer 8/pause 200/speak Krobus \"It's just that, I'm safe and warm here in the sewers, but my people are out there, scattered and hunted.#$b#And there's lots of space in there...#$b#No one's using it, right?#$b#So what if I turned it into a safe place for them?#$b#Like a sanctuary?$3\"/pause 200/emote farmer 40/pause 200/emote farmer 32/pause 200/faceDirection Krobus 1/speak Krobus \"Really? You think it's a good idea?\"/pause 200/emote farmer 20/pause 200/speak Krobus \"Then I'm going to try to do it!$1\"/pause 200/faceDirection Krobus 0/pause 200/emote Krobus 40/speak Krobus \"It's going to be really difficult though...\"/pause 200/faceDirection Krobus 1/pause 100/speak Krobus \"Will you help me?\"/pause 100/quickQuestion Will you help Krobus?#I'd love to help you!#I'll think about it.(break)speak Krobus \"Great! Bring me a strange bun when you're ready to get started.$1\"(break)speak Krobus \"I understand.#$b#I'm going to start working on it. Feel free to pitch in anytime!$1#$b#Bring me a strange bun if you decide to help.\"/addQuest {{ModId}}_Intro2/pause 200/emote farmer 32/pause 300/end/fade",
 		}
 	},
 
@@ -54,7 +55,7 @@
 		"Entries": {
 			"{{ModId}}_Intro6": {
 				"Location": "Custom_Si_SS_BugLand_Full", // or BugLand ?
-				"BundleName": "Bundle One",
+				// "BundleName": "Bundle One",
 				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6",
 				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
 				"ShopPosition": "18, 46",
@@ -64,11 +65,11 @@
 				"QuestionMarkOffset": "32, 48",
 				"BundleSlots": 2,
 				"Price": {
-						"(O)330": 300,
-						"(O)881": 300,
+						"(O)330": 300, // clay
+						"(O)881": 300, // bone fragments
 					},
 					"BundleReward": {
-						"(O)771": 200,
+						"(O)771": 200, // fiber
 					},
 				"SpecialPlacementRequirements": [
 					{

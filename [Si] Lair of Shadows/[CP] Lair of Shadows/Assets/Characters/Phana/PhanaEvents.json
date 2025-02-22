@@ -17,11 +17,11 @@
 	},
 
 	{
-		// Bundle mail // ADD REST OF CHAR BUNDLES
+		// Bundle mail
 		"Action": "EditData",
 		"Target": "Data/mail",
 		"Entries": {
-			"{{ModId}}_Phana2": "Hi @,^^Phana gave me some feedback about making the mounds feel more like houses, so I'm going to start collecting extra materials for them based on that. I'll keep some baskets out by the mounds in case you want to help.^^   -Krobus%action UB_PlaceBundle {{ModId}}_Chenchi3%%[#]Materials For The Lair",
+			"{{ModId}}_Phana2": "Hi @,^^Phana gave me some feedback about making the mounds feel more like homes, so I'm going to start collecting extra materials for them based on that. I'll keep some baskets out by the mounds in case you want to help.^^   -Krobus%action UB_PlaceBundle {{ModId}}_Chenchi3%% %action UB_PlaceBundle {{ModId}}_Duffle1%% %action UB_PlaceBundle {{ModId}}_Morprit1%%[#]Materials For The Lair",
 		},
 	},
 

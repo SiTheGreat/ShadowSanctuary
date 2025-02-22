@@ -2,13 +2,57 @@
 	"Changes": [
 
 	// See Harvey 8h event; has cooking recipe Blueberry Tart; Krobus quest to stock up on sanc supplies field snacks; summer lair hidden event, convo topic 5 days; summer, intro event; have met Phana
-	// Bundle: field snacks, tent, cooking fire, life elixir, various berries (50 each salmonberries and blackberries)
+	// Bundle: field snacks, tent kit (reward), various berries (50 each salmonberries and blackberries)
 	// 2 events, 1 quest
 
 	// Intro ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	// {
+	// 	// Load Bundle Icon for this Bundle // Still need to make this
+	//	// Probably make bundles look vaguely like the shadow people they're connected to
+	// Action": "Load",
+	// "Target": "{{ModId}}/BundleIcon_Intro6",
+	// "FromFile": "Assets/Other/BundleIcon_Intro6.png",
+	// },
+
+	{
+		// Duffle intro bundle
+		"Action": "EditData",
+		"Target": "UnlockableBundles/Bundles",
+		"Entries": {
+			"{{ModId}}_Duffle1": {
+				"Location": "Custom_Si_SS_BugLand_Full",
+				// "BundleName": "Bundle One", // update
+				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6", // update icon
+				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
+				"ShopPosition": "43, 15",
+				"ShopType": "CCBundle",
+				"ShopTexture":"Mods/{{ModId}}/Basket",
+				"DrawQuestionMark": true,
+				"QuestionMarkOffset": "32, 48",
+				"BundleSlots": 2,
+				"Price": {
+						"(O)296": 100, // salmonberry
+						"(O)410": 100, // blackberry
+					},
+					"BundleReward": {
+						"(O)TentKit": 3, // tent kit
+					},
+				"SpecialPlacementRequirements": [
+					{
+						"Type": "TriggerAction"
+					}
+				],
+				"BundleCompletedActions": [
+					"AddMail {{ModId}}_Duffle2 received",
+				]
+			}
+		}
+	},
+
 	{
 	// Event ID 262205044 Duffle pre-quest hidevent
+	// 571102 is the harvey radio event
 	"LogName": "Si SS IE HE 09",
 	"Action": "EditData",
 	"Target": "Data/Events/BusStop",
