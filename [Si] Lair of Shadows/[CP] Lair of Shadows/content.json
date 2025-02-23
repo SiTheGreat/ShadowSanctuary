@@ -10,10 +10,10 @@
 		"FromFile": "Assets/Characters/Phana/Phana.json",
 	},
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Bellum/Bellum.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Bellum/Bellum.json",
+	// },
 
 	{
 		"Action": "Include",
@@ -60,25 +60,25 @@
 		"FromFile": "Assets/Characters/Tove/Tove.json",
 	},
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Argil/Argil.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Argil/Argil.json",
+	// },
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Rath/Rath.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Rath/Rath.json",
+	// },
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Pax/Pax.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Pax/Pax.json",
+	// },
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Roa/Roa.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Roa/Roa.json",
+	// },
 
 	{
 		"Action": "Include",
@@ -92,7 +92,7 @@
 		"Action": "Include",
 		"FromFile": "Assets/Lair/Lair.json",
 		"When": {
-			"HasWalletItem |contains=MagicInk": true, // event is precond in intro quest; might not need this anymore
+			// "HasWalletItem |contains=MagicInk": true, // event is precond in intro quest; might not need this anymore
 			"HasWalletItem |contains=DwarvishTranslationGuide": true
 		},
 	},

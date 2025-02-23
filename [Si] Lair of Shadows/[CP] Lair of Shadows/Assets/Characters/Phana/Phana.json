@@ -102,17 +102,17 @@
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Phana/PhanaSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Phana/PhanaSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Phana/PhanaDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Phana/PhanaDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -127,7 +127,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Phana",
-		"FromFile": "Assets/Characters/Phana/Phana.tmx",
+		"FromFile": "Assets/Maps/Phana.tmx",
 	},
 
 	{
@@ -182,7 +182,7 @@
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Si_SS_BugLand_Full",
 		"PatchMode": "Replace",
-		"FromFile": "Assets/Phana/PhanaTarp.tmx",
+		"FromFile": "Assets/Maps/PhanaTarp.tmx",
 		"ToArea": { "X": 25, "Y": 40, "Width": 5, "Height": 5 },
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205023": false,
@@ -192,70 +192,70 @@
 	// Greenhouse ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// Add greenhouse map
-	{
-		"Action": "Load",
-		"Target": "Maps/Custom_PhanaGH",
-		"FromFile": "Assets/Characters/Phana/PhanaGH.tmx",
-	},
+	// {
+	// 	"Action": "Load",
+	// 	"Target": "Maps/Custom_PhanaGH",
+	// 	"FromFile": "Assets/Maps/PhanaGH.tmx",
+	// },
 
-	{
-		"Action": "EditData",
-		"Target": "Data/Locations",
-		"Entries": {
-			"Custom_Phana": {
-				"DisplayName": "Phana's Greenhouse",
-				"CreateOnLoad": {
-					"MapPath": "Maps/Custom_PhanaGH"
-				},
-				"DefaultArrivalTile": {
-					"X": 5,
-					"Y": 2
-				}
-			}
-		}
-	},
+	// {
+	// 	"Action": "EditData",
+	// 	"Target": "Data/Locations",
+	// 	"Entries": {
+	// 		"Custom_Phana": {
+	// 			"DisplayName": "Phana's Greenhouse",
+	// 			"CreateOnLoad": {
+	// 				"MapPath": "Maps/Custom_PhanaGH"
+	// 			},
+	// 			"DefaultArrivalTile": {
+	// 				"X": 5,
+	// 				"Y": 2
+	// 			}
+	// 		}
+	// 	}
+	// },
 
 	// Add greenhouse warps
-	{
-		"Action": "EditMap",
-		"Target": "Maps/Custom_Si_SS_BugLand_Full",
-		"AddWarps": [
-			"29 37 Custom_PhanaGH 11 7"
-		],
-		"When": {
-			"HasSeenEvent:hostPlayer |contains=262205023": true,
-		},
-	},
+	// {
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_Si_SS_BugLand_Full",
+	// 	"AddWarps": [
+	// 		"29 37 Custom_PhanaGH 11 7"
+	// 	],
+	// 	"When": {
+	// 		"HasSeenEvent:hostPlayer |contains=262205023": true,
+	// 	},
+	// },
 
-	{
-		"Action": "EditMap",
-		"Target": "Maps/Custom_PhanaGH",
-		"AddWarps": [
-			"12 7 Custom_Si_SS_BugLand_Full 30 37"
-		],
-		"When": {
-			"HasSeenEvent:hostPlayer |contains=262205023": true,
-		},
-	},
+	// {
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_PhanaGH",
+	// 	"AddWarps": [
+	// 		"12 7 Custom_Si_SS_BugLand_Full 30 37"
+	// 	],
+	// 	"When": {
+	// 		"HasSeenEvent:hostPlayer |contains=262205023": true,
+	// 	},
+	// },
 
 	// Add greenhouse events file
-	{
-		"Action": "Load",
-		"Target": "Data/Events/Phana",
-		"FromFile": "Assets/Other/blank.json",
-	},
+	// {
+	// 	"Action": "Load",
+	// 	"Target": "Data/Events/Phana",
+	// 	"FromFile": "Assets/Other/blank.json",
+	// },
 
 	// Add greenhouse tarp
-	{
-		"Action": "EditMap",
-		"Target": "Maps/Custom_Si_SS_BugLand_Full",
-		"PatchMode": "Replace",
-		"FromFile": "Assets/Phana/PhanaGHTarp.tmx",
-		"ToArea": { "X": 26, "Y": 33, "Width": 5, "Height": 7 },
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205999": false, // UPDATE EVENT
-			},
-	},
+	// {
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_Si_SS_BugLand_Full",
+	// 	"PatchMode": "Replace",
+	// 	"FromFile": "Assets/Maps/PhanaGHTarp.tmx",
+	// 	"ToArea": { "X": 26, "Y": 33, "Width": 5, "Height": 7 },
+	// 		"When": {
+	// 			"HasSeenEvent:hostPlayer |contains=262205999": false, // UPDATE EVENT
+	// 		},
+	// },
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

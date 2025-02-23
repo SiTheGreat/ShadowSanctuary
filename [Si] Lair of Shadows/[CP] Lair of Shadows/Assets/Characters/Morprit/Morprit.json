@@ -103,17 +103,17 @@
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Morprit/MorpritSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Morprit/MorpritSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Morprit/MorpritDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Morprit/MorpritDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -128,7 +128,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Morprit",
-		"FromFile": "Assets/Characters/Morprit/Morprit.tmx",
+		"FromFile": "Assets/Maps/Morprit.tmx",
 	},
 
 	{
@@ -183,7 +183,7 @@
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Si_SS_BugLand_Full",
 		"PatchMode": "Replace",
-		"FromFile": "Assets/Characters/Morprit/MorpritTarp.tmx",
+		"FromFile": "Assets/Maps/MorpritTarp.tmx",
 		"ToArea": { "X": 34, "Y": 42, "Width": 6, "Height": 7 },
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205037": false,

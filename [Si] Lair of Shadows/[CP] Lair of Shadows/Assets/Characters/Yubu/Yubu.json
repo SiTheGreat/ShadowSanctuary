@@ -88,24 +88,24 @@
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Yubu/YubuSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Yubu/YubuSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Yubu/YubuDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Yubu/YubuDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Yubu/YubuEvents.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Yubu/YubuEvents.json",
+	// },
 
 	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -113,7 +113,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Yubu",
-		"FromFile": "Assets/Characters/Yubu/Yubu.tmx",
+		"FromFile": "Assets/Maps/Yubu.tmx",
 	},
 
 	{
@@ -161,6 +161,18 @@
 		"Action": "Load",
 		"Target": "Data/Events/Yubu",
 		"FromFile": "Assets/Other/blank.json",
+	},
+
+	// Add home tarp
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"PatchMode": "Replace",
+		"FromFile": "Assets/Maps/YubuTarp.tmx",
+		"ToArea": { "X": 15, "Y": 24, "Width": 4, "Height": 5 },
+		"When": {
+			"HasSeenEvent:hostPlayer |contains=262205030": false,
+		},
 	},
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

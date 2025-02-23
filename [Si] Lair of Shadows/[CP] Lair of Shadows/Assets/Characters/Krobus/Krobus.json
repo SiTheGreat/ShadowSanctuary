@@ -7,42 +7,42 @@
 	// For items added by mod
 
 	// Every day but Friday
-	{
-		"Action": "EditData",
-		"Target": "Data/NPCGiftTastes",
-		"Entries": {
-			"Krobus": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/", // update to append instead
-		},
-		"When": {
-			"DayOfWeek |contains=Friday": false
-		},
-	},
+	// {
+	// 	"Action": "EditData",
+	// 	"Target": "Data/NPCGiftTastes",
+	// 	"Entries": {
+	// 		"Krobus": "Love it!/424/Like it./423/Dislike it./433/Hate it!/419/Meh./418/", // update to append instead
+	// 	},
+	// 	"When": {
+	// 		"DayOfWeek |contains=Friday": false
+	// 	},
+	// },
 
 	// Fridays
-	{
-		"Action": "EditData",
-		"Target": "Data/NPCGiftTastes",
-		"Entries": {
-			"Krobus": "!/424/Krobus smiles./423/Krobus frowns./433/!/419/.../418/", // update to append instead
-		},
-		"When": {
-			"DayOfWeek |contains=Friday": true
-		},
-	},
+	// {
+	// 	"Action": "EditData",
+	// 	"Target": "Data/NPCGiftTastes",
+	// 	"Entries": {
+	// 		"Krobus": "!/424/Krobus smiles./423/Krobus frowns./433/!/419/.../418/", // update to append instead
+	// 	},
+	// 	"When": {
+	// 		"DayOfWeek |contains=Friday": true
+	// 	},
+	// },
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Krobus/KrobusSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Krobus/KrobusSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Krobus/KrobusDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Krobus/KrobusDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -54,71 +54,71 @@
 
 	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	// Add home map
-	{
-		"Action": "Load",
-		"Target": "Maps/Custom_Krobus",
-		"FromFile": "Assets/Characters/Krobus/Krobus.tmx",
-	},
+	// // Add home map
+	// {
+	// 	"Action": "Load",
+	// 	"Target": "Maps/Custom_Krobus",
+	// 	"FromFile": "Assets/Characters/Krobus/Krobus.tmx",
+	// },
 
-	{
-		"Action": "EditData",
-		"Target": "Data/Locations",
-		"Entries": {
-			"Custom_Krobus": {
-				"DisplayName": "Krobus's House",
-				"CreateOnLoad": {
-					"MapPath": "Maps/Custom_Krobus"
-				},
-				"DefaultArrivalTile": {
-					"X": 3,
-					"Y": 5
-				}
-			}
-		}
-	},
+	// {
+	// 	"Action": "EditData",
+	// 	"Target": "Data/Locations",
+	// 	"Entries": {
+	// 		"Custom_Krobus": {
+	// 			"DisplayName": "Krobus's House",
+	// 			"CreateOnLoad": {
+	// 				"MapPath": "Maps/Custom_Krobus"
+	// 			},
+	// 			"DefaultArrivalTile": {
+	// 				"X": 3,
+	// 				"Y": 5
+	// 			}
+	// 		}
+	// 	}
+	// },
 
-	// Add home warps
-	{
-		"Action": "EditMap",
-		"Target": "Maps/Custom_Si_SS_BugLand_Full",
-		"AddWarps": [
-			"49 45 Custom_Krobus 3 6"
-		],
-		"When": {
-			"HasSeenEvent:hostPlayer |contains=262205XXX": true, // UPDATE EVENT
-		},
-	},
+	// // Add home warps
+	// {
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_Si_SS_BugLand_Full",
+	// 	"AddWarps": [
+	// 		"49 45 Custom_Krobus 3 6"
+	// 	],
+	// 	"When": {
+	// 		"HasSeenEvent:hostPlayer |contains=262205XXX": true, // UPDATE EVENT
+	// 	},
+	// },
 
-	{
-		"Action": "EditMap",
-		"Target": "Maps/Custom_Krobus",
-		"AddWarps": [
-			"3 8 Custom_Si_SS_BugLand_Full 49 46"
-		],
-		"When": {
-			"HasSeenEvent:hostPlayer |contains=262205XXX": true, // UPDATE EVENT
-		},
-	},
+	// {
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_Krobus",
+	// 	"AddWarps": [
+	// 		"3 8 Custom_Si_SS_BugLand_Full 49 46"
+	// 	],
+	// 	"When": {
+	// 		"HasSeenEvent:hostPlayer |contains=262205XXX": true, // UPDATE EVENT
+	// 	},
+	// },
 
-	// Add home events file
-	{
-		"Action": "Load",
-		"Target": "Data/Events/Krobus",
-		"FromFile": "Assets/Other/blank.json",
-	},
+	// // Add home events file
+	// {
+	// 	"Action": "Load",
+	// 	"Target": "Data/Events/Krobus",
+	// 	"FromFile": "Assets/Other/blank.json",
+	// },
 
-	// Add home tarp
-	{
-		"Action": "EditMap",
-		"Target": "Maps/Custom_Si_SS_BugLand_Full",
-		"PatchMode": "Replace",
-		"FromFile": "Assets/Characters/Krobus/KrobusTarp.tmx",
-		"ToArea": { "X": 47, "Y": 44, "Width": 5, "Height": 3 },
-		"When": {
-			"HasSeenEvent:hostPlayer |contains=262205XXX": false, // UPDATE EVENT
-		},
-	},
+	// // Add home tarp
+	// {
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_Si_SS_BugLand_Full",
+	// 	"PatchMode": "Replace",
+	// 	"FromFile": "Assets/Characters/Krobus/KrobusTarp.tmx",
+	// 	"ToArea": { "X": 47, "Y": 44, "Width": 5, "Height": 3 },
+	// 	"When": {
+	// 		"HasSeenEvent:hostPlayer |contains=262205XXX": false, // UPDATE EVENT
+	// 	},
+	// },
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

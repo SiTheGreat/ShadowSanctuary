@@ -104,17 +104,17 @@
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Chenchi/ChenchiSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Chenchi/ChenchiSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Chenchi/ChenchiDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Chenchi/ChenchiDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -129,7 +129,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Chenchi",
-		"FromFile": "Assets/Characters/Chenchi/Chenchi.tmx",
+		"FromFile": "Assets/Maps/Chenchi.tmx",
 	},
 
 	{
@@ -184,7 +184,7 @@
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Si_SS_BugLand_Full",
 		"PatchMode": "Replace",
-		"FromFile": "Assets/Characters/Chenchi/ChenchiTarp.tmx",
+		"FromFile": "Assets/Maps/ChenchiTarp.tmx",
 		"ToArea": { "X": 45, "Y": 16, "Width": 8, "Height": 11 },
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205055": false,

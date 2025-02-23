@@ -13,6 +13,10 @@
         		"UniqueID": "DLX.Bundles",
         		"IsRequired": true
 		},
+		{
+			"UniqueID": "Spiderbuttons.ArbitraryTilesheetAccess",
+			"IsRequired": true
+		},
 	]
 
 }

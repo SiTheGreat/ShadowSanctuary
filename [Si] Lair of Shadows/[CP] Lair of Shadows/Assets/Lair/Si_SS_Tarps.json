@@ -3,18 +3,6 @@
 	"Changes": [
 
 	// Tarps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-		{
-			// Ambu Yubu
-			"Action": "EditMap",
-			"Target": "Maps/Custom_Si_SS_BugLand_Full",
-			"PatchMode": "Replace",
-			"FromFile": "Assets/Maps/Si_SS_Tarp_AY.tmx",
-			"ToArea": { "X": 15, "Y": 24, "Width": 4, "Height": 5 },
-			"When": {
-				"HasSeenEvent:hostPlayer |contains=262205030": false,
-			},
-		},
 		
 		{
 			// Board

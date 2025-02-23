@@ -103,34 +103,34 @@
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Tove/ToveSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Tove/ToveSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Tove/ToveDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Tove/ToveDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Tove/ToveEvents.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Tove/ToveEvents.json",
+	// },
 
 	// CC Chickens ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Chickens.json",
-		"When": {
-			"HasSeenEvent:hostPlayer |contains=262205060": true,
-		},
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Tove/Si_SS_Tove_Chickens.json",
+	// 	"When": {
+	// 		"HasSeenEvent:hostPlayer |contains=262205060": true,
+	// 	},
+	// },
 
 	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -138,7 +138,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Tove",
-		"FromFile": "Assets/Characters/Tove/Tove.tmx",
+		"FromFile": "Assets/Maps/Tove.tmx",
 	},
 
 	{
@@ -193,7 +193,7 @@
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Si_SS_BugLand_Full",
 		"PatchMode": "Replace",
-		"FromFile": "Assets/Maps/Characters/Tove/ToveTarp.tmx",
+		"FromFile": "Assets/Maps/ToveTarp.tmx",
 		"ToArea": { "X": 23, "Y": 2, "Width": 16, "Height": 12 },
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205060": false,

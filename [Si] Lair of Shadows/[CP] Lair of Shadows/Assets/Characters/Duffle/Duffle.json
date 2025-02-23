@@ -103,17 +103,17 @@
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Duffle/DuffleSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Duffle/DuffleSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Duffle/DuffleDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Duffle/DuffleDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -128,7 +128,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Duffle",
-		"FromFile": "Assets/Characters/Duffle/Duffle.tmx",
+		"FromFile": "Assets/Maps/Duffle.tmx",
 	},
 
 	{
@@ -183,7 +183,7 @@
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Si_SS_BugLand_Full",
 		"PatchMode": "Replace",
-		"FromFile": "Assets/Characters/Duffle/DuffleTarp.tmx",
+		"FromFile": "Assets/Maps/DuffleTarp.tmx",
 		"ToArea": { "X": 42, "Y": 13, "Width": 3, "Height": 2 },
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205052": false, // UPDATE EVENT

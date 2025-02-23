@@ -128,7 +128,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Bellum",
-		"FromFile": "Assets/Characters/Bellum/Bellum.tmx",
+		"FromFile": "Assets/Maps/Bellum.tmx",
 	},
 
 	{
@@ -183,7 +183,7 @@
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Si_SS_BugLand_Full",
 		"PatchMode": "Replace",
-		"FromFile": "Assets/Characters/Bellum/BellumTarp.tmx",
+		"FromFile": "Assets/Maps/BellumTarp.tmx",
 		"ToArea": { "X": 47, "Y": 44, "Width": 5, "Height": 3 },
 		"When": {
 			"HasSeenEvent:hostPlayer |contains=262205XXX": false, // UPDATE EVENT

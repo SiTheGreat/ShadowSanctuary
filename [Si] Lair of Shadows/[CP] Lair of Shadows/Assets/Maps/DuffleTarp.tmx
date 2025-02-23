@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="left-down" width="3" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="1">
  <tileset firstgid="1" name="bugTiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
-  <image source="Tilesheets/bugLandTiles.png" width="128" height="224"/>
+  <image source="bugLandTiles.png" width="128" height="224"/>
   <tile id="4">
    <properties>
     <property name="Water" value="t"/>
@@ -104,7 +104,7 @@
   </tile>
  </tileset>
  <tileset firstgid="113" name="Paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
-  <image source="Tilesheets/paths.png" width="64" height="128"/>
+  <image source="paths.png" width="64" height="128"/>
  </tileset>
  <layer id="1" name="Back" width="3" height="2">
   <data encoding="csv">

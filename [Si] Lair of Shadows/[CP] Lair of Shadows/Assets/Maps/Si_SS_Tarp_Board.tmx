@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="left-down" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="1">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-down" width="3" height="3" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="1">
  <properties>
   <property name="TreatAsOutdoors" value="f"/>
  </properties>
- <tileset firstgid="1" name="SewerTiles" tilewidth="16" tileheight="16" tilecount="88" columns="8">
-  <image source="Tilesheets/SewerTiles.png" width="128" height="176"/>
- </tileset>
- <tileset firstgid="89" name="Fence3" tilewidth="16" tileheight="16" tilecount="66" columns="3">
-  <image source="Tilesheets/Fence3.png" width="48" height="352"/>
- </tileset>
- <tileset firstgid="155" name="Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
-  <image source="Tilesheets/Craftables.png" width="128" height="1152"/>
- </tileset>
- <tileset firstgid="731" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="Tilesheets/spring_outdoorsTileSheet.png" width="400" height="1264"/>
- </tileset>
- <tileset firstgid="2706" name="bugTiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
-  <image source="Tilesheets/bugLandTiles.png" width="128" height="224"/>
+ <tileset firstgid="1" name="bugTiles" tilewidth="16" tileheight="16" tilecount="17" columns="8">
+  <image source="bugLandTiles.png" width="128" height="224"/>
   <tile id="4">
    <properties>
     <property name="Water" value="t"/>
@@ -118,35 +106,14 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="2818" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
-  <image source="Tilesheets/furniture.png" width="512" height="1488"/>
- </tileset>
- <tileset firstgid="5794" name="fall_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="Tilesheets/fall_outdoorsTileSheet.png" width="400" height="1264"/>
-  <tile id="1721">
-   <animation>
-    <frame tileid="1720" duration="990"/>
-    <frame tileid="1719" duration="990"/>
-   </animation>
-  </tile>
- </tileset>
- <tileset firstgid="7769" name="mine_lava_dangerous" tilewidth="16" tileheight="16" tilecount="320" columns="16">
-  <image source="Tilesheets/mine_lava_dangerous.png" width="256" height="320"/>
- </tileset>
- <tileset firstgid="8089" name="Paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
-  <image source="Tilesheets/paths.png" width="64" height="128"/>
- </tileset>
- <tileset firstgid="8121" name="Greenhouse" tilewidth="16" tileheight="16" tilecount="300" columns="15">
-  <image source="Tilesheets/Greenhouse.png" width="240" height="320"/>
- </tileset>
- <tileset firstgid="8421" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="Tilesheets/townInterior.png" width="512" height="1088"/>
+ <tileset firstgid="73" name="Paths" tilewidth="16" tileheight="16" tilecount="0" columns="4">
+  <image source="paths.png" width="64" height="128"/>
  </tileset>
  <layer id="1" name="Back" width="3" height="3">
   <data encoding="csv">
-2713,2713,2713,
-2715,2716,2715,
-2723,2724,2723
+8,8,8,
+10,11,10,
+18,19,18
 </data>
  </layer>
  <layer id="11" name="Back1" width="3" height="3">
@@ -165,7 +132,7 @@
  </layer>
  <layer id="13" name="Buildings" width="3" height="3">
   <data encoding="csv">
-2708,2707,2708,
+3,2,3,
 0,0,0,
 0,0,0
 </data>
@@ -190,7 +157,7 @@
   <data encoding="csv">
 0,0,0,
 0,0,0,
-0,8097,0
+0,81,0
 </data>
  </layer>
  <objectgroup id="6" name="Paths"/>

@@ -103,24 +103,24 @@
 
 	// Schedules ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Ambu/AmbuSchedule.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Ambu/AmbuSchedule.json",
+	// },
 
 	// Dialogue ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Ambu/AmbuDialogue.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Ambu/AmbuDialogue.json",
+	// },
 		
 	// Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Ambu/AmbuEvents.json",
-	},
+	// {
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Characters/Ambu/AmbuEvents.json",
+	// },
 
 	// House ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -128,7 +128,7 @@
 	{
 		"Action": "Load",
 		"Target": "Maps/Custom_Ambu",
-		"FromFile": "Assets/Characters/Ambu/Ambu.tmx",
+		"FromFile": "Assets/Maps/Ambu.tmx",
 	},
 
 	{
@@ -177,6 +177,18 @@
 		"Target": "Data/Events/Ambu",
 		"FromFile": "Assets/Other/blank.json",
 	},
+
+	// Add home tarp
+	// {
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_Si_SS_BugLand_Full",
+	// 	"PatchMode": "Replace",
+	// 	"FromFile": "Assets/Characters/Ambu/AmbuTarp.tmx",
+	// 	"ToArea": { "X": 15, "Y": 24, "Width": 4, "Height": 5 },
+	// 	"When": {
+	// 		"HasSeenEvent:hostPlayer |contains=262205030": false,
+	// 	},
+	// },
 
 	// End ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

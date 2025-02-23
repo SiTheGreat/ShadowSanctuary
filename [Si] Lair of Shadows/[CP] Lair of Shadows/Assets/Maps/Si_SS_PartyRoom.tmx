@@ -7,7 +7,7 @@
   <property name="Warp" value="15 55 Sewer 3 19 14 55 Sewer 3 19"/>
  </properties>
  <tileset firstgid="1" name="bugTiles" tilewidth="16" tileheight="16" tilecount="112" columns="8">
-  <image source="Tilesheets/bugLandTiles.png" width="128" height="224"/>
+  <image source="bugLandTiles.png" width="128" height="224"/>
   <tile id="4">
    <properties>
     <property name="Water" value="t"/>
@@ -110,31 +110,31 @@
   </tile>
  </tileset>
  <tileset firstgid="113" name="Paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
-  <image source="Tilesheets/paths.png" width="64" height="128"/>
+  <image source="paths.png" width="64" height="128"/>
  </tileset>
  <tileset firstgid="145" name="SewerTiles" tilewidth="16" tileheight="16" tilecount="88" columns="8">
-  <image source="Tilesheets/SewerTiles.png" width="128" height="176"/>
+  <image source="SewerTiles.png" width="128" height="176"/>
  </tileset>
  <tileset firstgid="233" name="night_market_tilesheet_objects" tilewidth="16" tileheight="16" tilecount="1368" columns="72">
-  <image source="Tilesheets/night_market_tilesheet_objects.png" width="1152" height="312"/>
+  <image source="night_market_tilesheet_objects.png" width="1152" height="312"/>
  </tileset>
  <tileset firstgid="1601" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <image source="Tilesheets/townInterior.png" width="512" height="1088"/>
+  <image source="townInterior.png" width="512" height="1088"/>
  </tileset>
  <tileset firstgid="3777" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
-  <image source="Tilesheets/furniture.png" width="512" height="1488"/>
+  <image source="Content/Tilesheets/furniture.png" width="512" height="1488"/>
  </tileset>
  <tileset firstgid="6753" name="mine_lava_dangerous" tilewidth="16" tileheight="16" tilecount="320" columns="16">
-  <image source="Tilesheets/mine_lava_dangerous.png" width="256" height="320"/>
+  <image source="Content/Maps/Mines/mine_lava_dangerous.png" width="256" height="320"/>
  </tileset>
  <tileset firstgid="7073" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="Tilesheets/spring_outdoorsTileSheet.png" width="400" height="1264"/>
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
  </tileset>
  <tileset firstgid="9048" name="Fence3" tilewidth="16" tileheight="16" tilecount="66" columns="3">
-  <image source="Tilesheets/Fence3.png" width="48" height="352"/>
+  <image source="Content/LooseSprites/Fence3.png" width="48" height="352"/>
  </tileset>
  <tileset firstgid="9114" name="fall_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
-  <image source="Tilesheets/fall_outdoorsTileSheet.png" width="400" height="1264"/>
+  <image source="fall_outdoorsTileSheet.png" width="400" height="1264"/>
   <tile id="1721">
    <animation>
     <frame tileid="1720" duration="990"/>
@@ -143,13 +143,13 @@
   </tile>
  </tileset>
  <tileset firstgid="11089" name="Greenhouse" tilewidth="16" tileheight="16" tilecount="300" columns="15">
-  <image source="Tilesheets/Greenhouse.png" width="240" height="320"/>
+  <image source="Content/Buildings/Greenhouse.png" width="240" height="320"/>
  </tileset>
  <tileset firstgid="11389" name="Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
-  <image source="Tilesheets/Craftables.png" width="128" height="1152"/>
+  <image source="Content/Tilesheets/Craftables.png" width="128" height="1152"/>
  </tileset>
  <tileset firstgid="11965" name="mine_lava" tilewidth="16" tileheight="16" tilecount="320" columns="16">
-  <image source="Tilesheets/mine_lava.png" width="256" height="320"/>
+  <image source="Content/Maps/Mines/mine_lava.png" width="256" height="320"/>
  </tileset>
  <layer id="1" name="Back" width="13" height="11">
   <data encoding="csv">
