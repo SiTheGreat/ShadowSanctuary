@@ -46,6 +46,7 @@
 				"ShopPosition": "51, 20",
 				"ShopType": "CCBundle",
 				"ShopTexture":"Mods/{{ModId}}/Basket",
+				// "ShopTexture":"{{InternalAssetKey: Assets/Other/Basket.png}}",
 				"DrawQuestionMark": true,
 				"QuestionMarkOffset": "32, 48",
 				"BundleSlots": 3,

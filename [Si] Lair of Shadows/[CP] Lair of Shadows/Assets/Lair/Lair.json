@@ -1,6 +1,5 @@
 {
 
-	"Format": "2.0.0",
 	"Changes": [
 	
 	// Quests ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -13,22 +12,23 @@
 
 	{
 		// Load basket texture for Unlockable Bundles
+		// Looks like UB prefers it as an internal asset? Come back to this later
 		"Action": "Load",
-		"Target": "{{ModId}}/Basket",
+		"Target": "Mods/{{ModId}}/Basket",
 		"FromFile": "Assets/Other/Basket.png",
 	},
 
 	{
 		// Load UI texture for Unlockable Bundles
 		"Action": "Load",
-		"Target": "{{ModId}}/BundleUI",
+		"Target": "Mods/{{ModId}}/BundleUI",
 		"FromFile": "Assets/Other/BundleUI.png",
 	},
 
 	// Music ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
-		// Lair background music // Move to lair file
+		// Lair background music
 		"Action": "EditMap",
 		"Target": "Maps/Custom_Si_SS_BugLand_Full",
 		"MapProperties": {
@@ -36,63 +36,128 @@
 		},
 		"Update": "OnLocationChange",
 		"When": {
-			"HasSeenEvent:hostPlayer |contains=262205023": true,
+			"HasSeenEvent:hostPlayer |contains={{ModId}}_Phana1": true,
 		},
 	},
 
 	// Warps ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-	{
-		"Action": "EditMap", // Move to lair file
-		"Target": "Maps/Sewer",
-		"AddWarps": [
-			"3 18 Custom_Si_SS_BugLand_Full 15 53"
-		],
-		"When": {
-			"HasFlag:hostPlayer |contains=262205003": true,
-		},
-	},
+	// {
+	// 	// Remove current sewer warp to lair
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Sewer",
+	// 	"TextOperations": [
+	// 	  {
+	// 		"Operation": "RemoveDelimited",
+	// 		"Target": [ "MapProperties", "Warp" ],
+	// 		"Search": "3 18 BugLand 15 53",
+	// 		"ReplaceMode": "All",
+	// 		"Delimiter": " "
+	// 	  }
+	// 	],
+	// 	"Priority": "Late",
+	// 	"When": {
+	// 		"HasFlag:hostPlayer |contains={{ModId}}_Intro4": true,
+	// 	},
+	// },
 
-	{
-		"Action": "EditMap", // Move to lair file
-		"Target": "Maps/Custom_Si_SS_BugLand_Full",
-		"AddWarps": [
-			"14 54 Sewer 3 19",
-			"15 54 Sewer 3 19"
-		],
-	},
+	// {
+	// 	// Add sewer warp to new lair
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Sewer",
+	// 	"AddWarps": [
+	// 		"3 18 Custom_Si_SS_BugLand_Full 15 53"
+	// 	],
+	// 	"When": {
+	// 		"HasFlag:hostPlayer |contains={{ModId}}_Intro4": true,
+	// 	},
+	// },
 
-	{
-		"Action": "Include", // Move to lair file
-		"FromFile": "Assets/Sanctuary/Si_SS_ComboWarps.json",
-	},
+	// {
+	// 	// Add warps from new lair back to sewer
+	// 	"Action": "EditMap",
+	// 	"Target": "Maps/Custom_Si_SS_BugLand_Full",
+	// 	"AddWarps": [
+	// 		"14 54 Sewer 3 19",
+	// 		"15 54 Sewer 3 19"
+	// 	],
+	// },
+
+	// {
+	// 	// Might just move these to lair file
+	// 	"Action": "Include",
+	// 	"FromFile": "Assets/Lair/Si_SS_ComboWarps.json",
+	// },
 
 	// Locations ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
-		// Map: Full BugLand; move to lair file
-		"Name": "Custom_Si_SS_BugLand_Full",
-		"FromMapFile": "Assets/Maps/Si_SS_02BugLand_Full.tmx",
+		"Action": "EditMap",
+		"Target": "Maps/BugLand",
+		"FromFile": "Assets/Maps/Si_SS_02BugLand_Full.tmx",
+		"PatchMode": "Replace",
+		"When": {
+			"HasFlag:hostPlayer |contains={{ModId}}_Intro4": true,
+		},
 	},
 
 	{
-		// Map: Party Room; move to lair file; switch to shadow realm
-		"Name": "Custom_Si_SS_PartyRoom",
-		"FromMapFile": "Assets/Maps/Si_SS_PartyRoom.tmx",
+		"Action": "EditMap",
+		"Target": "Maps/BugLand",
+		"MapProperties": {
+			"TreatAsOutdoors": "F"
+		},
+		"When": {
+			"HasFlag:hostPlayer |contains={{ModId}}_Intro4": true,
+		},
 	},
+
+	// {
+	// 	// Map: Full BugLand; move to lair file
+	// 	"Name": "Custom_Si_SS_BugLand_Full",
+	// 	"FromMapFile": "Assets/Maps/Si_SS_02BugLand_Full.tmx",
+	// },
+
+	{
+		"Action": "Load",
+		"Target": "Maps/Custom_Si_SS_BugLand_Full",
+		"FromFile": "Assets/Maps/Si_SS_02BugLand_Full.tmx",
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Locations",
+		"Entries": {
+			"Custom_Si_SS_BugLand_Full": {
+				"DisplayName": "Lair",
+				"CreateOnLoad": {
+					"MapPath": "Maps/Custom_Si_SS_BugLand_Full"
+				},
+				"DefaultArrivalTile": {
+					"X": 14,
+					"Y": 50
+				}
+			}
+		}
+	},
+
+	// {
+	// 	// Map: Party Room; move to lair file; switch to shadow realm
+	// 	"Name": "Custom_Si_SS_PartyRoom",
+	// 	"FromMapFile": "Assets/Maps/Si_SS_PartyRoom.tmx",
+	// },
 
 	{
 		// Tarps to hide house maps till character reveals // Move to char files except board > lair file
 		"Action": "Include",
-		"FromFile": "Assets/Sanctuary/Si_SS_Tarps.json",
+		"FromFile": "Assets/Lair/Si_SS_Tarps.json",
 		//"When": { // all houses activated
 			//"HasSeenEvent:hostPlayer |contains=262205029": false,
 		//},
 	},
 
 	{
-		// Locations file for custom locations // Move to lair file/char folders
-		"LogName": "Si SS Custom Location Events",
+		// Locations file for custom locations
 		"Action": "Load",
 		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
 		"FromFile": "Assets/Other/blank.json",

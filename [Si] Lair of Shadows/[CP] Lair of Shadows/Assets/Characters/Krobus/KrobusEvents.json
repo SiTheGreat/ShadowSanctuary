@@ -28,7 +28,31 @@
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModId}}_Intro3": "Monster/Clear the Lair/Help Krobus by getting rid of the flies in the lair./Slay 100 flies./Fly 100 Krobus/-1/0/-1/false/Thanks @! Meet me in the lair tomorrow.#$action AddMail {{ModId}}_Intro4 received",
+			"{{ModId}}_Intro3": "Monster/Clear the Lair/Help Krobus by getting rid of the flies in the lair./Slay 100 flies./Fly 100/-1/0/-1/false",
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"{{ModId}}_Intro3b": {
+				"Id": "{{ModId}}_Intro3b",
+				"Trigger": "LocationChanged",
+				"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Host questComplete_{{ModId}}_Intro3",
+				"Actions": [
+					"AddMail Current {{ModId}}_Intro4 now",
+				]
+			}
+		}
+	},
+
+	{
+		// Fly quest
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"{{ModId}}_Intro4": "Thanks for your help with the bugs @! Meet me in the lair tomorrow.^^Krobus[#]Visit The Lair",
 		},
 	},
 
@@ -61,6 +85,7 @@
 				"ShopPosition": "18, 46",
 				"ShopType": "CCBundle",
 				"ShopTexture":"Mods/{{ModId}}/Basket",
+				// "ShopTexture":"{{InternalAssetKey: Assets/Other/Basket.png}}",
 				"DrawQuestionMark": true,
 				"QuestionMarkOffset": "32, 48",
 				"BundleSlots": 2,
@@ -138,22 +163,37 @@
 	},
 
 	{
-		// Stone golems quest // need to verify the quest completion action works properly
+		// Stone golems quest // need to verify the quest completion action works properly // should be 10 or 50, set to 1 for testing
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModId}}_Intro15": "Monster/Sticks And Stones/Help Marlon clear stone golems out of the mines, and then return to the guild./Slay 50 stone golems./Stone_Golem 50/-1/0/-1/false/#$action AddMail {{ModId}}_Intro16 received",
+			"{{ModId}}_Intro15": "Monster/Sticks And Stones/Help Marlon clear stone golems out of the mines, and then return to the guild./Slay 50 stone golems./Stone_Golem 1/{{ModId}}_Intro15b/0/-1/false",
 		},
 	},
 
-	// {
-	// 	// Return to Marlon quest
-	// 	"Action": "EditData",
-	// 	"Target": "Data/Quests",
-	// 	"Entries": {
-	// 		"{{ModId}}_Intro16": "Location/Sticks And Stones/Help Marlon clear stone golems out of the mines./Return to the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
-	// 	},
-	// },
+	{
+		// Return to Marlon quest
+		"Action": "EditData",
+		"Target": "Data/Quests",
+		"Entries": {
+			"{{ModId}}_Intro15b": "Location/Sticks And Stones/Help Marlon clear stone golems out of the mines./Return to the Adventurer's Guild./AdventureGuild/-1/0/-1/false",
+		},
+	},
+
+	{
+		"Action": "EditData",
+		"Target": "Data/TriggerActions",
+		"Entries": {
+			"{{ModId}}_Intro15c": {
+				"Id": "{{ModId}}_Intro15c",
+				"Trigger": "LocationChanged",
+				"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Host questComplete_{{ModId}}_Intro15",
+				"Actions": [
+					"AddMail Current {{ModId}}_Intro16 now",
+				]
+			}
+		}
+	},
 
 	{
 		// Talk to Marlon again
