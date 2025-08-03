@@ -31,7 +31,7 @@
 	// Event ID 262205029 Yubu intro p2
 	"LogName": "Si SS IE ME 05",
 	"Action": "EditData",
-	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
+	"Target": "Data/Events/BugLand", // reqs
 	"Entries": {
 		"262205029/e 262205028/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
 		}

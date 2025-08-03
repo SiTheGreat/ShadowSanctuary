@@ -21,7 +21,7 @@
 		"Target": "UnlockableBundles/Bundles",
 		"Entries": {
 			"{{ModId}}_Duffle1": {
-				"Location": "Custom_Si_SS_BugLand_Full",
+				"Location": "BugLand",
 				// "BundleName": "Bundle One", // update
 				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6", // update icon
 				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
@@ -78,7 +78,7 @@
 	// Event ID 262205048 Duffle intro
 	"LogName": "Si SS IE ME 09",
 	"Action": "EditData",
-	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs; A SSDuffle1, sewer
+	"Target": "Data/Events/BugLand", // reqs; A SSDuffle1, sewer
 	"Entries": {
 		"262205048/e 262205047/f Krobus 2000/e 262205999": "none/-1000 -1000/farmer -100 -100 2/end",
 

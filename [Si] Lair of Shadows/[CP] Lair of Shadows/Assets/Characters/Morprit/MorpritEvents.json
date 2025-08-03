@@ -21,7 +21,7 @@
 		"Target": "UnlockableBundles/Bundles",
 		"Entries": {
 			"{{ModId}}_Morprit1": {
-				"Location": "Custom_Si_SS_BugLand_Full",
+				"Location": "BugLand",
 				// "BundleName": "Bundle One", // update
 				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6", // update icon
 				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
@@ -66,7 +66,7 @@
 	// Event ID 262205033 Morprit fish lair hidevent
 	"LogName": "Si SS IE HE 04",
 	"Action": "EditData",
-	"Target": "Data/Events/Custom_Si_SS_BugLand_Full", // reqs
+	"Target": "Data/Events/BugLand", // reqs
 	"Entries": {
 		"262205033/e 262205023/A SSAfterPhana/i -4/e 262205999/f Krobus 2000": "none/-1000 -1000/farmer -100 -100 2/end",
 		}

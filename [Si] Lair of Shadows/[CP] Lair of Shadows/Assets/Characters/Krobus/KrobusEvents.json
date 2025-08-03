@@ -47,6 +47,8 @@
 		}
 	},
 
+	// BugLand map now replaced
+
 	{
 		// Fly quest
 		"Action": "EditData",
@@ -59,7 +61,7 @@
 	{
 		// Unlocks bundle for clay and bone fragments
 		"Action": "EditData",
-		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+		"Target": "Data/Events/BugLand",
 		"Entries": {
 			"{{ModId}}_Intro5/n {{ModId}}_Intro4/d Fri": "continue/34 39/farmer 33 39 1 Krobus 35 39 3/fade/pause 300/speak Krobus \"Here's what I've got so far.\"/speak Krobus \"I've cleaned the place up a bit.#$b#I think these mounds would make good houses.#$b#Some of them need to be reinforced though.#$b#Can you get some clay for me?#$b#And some bone fragments too. I think they're the reason the soil in here has held up so well.\"/pause 200/emote farmer 32/pause 200/emote Krobus 20/pause 200/speak Krobus \"I'll put out a basket for you to drop them off in.#$b#I'll keep cleaning the lair in the mean time.\"/action UB_PlaceBundle {{ModId}}_Intro6/pause 200/end/fade",
 		}
@@ -78,7 +80,7 @@
 		"Target": "UnlockableBundles/Bundles",
 		"Entries": {
 			"{{ModId}}_Intro6": {
-				"Location": "Custom_Si_SS_BugLand_Full", // or BugLand ?
+				"Location": "BugLand", // or BugLand ?
 				// "BundleName": "Bundle One",
 				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6",
 				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
@@ -95,6 +97,7 @@
 					},
 					"BundleReward": {
 						"(O)771": 200, // fiber
+						"(O)684": 100, // bug meat // can you do multiple rewards?
 					},
 				"SpecialPlacementRequirements": [
 					{
@@ -111,7 +114,7 @@
 	{
 		// Unlocks bribery quests
 		"Action": "EditData",
-		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+		"Target": "Data/Events/BugLand",
 		"Entries": {
 			"{{ModId}}_Intro8/n {{ModId}}_Intro7/d Fri": "continue/38 17/farmer 43 17 3 Krobus 41 17 1/fade/pause 300/speak Krobus \"Those materials really helped!\"/pause 200/speak Krobus \"The mounds will make great houses.\"/pause 200/emote farmer 20/speak Krobus \"Things are moving along pretty well.#$b#I'm worried that the wizard won't be happy though.#$b#Could you go check if it'll be okay?\"/addQuest {{ModId}}_Intro9/pause 200/emote farmer 32/pause 200/speak Krobus \"Maybe take a super cucumber, I know the wizard likes those.#$b#...#$b#Can you also make sure the guild won't attack any of my people down here?\"/addQuest {{ModId}}_Intro10/pause 200/emote farmer 8/pause 200/speak Krobus \"I know they can be pretty cautious, but this is supposed to be a safe and peaceful place.#$b#I don't mean any disrespect!$3\"/pause 300/emote farmer 40/pause 200/emote farmer 32/pause 300/end/fade",
 		}
@@ -149,7 +152,7 @@
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModId}}_Intro12": "ItemDelivery/Sunny With A Chance Of Magic/Rasmodius needs desert totems for some research trips./Deliver 20 desert totems to the wizard./Wizard 261 20/-1/0/-1/false/Hm, these should suffice.#$b#Yes, fine, I won't stop you so long as they do not cause any disturbances to the town.#$b#Now leave me to my studies!#$action AddMail {{ModId}}_Intro13 received",
+			"{{ModId}}_Intro12": "ItemDelivery/Sunny With A Chance Of Magic/Rasmodius needs desert totems for some research trips./Deliver 10 desert totems to the wizard./Wizard 261 10/-1/0/-1/false/Hm, these should suffice.#$b#Yes, fine, I won't stop you so long as they do not cause any disturbances to the town.#$b#Now leave me to my studies!#$action AddMail {{ModId}}_Intro13 received",
 		},
 	},
 
@@ -167,7 +170,7 @@
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModId}}_Intro15": "Monster/Sticks And Stones/Help Marlon clear stone golems out of the mines, and then return to the guild./Slay 50 stone golems./Stone_Golem 1/{{ModId}}_Intro15b/0/-1/false",
+			"{{ModId}}_Intro15": "Monster/Sticks And Stones/Help Marlon clear stone golems out of the mines, and then return to the guild./Slay 20 stone golems./Stone_Golem 1/{{ModId}}_Intro15b/0/-1/false",
 		},
 	},
 
@@ -207,7 +210,7 @@
 	{
 		// Unlock final intro quest
 		"Action": "EditData",
-		"Target": "Data/Events/Custom_Si_SS_BugLand_Full",
+		"Target": "Data/Events/BugLand",
 		"Entries": {
 			"{{ModId}}_Intro18/e {{ModId}}_Intro17/n {{ModId}}_Intro13/d Fri": "continue/24 24/farmer 23 24 1 Krobus 25 24 3/fade/pause 300/emote Krobus 20/pause 200/speak Krobus \"Thanks so much for convincing them!$1#$b#The lair is pretty much done, so I guess we're ready.\"/pause 200/emote farmer 32/pause 200/speak Krobus \"I'll start spreading the word.#$b#Many of my people will be hesitant, but I hope some will still choose to live here.#$b#I heard there are some of my people in the mines nearby.#$b#Could you leave this note at the bottom of them for me?\"/addQuest {{ModId}}_Intro19/speak Krobus \"It's an invitation.#$b#I wrote it in my language so they know it was sent by one of us.\"/pause 200/emote farmer 32/pause 200/speak Krobus \"Thank you so much for all your help @.#$b#I really, truly, appreciate it.#$b#Even if no one shows up...$2#$b#I will never forget this.$1\"/pause 300/emote farmer 20/pause 300/end/fade",
 		}

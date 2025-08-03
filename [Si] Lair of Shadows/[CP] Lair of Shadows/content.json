@@ -97,12 +97,20 @@
 		},
 	},
 
-	// Guild ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Blank Load Events ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
 		// Load events file for the Adventurer's Guild when no other mod does
 		"Action": "Load",
 		"Target": "Data/Events/AdventureGuild",
+		"FromFile": "Assets/Other/blank.json",
+		"Priority": "Low"
+	},
+
+	{
+		// Load events file for the Mutant Bug Lair when no other mod does
+		"Action": "Load",
+		"Target": "Data/Events/BugLand",
 		"FromFile": "Assets/Other/blank.json",
 		"Priority": "Low"
 	},
