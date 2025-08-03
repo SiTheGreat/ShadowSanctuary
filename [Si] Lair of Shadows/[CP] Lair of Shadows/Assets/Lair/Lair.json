@@ -5,6 +5,7 @@
 	// Locations ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
+		// Replace BugLand map
 		"Action": "Load",
 		"Target": "Maps/BugLand",
 		"FromFile": "Assets/Maps/Si_SS_02BugLand_Full.tmx",
@@ -12,6 +13,8 @@
 			"HasSeenEvent:hostPlayer |contains={{ModId}}_Intro4": true, // Clear The Lair quest complete
 		},
 	},
+
+	// House maps are in NPC files
 
 	// {
 	// 	// Map: Party Room; move to lair file; switch to shadow realm
@@ -40,6 +43,17 @@
 		"Update": "OnLocationChange",
 		"When": {
 			"HasSeenEvent:hostPlayer |contains={{ModId}}_Phana1": true, // Phana intro event
+		},
+	},
+
+	// Characters ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		// NPC includes are in here
+		"Action": "Include",
+		"FromFile": "Assets/Characters/NPCs.json",
+		"When": {
+			"HasSeenEvent:hostPlayer |contains={{ModId}}_Intro4": true, // Clear The Lair quest complete
 		},
 	},
 
@@ -97,7 +111,6 @@
 
 	{
 		// Load basket texture for Unlockable Bundles
-		// Looks like UB prefers it as an internal asset? Come back to this later
 		"Action": "Load",
 		"Target": "Mods/{{ModId}}/Basket",
 		"FromFile": "Assets/Other/Basket.png",

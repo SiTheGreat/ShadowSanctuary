@@ -3,84 +3,10 @@
 	"Format": "2.0.0",
 	"Changes": [
 
-	// Characters ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Intro Quest ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Phana/Phana.json",
-	},
-
-	// {
-	// 	"Action": "Include",
-	// 	"FromFile": "Assets/Characters/Bellum/Bellum.json",
-	// },
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Ambu/Ambu.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Yubu/Yubu.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Morprit/Morprit.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Serif/Serif.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Glee/Glee.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Duffle/Duffle.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Nib/Nib.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Chenchi/Chenchi.json",
-	},
-
-	{
-		"Action": "Include",
-		"FromFile": "Assets/Characters/Tove/Tove.json",
-	},
-
-	// {
-	// 	"Action": "Include",
-	// 	"FromFile": "Assets/Characters/Argil/Argil.json",
-	// },
-
-	// {
-	// 	"Action": "Include",
-	// 	"FromFile": "Assets/Characters/Rath/Rath.json",
-	// },
-
-	// {
-	// 	"Action": "Include",
-	// 	"FromFile": "Assets/Characters/Pax/Pax.json",
-	// },
-
-	// {
-	// 	"Action": "Include",
-	// 	"FromFile": "Assets/Characters/Roa/Roa.json",
-	// },
-
-	{
+		// Intro events are in here
 		"Action": "Include",
 		"FromFile": "Assets/Characters/Krobus/Krobus.json",
 	},
@@ -88,7 +14,7 @@
 	// Lair ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
-		// Lair-wide content
+		// Lair-wide content including NPC file includes
 		"Action": "Include",
 		"FromFile": "Assets/Lair/Lair.json",
 		"When": {

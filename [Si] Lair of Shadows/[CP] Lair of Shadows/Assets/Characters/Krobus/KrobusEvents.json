@@ -14,12 +14,62 @@
 		}
 	},
 
+	// {
+	// 	// Strange bun quest to kickstart this mod's events
+	// 	"Action": "EditData",
+	// 	"Target": "Data/Quests",
+	// 	"Entries": {
+	// 		"{{ModId}}_Intro2": "ItemDelivery/A Sanctuary of Shadows/Krobus wants to turn the lair into a safe haven for the Shadow People. When you're ready to help him, bring him a strange bun./Give Krobus a strange bun./Krobus 203 1/-1/0/-1/false/Great, you brought it!$1#$b#I started clearing out the lair, but I ran into a problem.#$b#There are too many bugs in there!#$b#Can you get rid of them for me?#$action AddQuest {{ModId}}_Intro3",
+	// 	},
+	// },
+
 	{
-		// Strange bun quest to kickstart this mod's events
+		// Load Bundle Icon for Unlockable Bundle Intro6
+		"Action": "Load",
+		"Target": "{{ModId}}/BundleIcon_Intro6",
+		"FromFile": "Assets/Other/BundleIcon_Intro6.png",
+	},
+
+	{
+		// Strange bun-dle to kickstart this mod's events
 		"Action": "EditData",
-		"Target": "Data/Quests",
+		"Target": "UnlockableBundles/Bundles",
 		"Entries": {
-			"{{ModId}}_Intro2": "ItemDelivery/A Sanctuary of Shadows/Krobus wants to turn the lair into a safe haven for the Shadow People. When you're ready to help him, bring him a strange bun./Give Krobus a strange bun./Krobus 203 1/-1/0/-1/false/Great, you brought it!$1#$b#I started clearing out the lair, but I ran into a problem.#$b#There are too many bugs in there!#$b#Can you get rid of them for me?#$action AddQuest {{ModId}}_Intro3",
+			"{{ModId}}_Intro2": {
+				"Location": "Sewer",
+				"BundleName": "Lair of Shadows",
+				"BundleIconAsset": "{{ModId}}/BundleIcon_Intro6",
+				"JunimoNoteTexture": "Mods/{{ModId}}/BundleUI",
+				"ShopPosition": "29, 16",
+				"ShopType": "CCBundle",
+				"ShopTexture":"Mods/{{ModId}}/Basket",
+				"DrawQuestionMark": true,
+				"QuestionMarkOffset": "32, 48",
+				"BundleSlots": 1,
+				"Price": {
+						"(O)203": 1, // Strange Bun
+					},
+					"BundleReward": {
+						"(O)769": 50, // Void Essence
+					},
+				"SpecialPlacementRequirements": [
+					{
+						"Type": "TriggerAction"
+					}
+				],
+				"BundleCompletedActions": [
+					"AddMail All {{ModId}}_Intro2b now",
+				]
+			}
+		}
+	},
+
+	{
+		// Trigger fly quest
+		"Action": "EditData",
+		"Target": "Data/mail",
+		"Entries": {
+			"{{ModId}}_Intro2b": "Great, you brought it! I started clearing out the lair, but I ran into a problem. There are too many bugs in there! Can you get rid of them for me?^^Krobus%action AddQuest {{ModId}}_Intro3%%[#]Clear The Lair",
 		},
 	},
 
@@ -28,7 +78,7 @@
 		"Action": "EditData",
 		"Target": "Data/Quests",
 		"Entries": {
-			"{{ModId}}_Intro3": "Monster/Clear the Lair/Help Krobus by getting rid of the flies in the lair./Slay 100 flies./Fly 100/-1/0/-1/false",
+			"{{ModId}}_Intro3": "Monster/Clear the Lair/Help Krobus by getting rid of the flies in the lair./Slay 100 flies./Fly 1/-1/0/-1/false", // Set to 1 for testing
 		},
 	},
 
@@ -41,7 +91,7 @@
 				"Trigger": "LocationChanged",
 				"Condition": "PLAYER_HAS_CONVERSATION_TOPIC Host questComplete_{{ModId}}_Intro3",
 				"Actions": [
-					"AddMail Current {{ModId}}_Intro4 now",
+					"AddMail All {{ModId}}_Intro4 now",
 				]
 			}
 		}
@@ -67,12 +117,12 @@
 		}
 	},
 
-	{
-		// Load Bundle Icon for Unlockable Bundle Intro6
-		"Action": "Load",
-		"Target": "{{ModId}}/BundleIcon_Intro6",
-		"FromFile": "Assets/Other/BundleIcon_Intro6.png",
-	},
+	// {
+	// 	// Load Bundle Icon for Unlockable Bundle Intro6
+	// 	"Action": "Load",
+	// 	"Target": "{{ModId}}/BundleIcon_Intro6",
+	// 	"FromFile": "Assets/Other/BundleIcon_Intro6.png",
+	// },
 
 	{
 		// Bundle for clay and bone fragments
@@ -105,7 +155,7 @@
 					}
 				],
 				"BundleCompletedActions": [
-					"AddMail {{ModId}}_Intro7 received",
+					"AddMail All {{ModId}}_Intro7 received",
 				]
 			}
 		}
@@ -230,7 +280,7 @@
 		"Action": "EditData",
 		"Target": "Data/Events/Mine",
 		"Entries": {
-			"{{ModId}}_Intro20/e {{ModId}}_Intro18": "continue/18 8/farmer 18 11 0 Dwarf 23 8 2/addConversationTopic SSDelay1 12/skippable/fade/pause 300/move farmer 0 -3 1/faceDirection Dwarf 3/speak Dwarf \"Going on a mine run?\"/pause 300/emote farmer 40/pause 200/speak Dwarf \"You should take more equipment.#$b#The Shadow People have been out in full force lately.#$b#And the mines are dark.#$b#They might get the jump on you.#$b#Wouldn't want my best customer to get hurt.\"/pause 200/emote farmer 8/pause 200/speak Dwarf \"That one in the sewers may be smart enough not to attack you, but many of them aren't.#$b#It's nothing to do with whether you think they're nice or not.#$b#They're too suspicious for it to be worth it.#$b#Violence is all they've ever known.\"/pause 200/emote farmer 40/pause 200/faceDirection Dwarf 1/pause 200/speak Dwarf \"Be careful @.\"/pause 200/move Dwarf 10 0 1 true/emote farmer 40/globalFade/viewport -1000 -1000/pause 500/playSound stairsdown/pause 300/message \"You make your way down into the mines, and leave the note at the bottom.\"/pause 400/playSound crystal/pause 300/message \"Now you can only wait.\"/pause 300/end/fade",
+			"{{ModId}}_Intro20/e {{ModId}}_Intro18": "continue/18 8/farmer 18 11 0 Dwarf 23 8 2/addConversationTopic SSDelay1 12/skippable/fade/pause 300/move farmer 0 -3 1/faceDirection Dwarf 3/speak Dwarf \"Going on a mine run?\"/pause 300/emote farmer 40/pause 200/speak Dwarf \"You should take more equipment.#$b#The Shadow People have been out in full force lately.#$b#And the mines are dark.#$b#They might get the jump on you.#$b#Wouldn't want my best customer to get hurt.\"/pause 200/emote farmer 8/pause 200/speak Dwarf \"That one in the sewers may be smart enough not to attack you, but most of them are still wary.#$b#It's nothing to do with how friendly you are.#$b#They've been through too much to risk their safety for you.\"/pause 200/emote farmer 40/pause 200/faceDirection Dwarf 1/pause 200/speak Dwarf \"Be careful @.\"/pause 200/move Dwarf 10 0 1 true/emote farmer 40/globalFade/viewport -1000 -1000/pause 500/playSound stairsdown/pause 300/message \"You make your way down into the mines, and leave the note at the bottom.\"/pause 400/playSound crystal/pause 300/message \"Now you can only wait.\"/pause 300/end/fade",
 		}
 	},
 
